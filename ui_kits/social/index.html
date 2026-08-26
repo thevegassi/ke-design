@@ -1,0 +1,37 @@
+<!-- @dsCard group="Social kit" viewport="700x560" name="Social artwork kit" subtitle="Feed grid, post detail, story set, thumbnails, channel banner" -->
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Key Entertainment — Social artwork kit</title>
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>
+body{margin:0;background:var(--ke-off-white);font-family:var(--font-display);color:var(--ke-oxford-blue)}
+#root{max-width:700px;margin:0 auto;padding:24px;box-sizing:border-box}
+.tabs{display:flex;gap:8px;margin-bottom:22px;flex-wrap:wrap}
+.tab{font-family:var(--font-display);font-weight:600;font-size:12px;letter-spacing:.02em;padding:9px 16px;border-radius:999px;border:none;cursor:pointer;background:transparent;box-shadow:inset 0 0 0 1px rgba(12,35,80,.2);color:var(--ke-oxford-blue);transition:background var(--dur-base) var(--ease-standard),color var(--dur-base) var(--ease-standard)}
+.tab:hover{background:rgba(12,35,80,.06)}
+.tab[aria-selected="true"]{background:var(--ke-lime);color:var(--ke-lime-ink);box-shadow:none}
+</style></head><body><div id="root"></div>
+<script type="text/babel" src="Screens.jsx"></script>
+<script type="text/babel">
+const { useState } = React;
+function App(){
+  const [view,setView]=useState('feed');
+  const [post,setPost]=useState(null);
+  const tabs=[['feed','Feed'],['story','Stories'],['thumbs','Thumbnails'],['banner','Banner']];
+  return (<>
+    <div className="tabs" role="tablist">
+      {tabs.map(([k,l])=>(
+        <button key={k} className="tab" role="tab" aria-selected={view===k && post===null} onClick={()=>{setView(k);setPost(null)}}>{l}</button>
+      ))}
+    </div>
+    {post!==null ? <PostDetail index={post} onBack={()=>setPost(null)} />
+      : view==='feed' ? <FeedGrid onSelect={setPost} onOpenStories={()=>setView('story')} />
+      : view==='story' ? <StoryPlayer onBack={()=>setView('feed')} />
+      : view==='thumbs' ? <ThumbnailSet />
+      : <Banner />}
+  </>);
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script></body></html>
