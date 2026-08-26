@@ -1,0 +1,673 @@
+{
+  "plugins": [
+    "react",
+    "import"
+  ],
+  "rules": {
+    "react/forbid-elements": [
+      "warn",
+      {
+        "forbid": []
+      }
+    ],
+    "no-restricted-imports": [
+      "warn",
+      {
+        "patterns": [
+          {
+            "group": [
+              "components/brand/**",
+              "components/brandbook/**",
+              "components/channel/**",
+              "components/community/**",
+              "components/deck/**",
+              "components/icons/**",
+              "components/social/**",
+              "slides/**",
+              "ui_kits/brandbook/**",
+              "ui_kits/social/**"
+            ],
+            "message": "Import design-system components from 'index.js', not component internals."
+          }
+        ]
+      }
+    ],
+    "no-restricted-syntax": [
+      "warn",
+      {
+        "selector": "Literal[value=/#[0-9a-fA-F]{3,8}\\b/]",
+        "message": "Raw hex color — use a design-system color token via var()."
+      },
+      {
+        "selector": "Literal[value=/\\b\\d+px\\b/]",
+        "message": "Raw px value — use a design-system spacing token via var()."
+      },
+      {
+        "selector": "Literal[value=/font-family\\s*:\\s*(?!['\\\"]?(?:Nunito Sans|Manrope|Inter))/i]",
+        "message": "Font not provided by the design system. Available: Nunito Sans, Manrope, Inter."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Avatar28'] > JSXAttribute > JSXIdentifier[name!=/^(?:image|key|ref|className|style|children)$/]",
+        "message": "<Avatar28> doesn't accept that prop. Declared props: image."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='AvatarsSmall'] > JSXAttribute > JSXIdentifier[name!=/^(?:images|size|overlap|key|ref|className|style|children)$/]",
+        "message": "<AvatarsSmall> doesn't accept that prop. Declared props: images, size, overlap."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='BannerImage'] > JSXAttribute > JSXIdentifier[name!=/^(?:image|headline|guides|scale|background|key|ref|className|style|children)$/]",
+        "message": "<BannerImage> doesn't accept that prop. Declared props: image, headline, guides, scale, background."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='BottomNav'] > JSXAttribute > JSXIdentifier[name!=/^(?:tabs|active|onSelect|width|key|ref|className|style|children)$/]",
+        "message": "<BottomNav> doesn't accept that prop. Declared props: tabs, active, onSelect, width."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='ColorSwatch'] > JSXAttribute > JSXIdentifier[name!=/^(?:hex|name|cmyk|rgb|ink|hexInk|height|key|ref|className|style|children)$/]",
+        "message": "<ColorSwatch> doesn't accept that prop. Declared props: hex, name, cmyk, rgb, ink, hexInk, height."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='CommunitiesActionCollapsedButton'] > JSXAttribute > JSXIdentifier[name!=/^(?:primary|items|key|ref|className|style|children)$/]",
+        "message": "<CommunitiesActionCollapsedButton> doesn't accept that prop. Declared props: primary, items."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='CommunitiesContainerInfo'] > JSXAttribute > JSXIdentifier[name!=/^(?:name|category|width|key|ref|className|style|children)$/]",
+        "message": "<CommunitiesContainerInfo> doesn't accept that prop. Declared props: name, category, width."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='CommunitiesOfferNers'] > JSXAttribute > JSXIdentifier[name!=/^(?:title|name|category|width|key|ref|className|style|children)$/]",
+        "message": "<CommunitiesOfferNers> doesn't accept that prop. Declared props: title, name, category, width."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='CommunitiesSubscriptionsAll'] > JSXAttribute > JSXIdentifier[name!=/^(?:title|count|items|width|key|ref|className|style|children)$/]",
+        "message": "<CommunitiesSubscriptionsAll> doesn't accept that prop. Declared props: title, count, items, width."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='CommunitiesSubscriptionsFriendsSmallAlone'] > JSXAttribute > JSXIdentifier[name!=/^(?:title|count|images|width|key|ref|className|style|children)$/]",
+        "message": "<CommunitiesSubscriptionsFriendsSmallAlone> doesn't accept that prop. Declared props: title, count, images, width."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='DeckHeader'] > JSXAttribute > JSXIdentifier[name!=/^(?:section|folio|url|ink|key|ref|className|style|children)$/]",
+        "message": "<DeckHeader> doesn't accept that prop. Declared props: section, folio, url, ink."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='GlassRow'] > JSXAttribute > JSXIdentifier[name!=/^(?:size|ink|key|ref|className|style|children)$/]",
+        "message": "<GlassRow> doesn't accept that prop. Declared props: size, ink."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='HomeBottomMenu'] > JSXAttribute > JSXIdentifier[name!=/^(?:tabs|active|onSelect|width|key|ref|className|style|children)$/]",
+        "message": "<HomeBottomMenu> doesn't accept that prop. Declared props: tabs, active, onSelect, width."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Icon'] > JSXAttribute > JSXIdentifier[name!=/^(?:name|size|key|ref|className|style|children)$/]",
+        "message": "<Icon> doesn't accept that prop. Declared props: name, size."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='IconBadgePost'] > JSXAttribute > JSXIdentifier[name!=/^(?:icon|background|ring|ink|scale|key|ref|className|style|children)$/]",
+        "message": "<IconBadgePost> doesn't accept that prop. Declared props: icon, background, ring, ink, scale."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Logo'] > JSXAttribute > JSXIdentifier[name!=/^(?:variant|height|color|title|key|ref|className|style|children)$/]",
+        "message": "<Logo> doesn't accept that prop. Declared props: variant, height, color, title."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Logo'] > JSXAttribute[name.name='variant'] > Literal[value!=/^(?:full|mark)$/]",
+        "message": "<Logo> variant must be one of 'full' | 'mark'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='LogoTile'] > JSXAttribute > JSXIdentifier[name!=/^(?:background|ink|image|outlined|variant|logoHeight|height|key|ref|className|style|children)$/]",
+        "message": "<LogoTile> doesn't accept that prop. Declared props: background, ink, image, outlined, variant, logoHeight, height."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='LogoTile'] > JSXAttribute[name.name='variant'] > Literal[value!=/^(?:full|mark)$/]",
+        "message": "<LogoTile> variant must be one of 'full' | 'mark'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='MediaFrame'] > JSXAttribute > JSXIdentifier[name!=/^(?:image|title|tag|width|height|background|titleSize|key|ref|className|style|children)$/]",
+        "message": "<MediaFrame> doesn't accept that prop. Declared props: image, title, tag, width, height, background, titleSize."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='PatternField'] > JSXAttribute > JSXIdentifier[name!=/^(?:mode|color|opacity|size|key|ref|className|style|children)$/]",
+        "message": "<PatternField> doesn't accept that prop. Declared props: mode, color, opacity, size."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='PatternField'] > JSXAttribute[name.name='mode'] > Literal[value!=/^(?:wash|tile)$/]",
+        "message": "<PatternField> mode must be one of 'wash' | 'tile'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='PostFrame'] > JSXAttribute > JSXIdentifier[name!=/^(?:image|tag|title|subtitle|format|background|ink|titleSize|scale|key|ref|className|style|children)$/]",
+        "message": "<PostFrame> doesn't accept that prop. Declared props: image, tag, title, subtitle, format, background, ink, titleSize, scale."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='PostFrame'] > JSXAttribute[name.name='format'] > Literal[value!=/^(?:square|story)$/]",
+        "message": "<PostFrame> format must be one of 'square' | 'story'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='ProfilePicture'] > JSXAttribute > JSXIdentifier[name!=/^(?:image|size|key|ref|className|style|children)$/]",
+        "message": "<ProfilePicture> doesn't accept that prop. Declared props: image, size."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='SectionHeading'] > JSXAttribute > JSXIdentifier[name!=/^(?:rule|color|size|as|key|ref|className|style|children)$/]",
+        "message": "<SectionHeading> doesn't accept that prop. Declared props: rule, color, size, as."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='ServiceCard'] > JSXAttribute > JSXIdentifier[name!=/^(?:icon|label|background|ink|labelInk|iconColor|key|ref|className|style|children)$/]",
+        "message": "<ServiceCard> doesn't accept that prop. Declared props: icon, label, background, ink, labelInk, iconColor."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Tag'] > JSXAttribute > JSXIdentifier[name!=/^(?:variant|size|key|ref|className|style|children)$/]",
+        "message": "<Tag> doesn't accept that prop. Declared props: variant, size."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Tag'] > JSXAttribute[name.name='variant'] > Literal[value!=/^(?:accent|outline)$/]",
+        "message": "<Tag> variant must be one of 'accent' | 'outline'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='XActionsPageMenuButton'] > JSXAttribute > JSXIdentifier[name!=/^(?:label|width|key|ref|className|style|children)$/]",
+        "message": "<XActionsPageMenuButton> doesn't accept that prop. Declared props: label, width."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='XActionsPageMenuItem'] > JSXAttribute > JSXIdentifier[name!=/^(?:icon|label|width|key|ref|className|style|children)$/]",
+        "message": "<XActionsPageMenuItem> doesn't accept that prop. Declared props: icon, label, width."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='XAvatarCircle'] > JSXAttribute > JSXIdentifier[name!=/^(?:size|image|key|ref|className|style|children)$/]",
+        "message": "<XAvatarCircle> doesn't accept that prop. Declared props: size, image."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='XAvatarsRow'] > JSXAttribute > JSXIdentifier[name!=/^(?:images|label|key|ref|className|style|children)$/]",
+        "message": "<XAvatarsRow> doesn't accept that prop. Declared props: images, label."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='XButtonActionsLabelFixed'] > JSXAttribute > JSXIdentifier[name!=/^(?:label|icon|key|ref|className|style|children)$/]",
+        "message": "<XButtonActionsLabelFixed> doesn't accept that prop. Declared props: label, icon."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='XCommunityTitleLayout'] > JSXAttribute > JSXIdentifier[name!=/^(?:name|category|status|key|ref|className|style|children)$/]",
+        "message": "<XCommunityTitleLayout> doesn't accept that prop. Declared props: name, category, status."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='XContainerCounters'] > JSXAttribute > JSXIdentifier[name!=/^(?:likes|comments|shares|views|key|ref|className|style|children)$/]",
+        "message": "<XContainerCounters> doesn't accept that prop. Declared props: likes, comments, shares, views."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='XIconCounter'] > JSXAttribute > JSXIdentifier[name!=/^(?:icon|count|active|key|ref|className|style|children)$/]",
+        "message": "<XIconCounter> doesn't accept that prop. Declared props: icon, count, active."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='XIconCounterViews'] > JSXAttribute > JSXIdentifier[name!=/^(?:count|key|ref|className|style|children)$/]",
+        "message": "<XIconCounterViews> doesn't accept that prop. Declared props: count."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='XLeftMenuRow'] > JSXAttribute > JSXIdentifier[name!=/^(?:icon|label|active|key|ref|className|style|children)$/]",
+        "message": "<XLeftMenuRow> doesn't accept that prop. Declared props: icon, label, active."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='XMainContainerTextLocation'] > JSXAttribute > JSXIdentifier[name!=/^(?:address|lines|width|key|ref|className|style|children)$/]",
+        "message": "<XMainContainerTextLocation> doesn't accept that prop. Declared props: address, lines, width."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='XMainContainerTextPhone'] > JSXAttribute > JSXIdentifier[name!=/^(?:phone|key|ref|className|style|children)$/]",
+        "message": "<XMainContainerTextPhone> doesn't accept that prop. Declared props: phone."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='XMenuSeparator'] > JSXAttribute > JSXIdentifier[name!=/^(?:width|key|ref|className|style|children)$/]",
+        "message": "<XMenuSeparator> doesn't accept that prop. Declared props: width."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='XSearchHeader'] > JSXAttribute > JSXIdentifier[name!=/^(?:placeholder|width|key|ref|className|style|children)$/]",
+        "message": "<XSearchHeader> doesn't accept that prop. Declared props: placeholder, width."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='XSubscriptionsGroupAvatars'] > JSXAttribute > JSXIdentifier[name!=/^(?:items|size|key|ref|className|style|children)$/]",
+        "message": "<XSubscriptionsGroupAvatars> doesn't accept that prop. Declared props: items, size."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='XTextGroupInfo'] > JSXAttribute > JSXIdentifier[name!=/^(?:icon|width|link|key|ref|className|style|children)$/]",
+        "message": "<XTextGroupInfo> doesn't accept that prop. Declared props: icon, width, link."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='XTitleLayout125'] > JSXAttribute > JSXIdentifier[name!=/^(?:title|count|key|ref|className|style|children)$/]",
+        "message": "<XTitleLayout125> doesn't accept that prop. Declared props: title, count."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='XTitleLayoutPost'] > JSXAttribute > JSXIdentifier[name!=/^(?:author|time|key|ref|className|style|children)$/]",
+        "message": "<XTitleLayoutPost> doesn't accept that prop. Declared props: author, time."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='XUsername'] > JSXAttribute > JSXIdentifier[name!=/^(?:verified|key|ref|className|style|children)$/]",
+        "message": "<XUsername> doesn't accept that prop. Declared props: verified."
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/index.js"
+      ],
+      "rules": {
+        "no-restricted-imports": "off"
+      }
+    }
+  ],
+  "x-omelette": {
+    "components": {
+      "Avatar28": {
+        "replaces": []
+      },
+      "AvatarsSmall": {
+        "replaces": []
+      },
+      "BannerImage": {
+        "replaces": []
+      },
+      "BottomNav": {
+        "replaces": []
+      },
+      "ColorSwatch": {
+        "replaces": []
+      },
+      "CommunitiesActionCollapsedButton": {
+        "replaces": []
+      },
+      "CommunitiesContainerInfo": {
+        "replaces": []
+      },
+      "CommunitiesOfferNers": {
+        "replaces": []
+      },
+      "CommunitiesSubscriptionsAll": {
+        "replaces": []
+      },
+      "CommunitiesSubscriptionsFriendsSmallAlone": {
+        "replaces": []
+      },
+      "DeckHeader": {
+        "replaces": []
+      },
+      "GlassRow": {
+        "replaces": []
+      },
+      "HomeBottomMenu": {
+        "replaces": []
+      },
+      "Icon": {
+        "replaces": []
+      },
+      "IconBadgePost": {
+        "replaces": []
+      },
+      "Logo": {
+        "replaces": []
+      },
+      "LogoTile": {
+        "replaces": []
+      },
+      "MediaFrame": {
+        "replaces": []
+      },
+      "PatternField": {
+        "replaces": []
+      },
+      "PostFrame": {
+        "replaces": []
+      },
+      "ProfilePicture": {
+        "replaces": []
+      },
+      "SectionHeading": {
+        "replaces": []
+      },
+      "ServiceCard": {
+        "replaces": []
+      },
+      "Tag": {
+        "replaces": []
+      },
+      "XActionsPageMenuButton": {
+        "replaces": []
+      },
+      "XActionsPageMenuItem": {
+        "replaces": []
+      },
+      "XAvatarCircle": {
+        "replaces": []
+      },
+      "XAvatarsRow": {
+        "replaces": []
+      },
+      "XButtonActionsLabelFixed": {
+        "replaces": []
+      },
+      "XCommunityTitleLayout": {
+        "replaces": []
+      },
+      "XContainerCounters": {
+        "replaces": []
+      },
+      "XIconCounter": {
+        "replaces": []
+      },
+      "XIconCounterViews": {
+        "replaces": []
+      },
+      "XLeftMenuRow": {
+        "replaces": []
+      },
+      "XMainContainerTextLocation": {
+        "replaces": []
+      },
+      "XMainContainerTextPhone": {
+        "replaces": []
+      },
+      "XMenuSeparator": {
+        "replaces": []
+      },
+      "XSearchHeader": {
+        "replaces": []
+      },
+      "XSubscriptionsGroupAvatars": {
+        "replaces": []
+      },
+      "XTextGroupInfo": {
+        "replaces": []
+      },
+      "XTitleLayout125": {
+        "replaces": []
+      },
+      "XTitleLayoutPost": {
+        "replaces": []
+      },
+      "XUsername": {
+        "replaces": []
+      }
+    },
+    "tokens": [
+      "--accent-rule",
+      "--accent-rule-gap",
+      "--accent-rule-h",
+      "--accent-rule-w",
+      "--banner-h",
+      "--banner-w",
+      "--border-diagram",
+      "--border-diagram-w",
+      "--border-hair",
+      "--border-hairline",
+      "--border-on-dark",
+      "--border-pill",
+      "--chrome-border",
+      "--chrome-border-strong",
+      "--chrome-icon",
+      "--chrome-link",
+      "--chrome-meta",
+      "--chrome-nav",
+      "--chrome-nav-field",
+      "--chrome-nav-ink",
+      "--chrome-nav-ink-muted",
+      "--chrome-surface",
+      "--deck-pattern-opacity",
+      "--dur-base",
+      "--dur-fast",
+      "--dur-slow",
+      "--ease-standard",
+      "--font-body",
+      "--font-deck",
+      "--font-display",
+      "--font-ui",
+      "--fw-bold",
+      "--fw-extrabold",
+      "--fw-extralight",
+      "--fw-light",
+      "--fw-regular",
+      "--fw-semibold",
+      "--ke-abyss",
+      "--ke-black",
+      "--ke-blue-rule",
+      "--ke-indigo-ink",
+      "--ke-ink",
+      "--ke-lavender",
+      "--ke-lime",
+      "--ke-lime-bright",
+      "--ke-lime-deep",
+      "--ke-lime-ink",
+      "--ke-midnight",
+      "--ke-navy-deep",
+      "--ke-near-black",
+      "--ke-off-white",
+      "--ke-oxford-blue",
+      "--ke-periwinkle",
+      "--ke-thumb-yellow",
+      "--ke-tropical-indigo",
+      "--ke-white",
+      "--lh-body",
+      "--lh-copy",
+      "--lh-flush",
+      "--lh-snug",
+      "--lh-tight",
+      "--link",
+      "--link-hover",
+      "--live-brandbook",
+      "--live-deck",
+      "--margin-brandbook",
+      "--margin-deck",
+      "--margin-social",
+      "--margin-thumb",
+      "--page-h",
+      "--page-w",
+      "--pattern-opacity",
+      "--photo-scrim",
+      "--photo-scrim-soft",
+      "--post-square",
+      "--post-story-h",
+      "--radius-2xl",
+      "--radius-3xl",
+      "--radius-lg",
+      "--radius-md",
+      "--radius-none",
+      "--radius-pill",
+      "--radius-sm",
+      "--radius-xl",
+      "--radius-xs",
+      "--shadow-device",
+      "--shadow-none",
+      "--size-body",
+      "--size-cover",
+      "--size-deck-body",
+      "--size-deck-hero",
+      "--size-deck-meta",
+      "--size-deck-tagline",
+      "--size-deck-title",
+      "--size-label",
+      "--size-lead",
+      "--size-section",
+      "--size-title",
+      "--space-10",
+      "--space-12",
+      "--space-14",
+      "--space-16",
+      "--space-18",
+      "--space-2",
+      "--space-20",
+      "--space-3",
+      "--space-32",
+      "--space-4",
+      "--space-6",
+      "--space-7",
+      "--space-8",
+      "--space-9",
+      "--surface-accent",
+      "--surface-card",
+      "--surface-card-invert",
+      "--surface-chapter",
+      "--surface-chapter-dark",
+      "--surface-deck",
+      "--surface-diagram",
+      "--surface-invert",
+      "--surface-page",
+      "--surface-page-alt",
+      "--surface-row-glass",
+      "--surface-scrim",
+      "--surface-scrim-soft",
+      "--text-accent",
+      "--text-body",
+      "--text-display",
+      "--text-heading",
+      "--text-muted",
+      "--text-on-accent",
+      "--text-on-chapter",
+      "--text-on-dark",
+      "--text-on-dark-muted",
+      "--thumb-h",
+      "--thumb-w",
+      "--tracking-deck",
+      "--tracking-deck-hero",
+      "--tracking-normal"
+    ],
+    "tokenKinds": {
+      "--ke-lime": "color",
+      "--ke-tropical-indigo": "color",
+      "--ke-oxford-blue": "color",
+      "--ke-black": "color",
+      "--ke-near-black": "color",
+      "--ke-midnight": "color",
+      "--ke-abyss": "color",
+      "--ke-navy-deep": "color",
+      "--ke-periwinkle": "color",
+      "--ke-lavender": "color",
+      "--ke-indigo-ink": "color",
+      "--ke-blue-rule": "color",
+      "--ke-white": "color",
+      "--ke-off-white": "color",
+      "--ke-ink": "color",
+      "--ke-lime-ink": "color",
+      "--ke-lime-deep": "color",
+      "--ke-lime-bright": "color",
+      "--ke-thumb-yellow": "color",
+      "--surface-page": "color",
+      "--surface-page-alt": "color",
+      "--surface-chapter": "color",
+      "--surface-chapter-dark": "color",
+      "--surface-invert": "color",
+      "--surface-card": "color",
+      "--surface-card-invert": "color",
+      "--surface-diagram": "color",
+      "--surface-accent": "color",
+      "--surface-deck": "color",
+      "--surface-row-glass": "color",
+      "--surface-scrim": "color",
+      "--surface-scrim-soft": "color",
+      "--text-display": "font",
+      "--text-heading": "font",
+      "--text-body": "font",
+      "--text-muted": "font",
+      "--text-on-dark": "font",
+      "--text-on-dark-muted": "font",
+      "--text-on-chapter": "font",
+      "--text-accent": "font",
+      "--text-on-accent": "font",
+      "--border-hairline": "color",
+      "--border-diagram": "color",
+      "--border-on-dark": "color",
+      "--accent-rule": "color",
+      "--link": "color",
+      "--link-hover": "color",
+      "--chrome-surface": "color",
+      "--chrome-border": "color",
+      "--chrome-border-strong": "color",
+      "--chrome-nav": "color",
+      "--chrome-nav-field": "color",
+      "--chrome-nav-ink": "color",
+      "--chrome-nav-ink-muted": "color",
+      "--chrome-link": "color",
+      "--chrome-meta": "color",
+      "--chrome-icon": "color",
+      "--font-display": "font",
+      "--font-body": "font",
+      "--font-deck": "font",
+      "--font-ui": "font",
+      "--fw-extralight": "font",
+      "--fw-light": "font",
+      "--fw-regular": "font",
+      "--fw-semibold": "font",
+      "--fw-bold": "font",
+      "--fw-extrabold": "font",
+      "--size-cover": "spacing",
+      "--size-title": "spacing",
+      "--size-section": "spacing",
+      "--size-lead": "spacing",
+      "--size-body": "spacing",
+      "--size-label": "spacing",
+      "--size-deck-hero": "spacing",
+      "--size-deck-tagline": "spacing",
+      "--size-deck-title": "spacing",
+      "--size-deck-body": "spacing",
+      "--size-deck-meta": "spacing",
+      "--lh-tight": "font",
+      "--lh-flush": "font",
+      "--lh-snug": "font",
+      "--lh-body": "font",
+      "--lh-copy": "font",
+      "--tracking-deck-hero": "font",
+      "--tracking-deck": "font",
+      "--tracking-normal": "font",
+      "--space-2": "spacing",
+      "--space-3": "spacing",
+      "--space-4": "spacing",
+      "--space-6": "spacing",
+      "--space-7": "spacing",
+      "--space-8": "spacing",
+      "--space-9": "spacing",
+      "--space-10": "spacing",
+      "--space-12": "spacing",
+      "--space-14": "spacing",
+      "--space-16": "spacing",
+      "--space-18": "spacing",
+      "--space-20": "spacing",
+      "--space-32": "spacing",
+      "--page-w": "spacing",
+      "--page-h": "spacing",
+      "--margin-brandbook": "spacing",
+      "--live-brandbook": "spacing",
+      "--margin-deck": "spacing",
+      "--live-deck": "spacing",
+      "--margin-social": "spacing",
+      "--margin-thumb": "spacing",
+      "--accent-rule-w": "spacing",
+      "--accent-rule-h": "spacing",
+      "--accent-rule-gap": "spacing",
+      "--post-square": "spacing",
+      "--post-story-h": "spacing",
+      "--thumb-w": "spacing",
+      "--thumb-h": "spacing",
+      "--banner-w": "spacing",
+      "--banner-h": "spacing",
+      "--radius-none": "radius",
+      "--radius-xs": "radius",
+      "--radius-sm": "radius",
+      "--radius-md": "radius",
+      "--radius-lg": "radius",
+      "--radius-xl": "radius",
+      "--radius-2xl": "radius",
+      "--radius-3xl": "radius",
+      "--radius-pill": "radius",
+      "--border-hair": "other",
+      "--border-diagram-w": "other",
+      "--border-pill": "other",
+      "--shadow-device": "shadow",
+      "--shadow-none": "shadow",
+      "--pattern-opacity": "other",
+      "--deck-pattern-opacity": "other",
+      "--photo-scrim": "color",
+      "--photo-scrim-soft": "color",
+      "--ease-standard": "other",
+      "--dur-fast": "other",
+      "--dur-base": "other",
+      "--dur-slow": "other"
+    },
+    "fontFamilies": [
+      "Inter",
+      "Manrope",
+      "Nunito Sans"
+    ]
+  }
+}

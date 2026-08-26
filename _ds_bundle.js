@@ -1,0 +1,4021 @@
+/* @ds-bundle: {"format":4,"namespace":"KeyEntertainmentDesignSystem_27049e","components":[{"name":"Logo","sourcePath":"components/brand/Logo.jsx"},{"name":"PatternField","sourcePath":"components/brand/PatternField.jsx"},{"name":"ColorSwatch","sourcePath":"components/brandbook/ColorSwatch.jsx"},{"name":"LogoTile","sourcePath":"components/brandbook/LogoTile.jsx"},{"name":"SectionHeading","sourcePath":"components/brandbook/SectionHeading.jsx"},{"name":"ServiceCard","sourcePath":"components/brandbook/ServiceCard.jsx"},{"name":"BannerImage","sourcePath":"components/channel/BannerImage.jsx"},{"name":"Avatar28","sourcePath":"components/community/Avatar28.jsx"},{"name":"AvatarsSmall","sourcePath":"components/community/AvatarsSmall.jsx"},{"name":"BottomNav","sourcePath":"components/community/BottomNav.jsx"},{"name":"CommunitiesActionCollapsedButton","sourcePath":"components/community/CommunitiesActionCollapsedButton.jsx"},{"name":"CommunitiesContainerInfo","sourcePath":"components/community/CommunitiesContainerInfo.jsx"},{"name":"CommunitiesOfferNers","sourcePath":"components/community/CommunitiesOfferNers.jsx"},{"name":"CommunitiesSubscriptionsAll","sourcePath":"components/community/CommunitiesSubscriptionsAll.jsx"},{"name":"CommunitiesSubscriptionsFriendsSmallAlone","sourcePath":"components/community/CommunitiesSubscriptionsFriendsSmallAlone.jsx"},{"name":"HomeBottomMenu","sourcePath":"components/community/HomeBottomMenu.jsx"},{"name":"ProfilePicture","sourcePath":"components/community/ProfilePicture.jsx"},{"name":"XActionsPageMenuButton","sourcePath":"components/community/XActionsPageMenuButton.jsx"},{"name":"XActionsPageMenuItem","sourcePath":"components/community/XActionsPageMenuItem.jsx"},{"name":"XAvatarCircle","sourcePath":"components/community/XAvatarCircle.jsx"},{"name":"XAvatarsRow","sourcePath":"components/community/XAvatarsRow.jsx"},{"name":"XButtonActionsLabelFixed","sourcePath":"components/community/XButtonActionsLabelFixed.jsx"},{"name":"XCommunityTitleLayout","sourcePath":"components/community/XCommunityTitleLayout.jsx"},{"name":"XContainerCounters","sourcePath":"components/community/XContainerCounters.jsx"},{"name":"XIconCounter","sourcePath":"components/community/XIconCounter.jsx"},{"name":"XIconCounterViews","sourcePath":"components/community/XIconCounterViews.jsx"},{"name":"XLeftMenuRow","sourcePath":"components/community/XLeftMenuRow.jsx"},{"name":"XMainContainerTextLocation","sourcePath":"components/community/XMainContainerTextLocation.jsx"},{"name":"XMainContainerTextPhone","sourcePath":"components/community/XMainContainerTextPhone.jsx"},{"name":"XMenuSeparator","sourcePath":"components/community/XMenuSeparator.jsx"},{"name":"XSearchHeader","sourcePath":"components/community/XSearchHeader.jsx"},{"name":"XSubscriptionsGroupAvatars","sourcePath":"components/community/XSubscriptionsGroupAvatars.jsx"},{"name":"XTextGroupInfo","sourcePath":"components/community/XTextGroupInfo.jsx"},{"name":"XTitleLayout125","sourcePath":"components/community/XTitleLayout125.jsx"},{"name":"XTitleLayoutPost","sourcePath":"components/community/XTitleLayoutPost.jsx"},{"name":"XUsername","sourcePath":"components/community/XUsername.jsx"},{"name":"DeckHeader","sourcePath":"components/deck/DeckHeader.jsx"},{"name":"GlassRow","sourcePath":"components/deck/GlassRow.jsx"},{"name":"Icon","sourcePath":"components/icons/Icon.jsx"},{"name":"IconBadgePost","sourcePath":"components/social/IconBadgePost.jsx"},{"name":"MediaFrame","sourcePath":"components/social/MediaFrame.jsx"},{"name":"PostFrame","sourcePath":"components/social/PostFrame.jsx"},{"name":"Tag","sourcePath":"components/social/Tag.jsx"}],"sourceHashes":{"components/brand/Logo.jsx":"e2d7d8ac5b37","components/brand/PatternField.jsx":"462abbffdce8","components/brandbook/ColorSwatch.jsx":"fdc35d23ccb6","components/brandbook/LogoTile.jsx":"3c572d0565ae","components/brandbook/SectionHeading.jsx":"ef0270db6c85","components/brandbook/ServiceCard.jsx":"afa9bbabba21","components/channel/BannerImage.jsx":"0fe871274ce5","components/community/Avatar28.jsx":"fc67680dcbee","components/community/AvatarsSmall.jsx":"fc7b83824df9","components/community/BottomNav.jsx":"e00f5bb0f6e9","components/community/CommunitiesActionCollapsedButton.jsx":"824f86a55043","components/community/CommunitiesContainerInfo.jsx":"729ae78339c0","components/community/CommunitiesOfferNers.jsx":"23889c2bb506","components/community/CommunitiesSubscriptionsAll.jsx":"d056f305d58a","components/community/CommunitiesSubscriptionsFriendsSmallAlone.jsx":"876c6ef4a37c","components/community/HomeBottomMenu.jsx":"a6eff2a8fdff","components/community/ProfilePicture.jsx":"710d828df9b2","components/community/XActionsPageMenuButton.jsx":"9251aac4a164","components/community/XActionsPageMenuItem.jsx":"36742e38fbd4","components/community/XAvatarCircle.jsx":"369e86e218f3","components/community/XAvatarsRow.jsx":"ae901d1b00cb","components/community/XButtonActionsLabelFixed.jsx":"0f1dbf9395b5","components/community/XCommunityTitleLayout.jsx":"5b144895cf5d","components/community/XContainerCounters.jsx":"32ab935ff403","components/community/XIconCounter.jsx":"fba9f20777d0","components/community/XIconCounterViews.jsx":"a949d4cc0634","components/community/XLeftMenuRow.jsx":"c718c030911a","components/community/XMainContainerTextLocation.jsx":"08a76a451064","components/community/XMainContainerTextPhone.jsx":"25d52c17156b","components/community/XMenuSeparator.jsx":"b5f56eebe80b","components/community/XSearchHeader.jsx":"a1191ad23687","components/community/XSubscriptionsGroupAvatars.jsx":"95af142b7baa","components/community/XTextGroupInfo.jsx":"e56edf95d682","components/community/XTitleLayout125.jsx":"d1a4db5d3ab0","components/community/XTitleLayoutPost.jsx":"0bfc430d95ff","components/community/XUsername.jsx":"5e3c1a5fb63f","components/deck/DeckHeader.jsx":"935c0e2ef02a","components/deck/GlassRow.jsx":"cf27c8cfdc56","components/icons/Icon.jsx":"b81dfc2559d3","components/icons/icon-data.js":"1c594548dfb2","components/social/IconBadgePost.jsx":"02af1beba2c5","components/social/MediaFrame.jsx":"075e3f4cb079","components/social/PostFrame.jsx":"77f357104482","components/social/Tag.jsx":"1edabe9a9630","slides/Slides.jsx":"c9e8820d1f2f","ui_kits/brandbook/Pages.jsx":"70f3bbfeaaad","ui_kits/social/Screens.jsx":"484218337eaa"},"inlinedExternals":[],"unexposedExports":[]} */
+
+(() => {
+
+const __ds_ns = (window.KeyEntertainmentDesignSystem_27049e = window.KeyEntertainmentDesignSystem_27049e || {});
+
+const __ds_scope = {};
+
+(__ds_ns.__errors = __ds_ns.__errors || []);
+
+// components/brand/Logo.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+const MARK = 'M 585.129 12.209 C 585.98 5.741 580.946 0 574.421 0 L 10.8 0 C 4.835 0 0 4.835 0 10.8 L 0 649.174 C 0 660.406 16.57 665.06 23.479 656.205 C 86.209 575.806 198.273 529.873 318.497 545.694 C 383.832 554.291 442.121 579.883 488.113 616.528 C 494.935 621.963 505.399 618.083 506.537 609.435 L 585.129 12.209 Z M 23.456 957.43 C 16.716 948.352 0 952.914 0 964.221 L 0 1069.2 C 0 1075.165 4.835 1080 10.8 1080 L 115.902 1080 C 128.903 1080 134.175 1049.893 122.813 1043.574 C 82.826 1021.336 48.952 991.768 23.456 957.43 Z M 462.303 1043.393 C 451.106 1049.928 456.538 1080 469.503 1080 L 1053.927 1080 C 1063.549 1080 1068.368 1068.367 1061.564 1061.563 L 639.994 639.993 C 633.662 633.661 622.818 637.343 621.649 646.221 L 593.533 859.88 C 593.477 860.301 593.091 860.598 592.67 860.542 C 592.255 860.487 591.872 860.778 591.808 861.192 C 579.8 938.823 530.894 1003.36 462.303 1043.393 Z M 672.613 407.387 C 665.317 414.684 652.923 408.572 654.269 398.341 L 705.453 9.391 C 706.16 4.017 710.74 0 716.16 0 L 1053.927 0 C 1063.549 0 1068.368 11.633 1061.564 18.437 L 672.613 407.387 Z';
+const FULL = ['M 65.014 1.357 C 65.109 0.638 64.55 0 63.825 0 L 1.2 0 C 0.537 0 0 0.537 0 1.2 L 0 72.13 C 0 73.378 1.841 73.896 2.609 72.912 C 9.579 63.978 22.03 58.875 35.389 60.633 C 42.648 61.588 49.125 64.431 54.235 68.503 C 54.993 69.107 56.155 68.676 56.282 67.715 L 65.014 1.357 Z', 'M 2.606 106.381 C 1.857 105.372 0 105.879 0 107.136 L 0 118.8 C 0 119.463 0.537 120 1.2 120 L 12.878 120 C 14.323 120 14.908 116.655 13.646 115.953 C 9.203 113.482 5.439 110.196 2.606 106.381 Z', 'M 51.367 115.933 C 50.123 116.659 50.726 120 52.167 120 L 117.103 120 C 118.172 120 118.707 118.707 117.952 117.951 L 71.11 71.11 C 70.407 70.407 69.202 70.816 69.072 71.802 L 65.948 95.542 C 65.942 95.589 65.899 95.622 65.852 95.616 C 65.806 95.61 65.764 95.642 65.756 95.688 C 64.422 104.314 58.988 111.484 51.367 115.933 Z', 'M 74.735 45.265 C 73.924 46.076 72.547 45.397 72.697 44.26 L 78.384 1.043 C 78.462 0.446 78.971 0 79.573 0 L 117.103 0 C 118.172 0 118.707 1.293 117.952 2.049 L 74.735 45.265 Z', 'M 144.426 96.942 L 144.426 67.025 L 161.914 67.025 L 161.914 69.297 L 146.998 69.297 L 146.998 80.612 L 161.185 80.612 L 161.185 82.884 L 146.998 82.884 L 146.998 94.671 L 161.914 94.671 L 161.914 96.942 L 144.426 96.942 Z', 'M 169.724 70.54 L 169.595 70.54 L 169.595 96.942 L 167.109 96.942 L 167.109 67.025 L 170.324 67.025 L 186.054 93.428 L 186.182 93.428 L 186.182 67.025 L 188.668 67.025 L 188.668 96.942 L 185.454 96.942 L 169.724 70.54 Z', 'M 204.448 69.297 L 204.448 96.942 L 201.877 96.942 L 201.877 69.297 L 191.847 69.297 L 191.847 67.025 L 214.478 67.025 L 214.478 69.297 L 204.448 69.297 Z', 'M 217.665 96.942 L 217.665 67.025 L 235.152 67.025 L 235.152 69.297 L 220.237 69.297 L 220.237 80.612 L 234.424 80.612 L 234.424 82.884 L 220.237 82.884 L 220.237 94.671 L 235.152 94.671 L 235.152 96.942 L 217.665 96.942 Z', 'M 242.919 96.942 L 240.348 96.942 L 240.348 67.025 L 252.092 67.025 C 254.663 67.025 256.635 67.754 258.006 69.211 C 259.407 70.669 260.107 72.712 260.107 75.34 C 260.107 77.655 259.535 79.526 258.392 80.955 C 257.278 82.384 255.649 83.241 253.506 83.527 L 260.878 96.942 L 258.006 96.942 L 250.849 83.698 L 242.919 83.698 L 242.919 96.942 Z M 252.092 81.512 C 253.806 81.512 255.106 81.041 255.992 80.098 C 256.906 79.126 257.364 77.898 257.364 76.412 L 257.364 74.355 C 257.364 72.897 256.906 71.697 255.992 70.754 C 255.106 69.783 253.806 69.297 252.092 69.297 L 242.919 69.297 L 242.919 81.512 L 252.092 81.512 Z', 'M 273.836 69.297 L 273.836 96.942 L 271.265 96.942 L 271.265 69.297 L 261.235 69.297 L 261.235 67.025 L 283.866 67.025 L 283.866 69.297 L 273.836 69.297 Z', 'M 303.355 96.942 L 300.098 87.641 L 287.368 87.641 L 284.111 96.942 L 281.539 96.942 L 292.126 67.025 L 295.426 67.025 L 306.056 96.942 L 303.355 96.942 Z M 293.797 69.468 L 293.626 69.468 L 288.011 85.413 L 299.412 85.413 L 293.797 69.468 Z', 'M 307.941 96.942 L 307.941 94.799 L 312.313 94.799 L 312.313 69.168 L 307.941 69.168 L 307.941 67.025 L 319.257 67.025 L 319.257 69.168 L 314.885 69.168 L 314.885 94.799 L 319.257 94.799 L 319.257 96.942 L 307.941 96.942 Z', 'M 326.871 70.54 L 326.742 70.54 L 326.742 96.942 L 324.256 96.942 L 324.256 67.025 L 327.471 67.025 L 343.201 93.428 L 343.33 93.428 L 343.33 67.025 L 345.815 67.025 L 345.815 96.942 L 342.601 96.942 L 326.871 70.54 Z', 'M 375.868 70.326 L 375.697 70.326 L 365.367 88.627 L 355.038 70.326 L 354.867 70.326 L 354.867 96.942 L 352.381 96.942 L 352.381 67.025 L 355.895 67.025 L 365.367 83.87 L 365.496 83.87 L 374.968 67.025 L 378.354 67.025 L 378.354 96.942 L 375.868 96.942 L 375.868 70.326 Z', 'M 384.9 96.942 L 384.9 67.025 L 402.387 67.025 L 402.387 69.297 L 387.471 69.297 L 387.471 80.612 L 401.658 80.612 L 401.658 82.884 L 387.471 82.884 L 387.471 94.671 L 402.387 94.671 L 402.387 96.942 L 384.9 96.942 Z', 'M 410.197 70.54 L 410.068 70.54 L 410.068 96.942 L 407.582 96.942 L 407.582 67.025 L 410.797 67.025 L 426.527 93.428 L 426.656 93.428 L 426.656 67.025 L 429.142 67.025 L 429.142 96.942 L 425.927 96.942 L 410.197 70.54 Z', 'M 444.922 69.297 L 444.922 96.942 L 442.35 96.942 L 442.35 69.297 L 432.321 69.297 L 432.321 67.025 L 454.951 67.025 L 454.951 69.297 L 444.922 69.297 Z', 'M 153.384 38.986 L 149.27 43.701 L 149.27 52.959 L 144.426 52.959 L 144.426 23.042 L 149.27 23.042 L 149.27 38.215 L 149.441 38.215 L 153.727 32.771 L 161.785 23.042 L 167.443 23.042 L 156.77 35.643 L 168.3 52.959 L 162.471 52.959 L 153.384 38.986 Z', 'M 170.792 52.959 L 170.792 23.042 L 189.951 23.042 L 189.951 27.328 L 175.636 27.328 L 175.636 35.643 L 188.623 35.643 L 188.623 39.929 L 175.636 39.929 L 175.636 48.673 L 189.951 48.673 L 189.951 52.959 L 170.792 52.959 Z', 'M 200.882 52.959 L 200.882 41.172 L 190.596 23.042 L 196.125 23.042 L 203.411 36.372 L 203.54 36.372 L 210.783 23.042 L 216.098 23.042 L 205.725 41.086 L 205.725 52.959 L 200.882 52.959 Z'];
+
+/* Key Entertainment logo. Two locked artworks exist in the source: the
+   horizontal lockup (mark + KEY / ENTERTAINMENT, 454.951×120) and the
+   compact mark alone (1064.749×1080). Both are single-colour and paint with
+   currentColor — never re-tint one part independently. */
+function Logo({
+  variant = 'full',
+  height,
+  color = 'currentColor',
+  title = 'Key Entertainment',
+  style,
+  ...rest
+}) {
+  const full = variant === 'full';
+  const h = height ?? (full ? 60 : 80);
+  const ratio = full ? 454.951 / 120 : 1064.749 / 1080;
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    role: "img",
+    "aria-label": title,
+    viewBox: full ? '0 0 454.951 120' : '0 0 1064.749 1080',
+    height: h,
+    width: h * ratio,
+    fill: "none",
+    style: {
+      color,
+      display: 'block',
+      flexShrink: 0,
+      ...style
+    }
+  }, rest), /*#__PURE__*/React.createElement("title", null, title), (full ? FULL : [MARK]).map((d, i) => /*#__PURE__*/React.createElement("path", {
+    key: i,
+    d: d,
+    fill: "currentColor",
+    fillRule: "nonzero"
+  })));
+}
+Object.assign(__ds_scope, { Logo, __ds_default_components_brand_Logo_1q8yv4x: Logo });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/brand/Logo.jsx", error: String((e && e.message) || e) }); }
+
+// components/brand/PatternField.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* The brand's only decorative device: the compact mark, tiled or oversized,
+   dropped to 20% (brandbook chapter pages) or 30% overlay (deck pages).
+   `mode="wash"` = one oversized mark bleeding off the left edge.
+   `mode="tile"` = repeated mark grid.  */
+function PatternField({
+  mode = 'wash',
+  color = 'var(--ke-tropical-indigo)',
+  opacity,
+  size = 180,
+  children,
+  style,
+  ...rest
+}) {
+  const op = opacity ?? (mode === 'tile' ? 0.3 : 0.2);
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      position: 'relative',
+      overflow: 'hidden',
+      ...style
+    }
+  }, rest), mode === 'wash' ? /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      inset: 0,
+      opacity: op,
+      pointerEvents: 'none'
+    },
+    "aria-hidden": "true"
+  }, /*#__PURE__*/React.createElement(__ds_scope.Logo, {
+    variant: "mark",
+    height: "100%",
+    color: color,
+    style: {
+      height: '100%',
+      width: 'auto'
+    }
+  })) : /*#__PURE__*/React.createElement("div", {
+    "aria-hidden": "true",
+    style: {
+      position: 'absolute',
+      inset: 0,
+      opacity: op,
+      pointerEvents: 'none',
+      display: 'grid',
+      gridTemplateColumns: `repeat(auto-fill, ${size}px)`,
+      gridAutoRows: `${size}px`,
+      justifyContent: 'space-between',
+      alignContent: 'space-between',
+      color
+    }
+  }, Array.from({
+    length: 96
+  }).map((_, i) => /*#__PURE__*/React.createElement(__ds_scope.Logo, {
+    key: i,
+    variant: "mark",
+    height: size * 0.62,
+    color: "currentColor"
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'relative'
+    }
+  }, children));
+}
+Object.assign(__ds_scope, { PatternField, __ds_default_components_brand_PatternField_17hde42: PatternField });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/brand/PatternField.jsx", error: String((e && e.message) || e) }); }
+
+// components/brandbook/ColorSwatch.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* Colour specimen panel from brandbook p.04: 54px radius, 60px padding,
+   hex at 72px Bold, name at 32px Regular @50%, CMYK/RGB flush right. */
+function ColorSwatch({
+  hex,
+  name,
+  cmyk,
+  rgb,
+  ink = '#FFFFFF',
+  hexInk = 'var(--ke-oxford-blue)',
+  height = 707,
+  style,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      position: 'relative',
+      height,
+      borderRadius: 54,
+      background: hex,
+      padding: 60,
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'space-between',
+      alignItems: 'flex-start',
+      boxSizing: 'border-box',
+      flex: 1,
+      ...style
+    }
+  }, rest), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 24,
+      alignItems: 'flex-start'
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-display)',
+      fontWeight: 700,
+      fontSize: 72,
+      lineHeight: 1,
+      color: hexInk
+    }
+  }, hex), /*#__PURE__*/React.createElement("span", {
+    style: {
+      opacity: 0.5,
+      fontFamily: 'var(--font-display)',
+      fontWeight: 400,
+      fontSize: 32,
+      lineHeight: 1,
+      color: ink
+    }
+  }, name)), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'row',
+      gap: 10,
+      alignItems: 'flex-start',
+      alignSelf: 'stretch',
+      fontFamily: 'var(--font-display)',
+      fontSize: 32,
+      lineHeight: 1,
+      color: ink
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontWeight: 400,
+      whiteSpace: 'pre'
+    }
+  }, 'CMYK:  \nRGB: '), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontWeight: 700,
+      flexGrow: 1,
+      textAlign: 'right',
+      whiteSpace: 'pre'
+    }
+  }, cmyk + '\n' + rgb)));
+}
+Object.assign(__ds_scope, { ColorSwatch, __ds_default_components_brandbook_ColorSwatch_101la2s: ColorSwatch });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/brandbook/ColorSwatch.jsx", error: String((e && e.message) || e) }); }
+
+// components/brandbook/LogoTile.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* The logo colour-combination tile from brandbook p.05 and the alternate-version
+   page: 40px radius (30px for the outlined variant), 40px padding, logo centred. */
+function LogoTile({
+  background = '#000000',
+  ink = '#FFFFFF',
+  image,
+  outlined = false,
+  variant = 'full',
+  logoHeight = 120,
+  height = 200,
+  style,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      position: 'relative',
+      overflow: 'hidden',
+      height,
+      borderRadius: outlined ? 30 : 40,
+      background: outlined ? 'transparent' : background,
+      boxShadow: outlined ? 'inset 0 0 0 1px var(--ke-black)' : 'none',
+      padding: outlined ? 50 : 40,
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 8,
+      alignItems: 'center',
+      justifyContent: 'center',
+      boxSizing: 'border-box',
+      flex: 1,
+      ...style
+    }
+  }, rest), image ? /*#__PURE__*/React.createElement("div", {
+    "aria-hidden": "true",
+    style: {
+      position: 'absolute',
+      inset: 0,
+      background: `var(--photo-scrim), url(${image}) center / cover no-repeat`
+    }
+  }) : null, /*#__PURE__*/React.createElement(__ds_scope.Logo, {
+    variant: variant,
+    height: logoHeight,
+    color: ink,
+    style: {
+      position: 'relative'
+    }
+  }));
+}
+Object.assign(__ds_scope, { LogoTile, __ds_default_components_brandbook_LogoTile_5o5gt6: LogoTile });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/brandbook/LogoTile.jsx", error: String((e && e.message) || e) }); }
+
+// components/brandbook/SectionHeading.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* Brandbook page heading: a 14×60 solid bar, 30px gap, then the title.
+   The bar is tropical indigo on light pages and white on periwinkle pages. */
+function SectionHeading({
+  children,
+  rule = 'var(--ke-tropical-indigo)',
+  color = 'var(--ke-oxford-blue)',
+  size = 48,
+  as: Tag = 'h2',
+  style,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      display: 'flex',
+      flexDirection: 'row',
+      gap: 30,
+      alignItems: 'center',
+      ...style
+    }
+  }, rest), /*#__PURE__*/React.createElement("div", {
+    "aria-hidden": "true",
+    style: {
+      width: 14,
+      height: 60,
+      background: rule,
+      flexShrink: 0
+    }
+  }), /*#__PURE__*/React.createElement(Tag, {
+    style: {
+      margin: 0,
+      fontFamily: 'var(--font-display)',
+      fontWeight: 700,
+      fontSize: size,
+      lineHeight: 1,
+      color,
+      whiteSpace: 'nowrap'
+    }
+  }, children));
+}
+Object.assign(__ds_scope, { SectionHeading, __ds_default_components_brandbook_SectionHeading_9kf4tc: SectionHeading });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/brandbook/SectionHeading.jsx", error: String((e && e.message) || e) }); }
+
+// components/channel/BannerImage.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* Channel-art canvas with the platform's published safe areas overlaid.
+   Geometry from the source file's "Banner image" guide symbol:
+   2560×1440 canvas · 1546×423 mobile safe · 1855×423 tablet safe ·
+   2560×423 desktop safe · 2560×1440 TV-only bleed. */
+const AREAS = [{
+  w: 2560,
+  h: 1440,
+  label: 'TV Only Area  2560 × 1440'
+}, {
+  w: 2560,
+  h: 423,
+  label: 'Max Desktop Safe Area  2560 × 423'
+}, {
+  w: 1855,
+  h: 423,
+  label: 'Tablet Safe Area  1855 × 423'
+}, {
+  w: 1546,
+  h: 423,
+  label: 'Mobile Safe Area  1546 × 423'
+}];
+function BannerImage({
+  image,
+  headline = 'your partner in the world of music',
+  guides = true,
+  scale = 1,
+  background = 'var(--surface-deck)',
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      width: 2560 * scale,
+      height: 1440 * scale,
+      overflow: 'hidden',
+      flexShrink: 0,
+      ...rest.style
+    }
+  }, rest), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'relative',
+      width: 2560,
+      height: 1440,
+      overflow: 'hidden',
+      background,
+      transform: `scale(${scale})`,
+      transformOrigin: 'top left'
+    }
+  }, image ? /*#__PURE__*/React.createElement("div", {
+    "aria-hidden": "true",
+    style: {
+      position: 'absolute',
+      inset: 0,
+      background: `var(--photo-scrim), url(${image}) center / cover no-repeat`
+    }
+  }) : null, /*#__PURE__*/React.createElement("img", {
+    "aria-hidden": "true",
+    src: "../../assets/patterns/pattern-deck-tile-lime.svg",
+    alt: "",
+    style: {
+      position: 'absolute',
+      left: 0,
+      top: 0,
+      width: 2808,
+      opacity: 0.18
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      left: 0,
+      right: 0,
+      top: 508,
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      gap: 60
+    }
+  }, /*#__PURE__*/React.createElement(__ds_scope.Logo, {
+    height: 230,
+    color: "var(--ke-white)"
+  }), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-deck)',
+      fontWeight: 300,
+      fontSize: 96,
+      letterSpacing: '-0.05em',
+      color: 'var(--ke-lime)'
+    }
+  }, headline)), guides ? AREAS.map((a, i) => /*#__PURE__*/React.createElement("div", {
+    key: i,
+    "aria-hidden": "true",
+    style: {
+      position: 'absolute',
+      left: (2560 - a.w) / 2,
+      top: (1440 - a.h) / 2,
+      width: a.w,
+      height: a.h,
+      boxShadow: 'inset 0 0 0 4px rgba(211,255,51,.55)',
+      display: 'flex',
+      alignItems: 'flex-start',
+      justifyContent: 'center',
+      pointerEvents: 'none'
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      marginTop: 12,
+      padding: '6px 16px',
+      background: 'rgba(12,35,80,.75)',
+      fontFamily: 'var(--font-ui)',
+      fontWeight: 500,
+      fontSize: 28,
+      color: 'var(--ke-lime)',
+      whiteSpace: 'nowrap'
+    }
+  }, a.label))) : null));
+}
+Object.assign(__ds_scope, { BannerImage, __ds_default_components_channel_BannerImage_nj0t6j: BannerImage });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/channel/BannerImage.jsx", error: String((e && e.message) || e) }); }
+
+// components/community/ProfilePicture.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function ProfilePicture({
+  image,
+  size = 200,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      width: size,
+      height: size,
+      borderRadius: 5,
+      overflow: 'hidden',
+      background: image ? `url(${image}) center / cover no-repeat` : 'var(--ke-oxford-blue)',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexShrink: 0,
+      ...rest.style
+    }
+  }, rest), image ? null : /*#__PURE__*/React.createElement(__ds_scope.Logo, {
+    variant: "mark",
+    height: size * 0.46,
+    color: "var(--ke-lime)"
+  }));
+}
+Object.assign(__ds_scope, { ProfilePicture, __ds_default_components_community_ProfilePicture_14aqraz: ProfilePicture });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/community/ProfilePicture.jsx", error: String((e && e.message) || e) }); }
+
+// components/community/XActionsPageMenuButton.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function XActionsPageMenuButton({
+  label = 'Подписаться',
+  width = 199,
+  onClick,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("button", _extends({
+    onClick: onClick,
+    style: {
+      position: 'relative',
+      width,
+      height: 36,
+      borderRadius: 5,
+      border: 'none',
+      background: 'var(--ke-lime)',
+      color: 'var(--ke-lime-ink)',
+      fontFamily: 'var(--font-ui)',
+      fontWeight: 500,
+      fontSize: 13,
+      lineHeight: '18px',
+      cursor: 'pointer',
+      transition: 'background var(--dur-base) var(--ease-standard)',
+      ...rest.style
+    }
+  }, rest), label);
+}
+Object.assign(__ds_scope, { XActionsPageMenuButton, __ds_default_components_community_XActionsPageMenuButton_1r314rp: XActionsPageMenuButton });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/community/XActionsPageMenuButton.jsx", error: String((e && e.message) || e) }); }
+
+// components/community/XAvatarCircle.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function XAvatarCircle({
+  size = 50,
+  image,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      position: 'relative',
+      width: size,
+      height: size,
+      borderRadius: '50%',
+      overflow: 'hidden',
+      background: image ? `url(${image}) center / cover no-repeat` : 'var(--ke-oxford-blue)',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexShrink: 0,
+      ...rest.style
+    }
+  }, rest), image ? null : /*#__PURE__*/React.createElement(__ds_scope.Logo, {
+    variant: "mark",
+    height: size * 0.52,
+    color: "var(--ke-lime)"
+  }));
+}
+Object.assign(__ds_scope, { XAvatarCircle, __ds_default_components_community_XAvatarCircle_ulzjh3: XAvatarCircle });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/community/XAvatarCircle.jsx", error: String((e && e.message) || e) }); }
+
+// components/community/Avatar28.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function Avatar28({
+  image,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement(__ds_scope.XAvatarCircle, _extends({
+    size: 28,
+    image: image
+  }, rest));
+}
+Object.assign(__ds_scope, { Avatar28, __ds_default_components_community_Avatar28_wgk3hz: Avatar28 });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/community/Avatar28.jsx", error: String((e && e.message) || e) }); }
+
+// components/community/AvatarsSmall.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function AvatarsSmall({
+  images = [undefined, undefined, undefined],
+  size = 24,
+  overlap = 8,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      display: 'flex',
+      flexDirection: 'row',
+      alignItems: 'center',
+      ...rest.style
+    }
+  }, rest), images.map((src, i) => /*#__PURE__*/React.createElement("div", {
+    key: i,
+    style: {
+      marginLeft: i === 0 ? 0 : -overlap,
+      borderRadius: '50%',
+      boxShadow: '0 0 0 2px var(--chrome-surface)',
+      display: 'flex'
+    }
+  }, /*#__PURE__*/React.createElement(__ds_scope.XAvatarCircle, {
+    size: size,
+    image: src
+  }))));
+}
+Object.assign(__ds_scope, { AvatarsSmall, __ds_default_components_community_AvatarsSmall_1t6r4e1: AvatarsSmall });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/community/AvatarsSmall.jsx", error: String((e && e.message) || e) }); }
+
+// components/community/XAvatarsRow.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function XAvatarsRow({
+  images,
+  label = '18 452 подписчика',
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      display: 'flex',
+      flexDirection: 'row',
+      gap: 8,
+      alignItems: 'center',
+      ...rest.style
+    }
+  }, rest), /*#__PURE__*/React.createElement(__ds_scope.AvatarsSmall, {
+    images: images
+  }), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-ui)',
+      fontWeight: 400,
+      fontSize: 13,
+      lineHeight: '18px',
+      color: 'var(--chrome-link)'
+    }
+  }, label));
+}
+Object.assign(__ds_scope, { XAvatarsRow, __ds_default_components_community_XAvatarsRow_pfg2a8: XAvatarsRow });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/community/XAvatarsRow.jsx", error: String((e && e.message) || e) }); }
+
+// components/community/XCommunityTitleLayout.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function XCommunityTitleLayout({
+  name = 'Key Entertainment',
+  category = 'Музыкальный лейбл',
+  status = 'your partner in the world of music',
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 2,
+      ...rest.style
+    }
+  }, rest), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-ui)',
+      fontWeight: 500,
+      fontSize: 19,
+      lineHeight: '27px',
+      color: 'var(--ke-black)'
+    }
+  }, name), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-ui)',
+      fontWeight: 400,
+      fontSize: 13,
+      lineHeight: '20px',
+      color: 'var(--chrome-meta)'
+    }
+  }, category), status ? /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-ui)',
+      fontWeight: 400,
+      fontSize: 13,
+      lineHeight: '18px',
+      color: 'var(--ke-black)'
+    }
+  }, status) : null);
+}
+Object.assign(__ds_scope, { XCommunityTitleLayout, __ds_default_components_community_XCommunityTitleLayout_eg6cvf: XCommunityTitleLayout });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/community/XCommunityTitleLayout.jsx", error: String((e && e.message) || e) }); }
+
+// components/community/XMenuSeparator.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function XMenuSeparator({
+  width = 153,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("div", _extends({
+    "aria-hidden": "true",
+    style: {
+      width,
+      height: 1,
+      background: 'rgba(232,229,255,.18)',
+      flexShrink: 0,
+      ...rest.style
+    }
+  }, rest));
+}
+Object.assign(__ds_scope, { XMenuSeparator, __ds_default_components_community_XMenuSeparator_14h5vho: XMenuSeparator });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/community/XMenuSeparator.jsx", error: String((e && e.message) || e) }); }
+
+// components/community/XSubscriptionsGroupAvatars.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function XSubscriptionsGroupAvatars({
+  items = [1, 2, 3, 4, 5, 6],
+  size = 74,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      display: 'flex',
+      flexWrap: 'wrap',
+      gap: 6,
+      ...rest.style
+    }
+  }, rest), items.map((it, i) => /*#__PURE__*/React.createElement("div", {
+    key: i,
+    style: {
+      width: size,
+      height: size,
+      borderRadius: 5,
+      overflow: 'hidden',
+      background: typeof it === 'string' ? `url(${it}) center / cover no-repeat` : 'var(--ke-periwinkle)',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center'
+    }
+  }, typeof it === 'string' ? null : /*#__PURE__*/React.createElement(__ds_scope.Logo, {
+    variant: "mark",
+    height: size * 0.4,
+    color: "var(--ke-oxford-blue)"
+  }))));
+}
+Object.assign(__ds_scope, { XSubscriptionsGroupAvatars, __ds_default_components_community_XSubscriptionsGroupAvatars_106jc7x: XSubscriptionsGroupAvatars });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/community/XSubscriptionsGroupAvatars.jsx", error: String((e && e.message) || e) }); }
+
+// components/community/XTitleLayout125.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function XTitleLayout125({
+  title = 'Информация',
+  count,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      display: 'flex',
+      gap: 6,
+      alignItems: 'baseline',
+      fontFamily: 'var(--font-ui)',
+      fontWeight: 400,
+      fontSize: 12.5,
+      lineHeight: '18px',
+      ...rest.style
+    }
+  }, rest), /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: 'var(--ke-black)'
+    }
+  }, title), count != null ? /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: 'var(--chrome-icon)'
+    }
+  }, count) : null);
+}
+Object.assign(__ds_scope, { XTitleLayout125, __ds_default_components_community_XTitleLayout125_rah3xa: XTitleLayout125 });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/community/XTitleLayout125.jsx", error: String((e && e.message) || e) }); }
+
+// components/community/CommunitiesOfferNers.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function CommunitiesOfferNers({
+  title = 'Интересные страницы',
+  name = 'Key Records',
+  category = 'Студия звукозаписи',
+  width = 232,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      width,
+      borderRadius: 5,
+      background: 'var(--chrome-surface)',
+      boxShadow: 'inset 0 0 0 1px var(--chrome-border), inset 0 -1px 0 0 var(--chrome-border-strong)',
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 10,
+      padding: '13px 16px',
+      boxSizing: 'border-box',
+      ...rest.style
+    }
+  }, rest), /*#__PURE__*/React.createElement(__ds_scope.XTitleLayout125, {
+    title: title
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 10,
+      alignItems: 'center'
+    }
+  }, /*#__PURE__*/React.createElement(__ds_scope.XAvatarCircle, {
+    size: 40
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 1
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-ui)',
+      fontWeight: 500,
+      fontSize: 13,
+      lineHeight: '17px',
+      color: 'var(--chrome-link)'
+    }
+  }, name), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-ui)',
+      fontWeight: 400,
+      fontSize: 12.5,
+      lineHeight: '16px',
+      color: 'var(--chrome-icon)'
+    }
+  }, category))), /*#__PURE__*/React.createElement(__ds_scope.XActionsPageMenuButton, {
+    label: "\u041F\u043E\u0434\u043F\u0438\u0441\u0430\u0442\u044C\u0441\u044F",
+    width: 199
+  }));
+}
+Object.assign(__ds_scope, { CommunitiesOfferNers, __ds_default_components_community_CommunitiesOfferNers_1lpkj2d: CommunitiesOfferNers });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/community/CommunitiesOfferNers.jsx", error: String((e && e.message) || e) }); }
+
+// components/community/CommunitiesSubscriptionsAll.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function CommunitiesSubscriptionsAll({
+  title = 'Подписки',
+  count = 41,
+  items,
+  width = 552,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      width,
+      borderRadius: 5,
+      background: 'var(--chrome-surface)',
+      boxShadow: 'inset 0 0 0 1px var(--chrome-border), inset 0 -1px 0 0 var(--chrome-border-strong)',
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 10,
+      padding: '13px 16px',
+      boxSizing: 'border-box',
+      ...rest.style
+    }
+  }, rest), /*#__PURE__*/React.createElement(__ds_scope.XTitleLayout125, {
+    title: title,
+    count: count
+  }), /*#__PURE__*/React.createElement(__ds_scope.XSubscriptionsGroupAvatars, {
+    items: items
+  }));
+}
+Object.assign(__ds_scope, { CommunitiesSubscriptionsAll, __ds_default_components_community_CommunitiesSubscriptionsAll_1pu660c: CommunitiesSubscriptionsAll });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/community/CommunitiesSubscriptionsAll.jsx", error: String((e && e.message) || e) }); }
+
+// components/community/CommunitiesSubscriptionsFriendsSmallAlone.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function CommunitiesSubscriptionsFriendsSmallAlone({
+  title = 'Подписчики',
+  count = '18 452',
+  images,
+  width = 232,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      width,
+      borderRadius: 5,
+      background: 'var(--chrome-surface)',
+      boxShadow: 'inset 0 0 0 1px var(--chrome-border), inset 0 -1px 0 0 var(--chrome-border-strong)',
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 10,
+      padding: '13px 16px',
+      boxSizing: 'border-box',
+      ...rest.style
+    }
+  }, rest), /*#__PURE__*/React.createElement(__ds_scope.XTitleLayout125, {
+    title: title,
+    count: count
+  }), /*#__PURE__*/React.createElement(__ds_scope.XAvatarsRow, {
+    images: images,
+    label: "\u0421\u043C\u043E\u0442\u0440\u0435\u0442\u044C \u0432\u0441\u0435\u0445"
+  }));
+}
+Object.assign(__ds_scope, { CommunitiesSubscriptionsFriendsSmallAlone, __ds_default_components_community_CommunitiesSubscriptionsFriendsSmallAlone_vbmpeu: CommunitiesSubscriptionsFriendsSmallAlone });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/community/CommunitiesSubscriptionsFriendsSmallAlone.jsx", error: String((e && e.message) || e) }); }
+
+// components/community/XTitleLayoutPost.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function XTitleLayoutPost({
+  author = 'Key Entertainment',
+  time = '2 ч',
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 1,
+      ...rest.style
+    }
+  }, rest), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-ui)',
+      fontWeight: 500,
+      fontSize: 13,
+      lineHeight: '17px',
+      color: 'var(--chrome-link)'
+    }
+  }, author), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-ui)',
+      fontWeight: 400,
+      fontSize: 12.5,
+      lineHeight: '16px',
+      color: 'var(--chrome-icon)'
+    }
+  }, time));
+}
+Object.assign(__ds_scope, { XTitleLayoutPost, __ds_default_components_community_XTitleLayoutPost_1c91abw: XTitleLayoutPost });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/community/XTitleLayoutPost.jsx", error: String((e && e.message) || e) }); }
+
+// components/community/XUsername.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function XUsername({
+  children = 'Key Entertainment',
+  verified = false,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("span", _extends({
+    style: {
+      display: 'inline-flex',
+      gap: 6,
+      alignItems: 'center',
+      fontFamily: 'var(--font-ui)',
+      fontWeight: 500,
+      fontSize: 15,
+      lineHeight: '20px',
+      color: 'var(--chrome-link)',
+      ...rest.style
+    }
+  }, rest), children, verified ? /*#__PURE__*/React.createElement("span", {
+    style: {
+      width: 14,
+      height: 14,
+      borderRadius: '50%',
+      background: 'var(--ke-lime)',
+      flexShrink: 0
+    }
+  }) : null);
+}
+Object.assign(__ds_scope, { XUsername, __ds_default_components_community_XUsername_qduih2: XUsername });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/community/XUsername.jsx", error: String((e && e.message) || e) }); }
+
+// components/deck/DeckHeader.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* Deck running header: logo left at 60px height, section label + folio right.
+   Sits at 60px margins on a 1920×1080 page. */
+function DeckHeader({
+  section,
+  folio,
+  url = 'www.keyent.kz',
+  ink = 'var(--ke-white)',
+  style,
+  ...rest
+}) {
+  const t = {
+    fontFamily: 'var(--font-deck)',
+    letterSpacing: '-0.05em',
+    lineHeight: 1,
+    color: ink
+  };
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      width: '100%',
+      ...style
+    }
+  }, rest), /*#__PURE__*/React.createElement(__ds_scope.Logo, {
+    height: 60,
+    color: ink
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 20,
+      alignItems: 'flex-end'
+    }
+  }, url ? /*#__PURE__*/React.createElement("span", {
+    style: {
+      ...t,
+      opacity: 0.3,
+      fontWeight: 300,
+      fontSize: 24
+    }
+  }, url) : null, section || folio ? /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'row',
+      gap: 20,
+      alignItems: 'center'
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      ...t,
+      fontWeight: 300,
+      fontSize: 32,
+      textTransform: 'uppercase',
+      textAlign: 'right'
+    }
+  }, section), /*#__PURE__*/React.createElement("span", {
+    style: {
+      ...t,
+      fontWeight: 600,
+      fontSize: 32
+    }
+  }, folio)) : null));
+}
+Object.assign(__ds_scope, { DeckHeader, __ds_default_components_deck_DeckHeader_5n5ps0: DeckHeader });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/deck/DeckHeader.jsx", error: String((e && e.message) || e) }); }
+
+// components/deck/GlassRow.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* Deck content row: 16px radius, rgba(255,255,255,.05) ground, 30px padding,
+   Inter Regular 32px / 1.1 tracked -0.05em. */
+function GlassRow({
+  children,
+  size = 32,
+  ink = 'var(--ke-white)',
+  style,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      borderRadius: 16,
+      background: 'var(--surface-row-glass)',
+      padding: 30,
+      display: 'flex',
+      flexDirection: 'row',
+      gap: 10,
+      alignItems: 'flex-start',
+      boxSizing: 'border-box',
+      ...style
+    }
+  }, rest), /*#__PURE__*/React.createElement("span", {
+    style: {
+      flexGrow: 1,
+      fontFamily: 'var(--font-deck)',
+      fontWeight: 400,
+      fontSize: size,
+      lineHeight: 1.1,
+      letterSpacing: '-0.05em',
+      color: ink,
+      textWrap: 'pretty'
+    }
+  }, children));
+}
+Object.assign(__ds_scope, { GlassRow, __ds_default_components_deck_GlassRow_1a9fhua: GlassRow });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/deck/GlassRow.jsx", error: String((e && e.message) || e) }); }
+
+// components/icons/icon-data.js
+try { (() => {
+// Generated by fig_materialize (moduleFormat: 'icon-data') — 70 icon(s)
+// as { viewBox, body } SVG-markup entries. Render via the sibling Icon.jsx
+// (<Icon name="Arrow16" />), or consume the path data directly.
+let __ds_default_components_icons_icon_data_12stud1;
+try {
+  __ds_default_components_icons_icon_data_12stud1 = {
+    "Arrow16": {
+      viewBox: "0 0 13 5",
+      body: "<path d=\"M 3 3 L 2.646 3.354 L 3 3.707 L 3.354 3.354 L 3 3 Z M -0.354 0.354 L 2.646 3.354 L 3.354 2.646 L 0.354 -0.354 L -0.354 0.354 Z M 3.354 3.354 L 6.354 0.354 L 5.646 -0.354 L 2.646 2.646 L 3.354 3.354 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 3.500 1.500)\"/>"
+    },
+    "ArrowDown24": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 0.594 -0.726 C 0.193 -1.053 -0.398 -0.994 -0.726 -0.594 C -1.053 -0.193 -0.994 0.398 -0.594 0.726 L 0.594 -0.726 Z M 5.5 4.5 L 4.906 5.226 C 5.252 5.508 5.748 5.508 6.094 5.226 L 5.5 4.5 Z M 11.594 0.726 C 11.994 0.398 12.053 -0.193 11.726 -0.594 C 11.398 -0.994 10.807 -1.053 10.406 -0.726 L 11.594 0.726 Z M -0.594 0.726 L 4.906 5.226 L 6.094 3.774 L 0.594 -0.726 L -0.594 0.726 Z M 6.094 5.226 L 11.594 0.726 L 10.406 -0.726 L 4.906 3.774 L 6.094 5.226 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 6.500 10)\"/>"
+    },
+    "ArrowHeader": {
+      viewBox: "0 0 8 4",
+      body: "<path d=\"M 0.473 -0.582 C 0.151 -0.843 -0.321 -0.794 -0.582 -0.473 C -0.843 -0.151 -0.794 0.321 -0.473 0.582 L 0.473 -0.582 Z M 3.2 2.6 L 2.727 3.182 C 3.003 3.406 3.397 3.406 3.673 3.182 L 3.2 2.6 Z M 6.873 0.582 C 7.194 0.321 7.243 -0.151 6.982 -0.473 C 6.721 -0.794 6.249 -0.843 5.927 -0.582 L 6.873 0.582 Z M -0.473 0.582 L 2.727 3.182 L 3.673 2.018 L 0.473 -0.582 L -0.473 0.582 Z M 3.673 3.182 L 6.873 0.582 L 5.927 -0.582 L 2.727 2.018 L 3.673 3.182 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 0.800 0.700)\"/>"
+    },
+    "Bookmarks24Solid": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 8.88 4.819 L 7.322 0.433 C 7.257 0.248 7.112 0.103 6.927 0.038 C 6.589 -0.082 6.217 0.094 6.097 0.433 L 4.539 4.819 L 0.65 4.819 C 0.446 4.819 0.254 4.915 0.131 5.077 C -0.085 5.364 -0.028 5.772 0.258 5.988 L 3.466 8.408 L 2.265 12.861 C 2.212 13.056 2.253 13.264 2.376 13.425 C 2.594 13.71 3.002 13.764 3.287 13.547 L 6.71 10.932 L 10.133 13.547 C 10.294 13.669 10.502 13.71 10.697 13.658 C 11.044 13.564 11.249 13.207 11.155 12.861 L 9.954 8.408 L 13.161 5.988 C 13.324 5.865 13.419 5.673 13.419 5.469 C 13.419 5.11 13.128 4.819 12.769 4.819 L 8.88 4.819 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 5 5)\"/>"
+    },
+    "Clips24Solid": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 5.197 5.294 C 5.274 5.599 5.71 5.595 5.781 5.288 L 6.761 1.039 C 6.835 0.711 7.031 0.422 7.31 0.232 C 7.589 0.042 7.929 -0.036 8.262 0.015 C 8.596 0.066 8.898 0.241 9.107 0.506 C 9.316 0.77 9.417 1.104 9.39 1.44 L 9 6.503 L 9.129 6.503 C 9.588 6.503 10.042 6.597 10.464 6.778 C 10.886 6.959 11.266 7.225 11.581 7.558 C 11.897 7.892 12.14 8.286 12.298 8.717 C 12.455 9.148 12.523 9.607 12.497 10.065 L 11.254 9.342 C 9.58 8.37 7.5 9.586 7.5 11.506 L 7.5 14.996 C 7.5 15.306 7.554 15.598 7.653 15.866 C 7.231 15.956 6.801 16 6.37 16 L 5.5 16 C 1.795 16 0 13.001 0 11.002 L 0 10.814 C 0 10.002 0.323 9.224 0.897 8.65 C 1.471 8.076 2.25 7.753 3.062 7.753 L 3.486 7.753 C 3.732 7.753 3.971 7.84 4.158 8 C 4.346 8.159 4.471 8.38 4.51 8.624 C 4.55 8.867 4.501 9.116 4.374 9.327 C 4.246 9.537 4.048 9.696 3.814 9.773 L 3.763 9.79 C 3.668 9.82 3.581 9.869 3.505 9.933 C 3.429 9.998 3.367 10.076 3.322 10.165 C 3.277 10.253 3.25 10.35 3.243 10.449 C 3.235 10.548 3.248 10.647 3.279 10.742 C 3.31 10.836 3.36 10.923 3.426 10.998 C 3.491 11.072 3.57 11.134 3.659 11.177 C 3.749 11.221 3.846 11.247 3.945 11.253 C 4.044 11.259 4.143 11.245 4.237 11.213 L 4.288 11.196 C 4.86 11.005 5.345 10.618 5.657 10.103 C 5.969 9.587 6.087 8.978 5.991 8.384 C 5.894 7.789 5.589 7.248 5.13 6.858 C 4.671 6.468 4.088 6.254 3.486 6.254 L 3.062 6.254 C 2.68 6.254 2.308 6.301 1.952 6.39 L 1.612 1.951 C 1.589 1.617 1.692 1.287 1.9 1.025 C 2.109 0.762 2.407 0.587 2.738 0.534 C 3.069 0.48 3.407 0.552 3.688 0.735 C 3.968 0.918 4.17 1.199 4.254 1.523 L 5.197 5.294 Z M 12.239 11.65 C 11.994 12.454 11.587 13.2 11.042 13.84 C 10.497 14.481 9.827 15.003 9.072 15.374 C 9.024 15.254 8.999 15.126 9 14.996 L 9 11.506 C 9 11.33 9.045 11.157 9.133 11.005 C 9.221 10.853 9.347 10.726 9.499 10.638 C 9.651 10.55 9.824 10.504 10 10.504 C 10.175 10.504 10.348 10.551 10.5 10.639 L 12.239 11.65 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 5 4)\"/><path d=\"M 13.502 12.384 C 13.653 12.473 13.779 12.599 13.866 12.751 C 13.954 12.903 14 13.076 14 13.251 C 14 13.426 13.954 13.599 13.866 13.751 C 13.779 13.903 13.653 14.029 13.502 14.118 L 10.5 15.863 C 10.348 15.951 10.175 15.998 10 15.998 C 9.824 15.998 9.651 15.952 9.499 15.864 C 9.347 15.776 9.221 15.649 9.133 15.497 C 9.045 15.345 9 15.172 9 14.996 L 9 11.506 C 9 11.33 9.045 11.157 9.133 11.005 C 9.221 10.853 9.347 10.726 9.499 10.638 C 9.651 10.55 9.824 10.504 10 10.504 C 10.175 10.504 10.348 10.551 10.5 10.639 L 13.502 12.384 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 5 4)\"/>"
+    },
+    "Documents24Solid": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 7 0 L 7 4.502 C 7 4.777 7.215 5 7.498 5 L 12 5 L 7 0 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 6 5)\"/><path d=\"M 6 0 L 1.282 0 C 0.836 0 0.675 0.046 0.512 0.134 C 0.349 0.221 0.221 0.349 0.134 0.512 C 0.046 0.675 0 0.836 0 1.282 L 0 12.718 C 0 13.164 0.046 13.325 0.134 13.488 C 0.221 13.651 0.349 13.779 0.512 13.866 C 0.675 13.954 0.836 14 1.282 14 L 10.718 14 C 11.164 14 11.325 13.954 11.488 13.866 C 11.651 13.779 11.779 13.651 11.866 13.488 C 11.954 13.325 12 13.164 12 12.718 L 12 6 L 7.282 6 C 6.836 6 6.675 5.954 6.512 5.866 C 6.349 5.779 6.221 5.651 6.134 5.488 C 6.046 5.325 6 5.164 6 4.718 L 6 0 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 6 5)\"/>"
+    },
+    "Earth24": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 0 0 L 16 0 L 16 2 L 0 2 L 0 0 Z M 0 5.8 L 16 5.8 L 16 7.8 L 0 7.8 L 0 5.8 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 4 8.200)\"/><path d=\"M 8.1 16.1 L 7.407 16.674 C 7.578 16.881 7.832 17 8.1 17 C 8.368 17 8.622 16.881 8.793 16.674 L 8.1 16.1 Z M 8.1 0.1 L 8.793 -0.474 C 8.622 -0.681 8.368 -0.8 8.1 -0.8 C 7.832 -0.8 7.578 -0.681 7.407 -0.474 L 8.1 0.1 Z M 8.1 0.9 C 12.076 0.9 15.3 4.124 15.3 8.1 L 17.1 8.1 C 17.1 3.129 13.071 -0.9 8.1 -0.9 L 8.1 0.9 Z M 15.3 8.1 C 15.3 12.076 12.076 15.3 8.1 15.3 L 8.1 17.1 C 13.071 17.1 17.1 13.071 17.1 8.1 L 15.3 8.1 Z M 8.1 15.3 C 4.124 15.3 0.9 12.076 0.9 8.1 L -0.9 8.1 C -0.9 13.071 3.129 17.1 8.1 17.1 L 8.1 15.3 Z M 0.9 8.1 C 0.9 4.124 4.124 0.9 8.1 0.9 L 8.1 -0.9 C 3.129 -0.9 -0.9 3.129 -0.9 8.1 L 0.9 8.1 Z M 8.793 15.526 C 6.992 13.352 6.1 10.888 6.1 8.1 L 4.3 8.1 C 4.3 11.312 5.342 14.182 7.407 16.674 L 8.793 15.526 Z M 6.1 8.1 C 6.1 5.312 6.992 2.848 8.793 0.674 L 7.407 -0.474 C 5.342 2.018 4.3 4.888 4.3 8.1 L 6.1 8.1 Z M 7.407 0.674 C 9.208 2.848 10.1 5.312 10.1 8.1 L 11.9 8.1 C 11.9 4.888 10.858 2.018 8.793 -0.474 L 7.407 0.674 Z M 10.1 8.1 C 10.1 10.888 9.208 13.352 7.407 15.526 L 8.793 16.674 C 10.858 14.182 11.9 11.312 11.9 8.1 L 10.1 8.1 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 3.900 3.900)\"/>"
+    },
+    "Friends24Solid": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 12 12.1 C 12 10.7 11.4 8 6 8 C 0.6 8 0 10.6 0 12.1 C 0 12.8 0.36 13 1.8 13 L 10.32 13 C 11.76 13 12 12.8 12 12.1 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 6 5)\"/><path d=\"M 3 3.5 C 3 5.833 4.343 7 6 7 C 7.657 7 9 5.833 9 3.5 C 9 1.167 7.657 0 6 0 C 4.343 0 3 1.167 3 3.5 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 6 5)\"/>"
+    },
+    "Games24Solid": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 15.77 6.254 C 15.87 6.658 16.766 10.794 14.177 10.996 C 13.319 11.075 12.399 10.039 11.611 9.15 C 11.393 8.905 11.185 8.67 10.991 8.474 C 10.194 7.465 9.298 6.961 7.904 6.961 C 6.511 6.961 5.714 7.465 4.818 8.474 C 4.614 8.68 4.394 8.929 4.165 9.188 C 3.388 10.068 2.5 11.074 1.731 10.996 C -0.758 10.895 0.138 6.658 0.238 6.254 C 0.636 4.035 2.03 0 4.818 0 C 4.818 0 5.714 0.101 6.411 0.504 C 7.606 1.009 8.203 1.009 9.497 0.504 C 10.294 0.101 11.091 0 11.091 0 C 13.978 0 15.272 3.934 15.77 6.254 Z M 5 3.5 L 5 4 L 5.5 4 C 5.776 4 6 4.224 6 4.5 C 6 4.776 5.776 5 5.5 5 L 5 5 L 5 5.5 C 5 5.776 4.776 6 4.5 6 C 4.224 6 4 5.776 4 5.5 L 4 5 L 3.5 5 C 3.224 5 3 4.776 3 4.5 C 3 4.224 3.224 4 3.5 4 L 4 4 L 4 3.5 C 4 3.224 4.224 3 4.5 3 C 4.776 3 5 3.224 5 3.5 Z M 12 4.5 C 12 4.768 12.224 5 12.5 5 C 12.768 5 13 4.776 13 4.5 C 13 4.232 12.776 4 12.5 4 C 12.232 4 12 4.224 12 4.5 Z M 10.5 5 C 10.224 5 10 4.768 10 4.5 C 10 4.224 10.232 4 10.5 4 C 10.776 4 11 4.232 11 4.5 C 11 4.776 10.768 5 10.5 5 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 4 6)\"/>"
+    },
+    "Goods24Solid": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 11.83 4.64 C 11.72 4.44 11.56 4.28 11.36 4.17 C 11.16 4.06 10.95 4 10.4 4 L 10 4 C 10 1.79 8.21 0 6 0 C 3.79 0 2 1.79 2 4 L 1.6 4 C 1.05 4 0.84 4.06 0.64 4.17 C 0.44 4.28 0.28 4.44 0.17 4.64 C 0.06 4.84 0 5.05 0 5.6 L 0 13.38 C 0 14.27 0.73 15 1.62 15 L 10.38 15 C 11.28 15 12 14.27 12 13.38 L 12 5.6 C 12 5.05 11.94 4.84 11.83 4.64 Z M 6 1.5 C 7.38 1.5 8.5 2.62 8.5 4 L 3.5 4 C 3.5 2.62 4.62 1.5 6 1.5 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 6 4)\"/>"
+    },
+    "Groups24Solid": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 5 6 C 0 6 0 8.6 0 10.1 C 0 10.8 0.3 11 1.5 11 L 8.6 11 C 9.8 11 10 10.8 10 10.1 C 10 8.7 10 6 5 6 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 4 6)\"/><path d=\"M 11.6 10.718 C 11.6 10.819 11.596 10.913 11.589 11 L 14.6 11 C 15.8 11 16 10.8 16 10.1 C 16 8.7 15.5 6 11 6 C 10.69 6 10.399 6.01 10.126 6.029 C 11.564 7.383 11.6 9.352 11.6 10.718 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 4 6)\"/><path d=\"M 3 2.5 C 3 4.167 3.895 5 5 5 C 6.105 5 7 4.167 7 2.5 C 7 0.833 6.105 0 5 0 C 3.895 0 3 0.833 3 2.5 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 4 6)\"/><path d=\"M 9 2.5 C 9 4.167 9.895 5 11 5 C 12.105 5 13 4.167 13 2.5 C 13 0.833 12.105 0 11 0 C 9.895 0 9 0.833 9 2.5 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 4 6)\"/>"
+    },
+    "HeadNotify24Solid": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 8 18 C 6.646 18 5.5 17.3 5.5 16 L 10.5 16 C 10.5 17.3 9.354 18 8 18 Z M 13.996 11 C 13.996 12.5 16 12.5 16 13.5 C 16 14 16 15 13.896 15 L 1.984 15 C 0 15 0 14 0 13.5 C 0 12.5 1.984 12.5 2 11 L 2 8 C 2 4 4.097 1.5 7 1.1 L 7 1 C 7 0.4 7.5 0 8 0 C 8.5 0 9 0.4 9 1 L 9 1.1 C 11.903 1.5 13.996 4 13.996 8 L 13.996 11 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 4 3)\"/>"
+    },
+    "Home24Solid": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 7.345 0.298 C 7.646 -0.099 8.248 -0.099 8.65 0.298 L 15.781 7.248 C 16.183 7.546 15.982 7.844 15.58 7.943 L 14 8 L 14 13 C 14 14 14 14 13 14 L 10.495 14 C 10.216 14 10 13.78 10 13.509 L 10 9.998 C 10 8.898 9.105 8 8 8 C 6.888 8 6 8.894 6 9.998 L 6 13.509 C 6 13.772 5.778 14 5.505 14 L 3 14 C 2 14 2 14 2 13 L 2 8 L 0.515 7.943 C 0.013 7.943 -0.188 7.645 0.214 7.248 L 7.345 0.298 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 4 5)\"/>"
+    },
+    "HugeIconBusinessSolidBriefcase": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 3.75 1.5 C 2.507 1.5 1.5 2.507 1.5 3.75 L 1.5 4.75 C 1.5 5.164 1.164 5.5 0.75 5.5 C 0.336 5.5 0 5.164 0 4.75 L 0 3.75 C 0 1.679 1.679 0 3.75 0 L 5.75 0 C 7.821 0 9.5 1.679 9.5 3.75 L 9.5 4.75 C 9.5 5.164 9.164 5.5 8.75 5.5 C 8.336 5.5 8 5.164 8 4.75 L 8 3.75 C 8 2.507 6.993 1.5 5.75 1.5 L 3.75 1.5 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 2 1.625) matrix(1 0 0 1 5.250 0)\"/><path d=\"M 4 0 L 16 0 C 18.209 0 20 1.791 20 4 C 20 4 17.648 6.302 11.685 6.55 C 11.579 6.554 11.488 6.474 11.465 6.371 C 11.316 5.698 10.717 5.195 10 5.195 C 9.304 5.195 8.719 5.669 8.55 6.311 C 8.523 6.413 8.429 6.49 8.323 6.481 C 2.348 6.022 0 4 0 4 C 0 1.791 1.791 0 4 0 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 2 1.625) matrix(1 0 0 1 0 4.750)\"/><path d=\"M 8.5 7.883 C 8.5 7.778 8.417 7.691 8.313 7.683 C 3.623 7.327 1.001 6.094 0 5.513 L 0 12 C 0 14.209 1.791 16 4 16 L 16 16 C 18.209 16 20 14.209 20 12 L 20 5.554 C 18.997 6.212 16.369 7.586 11.694 7.789 C 11.587 7.794 11.5 7.882 11.5 7.99 L 11.5 8.095 C 11.5 8.924 10.828 9.595 10 9.595 C 9.172 9.595 8.5 8.924 8.5 8.095 L 8.5 7.883 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 2 1.625) matrix(1 0 0 1 0 4.750)\"/><path d=\"M 0 0.75 C 0 0.336 0.336 0 0.75 0 C 1.164 0 1.5 0.336 1.5 0.75 L 1.5 2.044 C 1.5 2.458 1.164 2.794 0.75 2.794 C 0.336 2.794 0 2.458 0 2.044 L 0 0.75 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 2 1.625) matrix(1 0 0 1 9.250 10.750)\"/>"
+    },
+    "HugeIconBusinessSolidChart": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 0.75 0 C 1.164 0 1.5 0.336 1.5 0.75 L 1.5 16.75 C 1.5 18.545 2.955 20 4.75 20 L 20.75 20 C 21.164 20 21.5 20.336 21.5 20.75 C 21.5 21.164 21.164 21.5 20.75 21.5 L 4.75 21.5 C 2.127 21.5 0 19.373 0 16.75 L 0 0.75 C 0 0.336 0.336 0 0.75 0 Z M 5.75 9 C 6.164 9 6.5 9.336 6.5 9.75 L 6.5 15.75 C 6.5 16.164 6.164 16.5 5.75 16.5 C 5.336 16.5 5 16.164 5 15.75 L 5 9.75 C 5 9.336 5.336 9 5.75 9 Z M 10.75 5 C 11.164 5 11.5 5.336 11.5 5.75 L 11.5 15.75 C 11.5 16.164 11.164 16.5 10.75 16.5 C 10.336 16.5 10 16.164 10 15.75 L 10 5.75 C 10 5.336 10.336 5 10.75 5 Z M 15.75 7 C 16.164 7 16.5 7.336 16.5 7.75 L 16.5 15.75 C 16.5 16.164 16.164 16.5 15.75 16.5 C 15.336 16.5 15 16.164 15 15.75 L 15 7.75 C 15 7.336 15.336 7 15.75 7 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 1.250 1.250)\"/>"
+    },
+    "HugeIconBusinessSolidTarget": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 11.238 10.573 L 20.53 1.28 C 20.823 0.987 20.823 0.513 20.53 0.22 C 20.237 -0.073 19.763 -0.073 19.47 0.22 L 16.521 3.168 C 14.77 1.661 12.491 0.75 10 0.75 C 4.477 0.75 0 5.227 0 10.75 C 0 16.273 4.477 20.75 10 20.75 C 15.523 20.75 20 16.273 20 10.75 C 20 8.772 19.426 6.928 18.435 5.376 L 16.052 7.758 C 16.499 8.66 16.75 9.676 16.75 10.75 C 16.75 14.478 13.728 17.5 10 17.5 C 6.272 17.5 3.25 14.478 3.25 10.75 C 3.25 7.022 6.272 4 10 4 C 11.594 4 13.059 4.552 14.213 5.476 L 13.144 6.545 C 12.268 5.889 11.179 5.5 10 5.5 C 7.101 5.5 4.75 7.851 4.75 10.75 C 4.75 13.649 7.101 16 10 16 C 12.899 16 15.25 13.649 15.25 10.75 C 15.25 10.098 15.131 9.473 14.914 8.897 L 12.73 11.08 C 12.567 12.443 11.407 13.5 10 13.5 C 8.481 13.5 7.25 12.269 7.25 10.75 C 7.25 9.231 8.481 8 10 8 C 10.487 8 10.944 8.127 11.341 8.348 L 10.177 9.512 C 10.119 9.504 10.06 9.5 10 9.5 C 9.31 9.5 8.75 10.06 8.75 10.75 C 8.75 11.44 9.31 12 10 12 C 10.69 12 11.25 11.44 11.25 10.75 C 11.25 10.69 11.246 10.631 11.238 10.573 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 2 1.250)\"/>"
+    },
+    "HugeIconCommunicationSolidBroadcast": {
+      viewBox: "0 0 80 80",
+      body: "<path d=\"M 14.303 0.523 C 15.394 -0.322 16.965 -0.122 17.811 0.97 C 18.656 2.061 18.456 3.631 17.364 4.477 C 13.55 7.431 10.464 11.17 8.328 15.421 C 6.192 19.671 5.056 24.328 5.002 29.054 C 4.948 33.779 5.975 38.459 8.013 42.754 C 10.05 47.05 13.049 50.856 16.794 53.892 C 17.866 54.761 18.03 56.335 17.161 57.407 C 16.292 58.48 14.718 58.645 13.646 57.775 C 9.326 54.274 5.857 49.875 3.495 44.896 C 1.133 39.918 -0.06 34.486 0.003 28.996 C 0.066 23.507 1.385 18.102 3.86 13.176 C 6.336 8.25 9.905 3.929 14.303 0.523 Z M 35.834 22.5 C 39.516 22.5 42.5 25.484 42.5 29.166 C 42.5 31.964 40.777 34.36 38.334 35.349 L 38.334 55.833 C 38.334 57.214 37.215 58.333 35.834 58.333 C 34.453 58.333 33.334 57.214 33.334 55.833 L 33.334 35.349 C 30.891 34.36 29.167 31.964 29.167 29.166 C 29.167 25.484 32.152 22.5 35.834 22.5 Z M 53.857 0.97 C 54.703 -0.122 56.273 -0.322 57.364 0.523 C 61.762 3.929 65.331 8.25 67.807 13.176 C 70.282 18.102 71.602 23.506 71.665 28.996 C 71.728 34.486 70.534 39.917 68.172 44.896 C 65.81 49.875 62.341 54.274 58.022 57.775 C 56.95 58.645 55.375 58.48 54.506 57.407 C 53.637 56.335 53.802 54.761 54.874 53.892 C 58.619 50.856 61.617 47.049 63.654 42.754 C 65.692 38.459 66.719 33.779 66.665 29.054 C 66.611 24.328 65.476 19.671 63.34 15.421 C 61.204 11.17 58.118 7.431 54.304 4.477 C 53.212 3.631 53.012 2.061 53.857 0.97 Z M 20.961 13.863 C 22.049 13.013 23.619 13.206 24.47 14.294 C 25.32 15.382 25.128 16.952 24.04 17.803 C 22.268 19.188 20.843 20.923 19.86 22.879 C 18.878 24.835 18.359 26.968 18.335 29.128 C 18.311 31.288 18.782 33.431 19.721 35.405 C 20.659 37.38 22.043 39.143 23.783 40.563 C 24.853 41.437 25.012 43.012 24.139 44.081 C 23.265 45.15 21.691 45.31 20.621 44.437 C 18.318 42.556 16.466 40.207 15.204 37.551 C 13.942 34.894 13.302 32 13.335 29.072 C 13.368 26.145 14.071 23.263 15.393 20.634 C 16.713 18.005 18.617 15.695 20.961 13.863 Z M 47.197 14.294 C 48.048 13.206 49.619 13.013 50.707 13.863 C 53.051 15.695 54.954 18.005 56.274 20.634 C 57.595 23.263 58.3 26.145 58.333 29.072 C 58.366 32 57.725 34.894 56.463 37.551 C 55.201 40.207 53.349 42.556 51.046 44.437 C 49.976 45.31 48.401 45.151 47.528 44.081 C 46.655 43.012 46.815 41.437 47.884 40.563 C 49.624 39.143 51.009 37.38 51.947 35.405 C 52.886 33.431 53.357 31.288 53.333 29.128 C 53.309 26.968 52.789 24.835 51.807 22.879 C 50.824 20.923 49.4 19.188 47.628 17.803 C 46.54 16.953 46.347 15.382 47.197 14.294 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 4.167 10.834) matrix(1 0 0 1 -0.001 0)\"/>"
+    },
+    "HugeIconCommunicationSolidCalling": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 3.646 0.75 C 4.463 0.75 5.199 1.248 5.503 2.007 L 6.316 4.041 C 6.703 5.007 6.285 6.108 5.354 6.573 L 5 6.75 C 5 6.75 5.5 9.25 7.5 11.25 C 9.5 13.25 12 13.75 12 13.75 L 12.177 13.396 C 12.642 12.465 13.743 12.047 14.709 12.434 L 16.743 13.247 C 17.502 13.551 18 14.287 18 15.104 L 18 16.75 C 18 17.855 17.105 18.75 16 18.75 C 7.163 18.75 0 11.587 0 2.75 C 0 1.645 0.895 0.75 2 0.75 L 3.646 0.75 Z M 10 4 C 10.624 4 11.241 4.123 11.817 4.361 C 12.394 4.6 12.917 4.951 13.358 5.392 C 13.799 5.833 14.15 6.356 14.389 6.933 C 14.627 7.509 14.75 8.126 14.75 8.75 C 14.75 9.164 14.414 9.5 14 9.5 C 13.586 9.5 13.25 9.164 13.25 8.75 C 13.25 8.323 13.166 7.9 13.003 7.506 C 12.84 7.112 12.6 6.754 12.298 6.452 C 11.996 6.15 11.638 5.91 11.244 5.747 C 10.85 5.584 10.427 5.5 10 5.5 C 9.586 5.5 9.25 5.164 9.25 4.75 C 9.25 4.336 9.586 4 10 4 Z M 10 0 C 11.149 0 12.287 0.226 13.349 0.666 C 14.41 1.106 15.375 1.75 16.188 2.563 C 17 3.375 17.644 4.34 18.084 5.401 C 18.524 6.463 18.75 7.601 18.75 8.75 C 18.75 9.164 18.414 9.5 18 9.5 C 17.586 9.5 17.25 9.164 17.25 8.75 C 17.25 7.798 17.063 6.855 16.698 5.976 C 16.334 5.096 15.8 4.296 15.127 3.623 C 14.454 2.95 13.654 2.416 12.774 2.052 C 11.895 1.687 10.952 1.5 10 1.5 C 9.586 1.5 9.25 1.164 9.25 0.75 C 9.25 0.336 9.586 0 10 0 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 3 2.250)\"/>"
+    },
+    "HugeIconCommunicationSolidMail": {
+      viewBox: "0 0 60 60",
+      body: "<path d=\"M 10 0 C 4.477 0 0 4.477 0 10 L 0 35 C 0 40.523 4.477 45 10 45 L 40 45 C 45.523 45 50 40.523 50 35 L 50 10 C 50 4.477 45.523 0 40 0 L 10 0 Z M 11.04 10.94 C 10.178 10.365 9.014 10.598 8.44 11.46 C 7.866 12.321 8.098 13.486 8.96 14.06 L 18.413 20.362 C 22.402 23.021 27.598 23.021 31.587 20.362 L 41.04 14.06 C 41.902 13.486 42.135 12.321 41.56 11.46 C 40.986 10.598 39.822 10.365 38.96 10.94 L 29.507 17.242 C 26.778 19.061 23.222 19.061 20.493 17.242 L 11.04 10.94 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 5 7.500)\"/>"
+    },
+    "HugeIconFilesAndFolder": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 14 0 C 16.209 0 18 1.791 18 4 L 18 10.343 C 18 10.651 17.963 10.955 17.895 11.25 L 14 11.25 C 11.377 11.25 9.25 13.377 9.25 16 L 9.25 19.895 C 8.955 19.963 8.651 20 8.343 20 L 4 20 C 1.791 20 0 18.209 0 16 L 0 4 C 0 1.791 1.791 0 4 0 L 14 0 Z M 17.193 12.75 C 17.082 12.898 16.96 13.04 16.828 13.172 L 11.172 18.828 C 11.04 18.96 10.898 19.082 10.75 19.193 L 10.75 16 C 10.75 14.205 12.205 12.75 14 12.75 L 17.193 12.75 Z M 5 8.25 C 4.586 8.25 4.25 8.586 4.25 9 C 4.25 9.414 4.586 9.75 5 9.75 L 9 9.75 C 9.414 9.75 9.75 9.414 9.75 9 C 9.75 8.586 9.414 8.25 9 8.25 L 5 8.25 Z M 5 4.25 C 4.586 4.25 4.25 4.586 4.25 5 C 4.25 5.414 4.586 5.75 5 5.75 L 13 5.75 C 13.414 5.75 13.75 5.414 13.75 5 C 13.75 4.586 13.414 4.25 13 4.25 L 5 4.25 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 3 2)\"/>"
+    },
+    "HugeIconFinanceAndPayment": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 11.751 4.75 C 12.445 4.75 13.049 5.227 13.21 5.902 L 14.162 9.902 C 14.387 10.845 13.672 11.75 12.703 11.75 L 16.751 11.75 C 17.445 11.75 18.049 12.227 18.21 12.902 L 19.162 16.902 C 19.387 17.845 18.672 18.75 17.703 18.75 L 11.501 18.75 C 10.532 18.75 9.818 17.845 10.042 16.902 L 10.994 12.902 C 11.155 12.227 11.759 11.75 12.453 11.75 L 6.751 11.75 C 7.445 11.75 8.049 12.227 8.21 12.902 L 9.162 16.902 C 9.387 17.845 8.672 18.75 7.703 18.75 L 1.501 18.75 C 0.532 18.75 -0.182 17.845 0.042 16.902 L 0.994 12.902 C 1.155 12.227 1.759 11.75 2.453 11.75 L 6.501 11.75 C 5.532 11.75 4.818 10.845 5.042 9.902 L 5.994 5.902 C 6.155 5.227 6.759 4.75 7.453 4.75 L 11.751 4.75 Z M 3.071 1.22 C 3.364 0.927 3.84 0.927 4.133 1.22 L 5.133 2.22 C 5.425 2.513 5.425 2.987 5.133 3.28 C 4.84 3.573 4.364 3.573 4.071 3.28 L 3.071 2.28 C 2.779 1.987 2.779 1.513 3.071 1.22 Z M 15.071 1.22 C 15.364 0.927 15.84 0.927 16.133 1.22 C 16.425 1.513 16.425 1.987 16.133 2.28 L 15.133 3.28 C 14.84 3.573 14.364 3.573 14.071 3.28 C 13.779 2.987 13.779 2.513 14.071 2.22 L 15.071 1.22 Z M 9.602 0 C 10.016 0 10.352 0.336 10.352 0.75 L 10.352 1.75 C 10.352 2.164 10.016 2.5 9.602 2.5 C 9.188 2.5 8.852 2.164 8.852 1.75 L 8.852 0.75 C 8.852 0.336 9.188 0 9.602 0 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 2.398 1) matrix(1 0 0 1 -0.000 0)\"/>"
+    },
+    "HugeIconInterfaceSolidBoard": {
+      viewBox: "0 0 24 23.750",
+      body: "<path d=\"M 17 15 C 18.657 15 20 13.657 20 12 L 20 3 C 20 1.343 18.657 0 17 0 L 3 0 C 1.343 0 0 1.343 0 3 L 0 12 C 0 13.657 1.343 15 3 15 L 4.525 15 L 2.357 18.614 C 2.144 18.969 2.259 19.43 2.614 19.643 C 2.969 19.856 3.43 19.741 3.643 19.386 L 6.275 15 L 9.25 15 L 9.25 17 C 9.25 17.414 9.586 17.75 10 17.75 C 10.414 17.75 10.75 17.414 10.75 17 L 10.75 15 L 13.725 15 L 16.357 19.386 C 16.57 19.741 17.031 19.856 17.386 19.643 C 17.741 19.43 17.856 18.969 17.643 18.614 L 15.475 15 L 17 15 Z M 4.25 5 C 4.25 4.586 4.586 4.25 5 4.25 L 15 4.25 C 15.414 4.25 15.75 4.586 15.75 5 C 15.75 5.414 15.414 5.75 15 5.75 L 5 5.75 C 4.586 5.75 4.25 5.414 4.25 5 Z M 5 9.25 C 4.586 9.25 4.25 9.586 4.25 10 C 4.25 10.414 4.586 10.75 5 10.75 L 10 10.75 C 10.414 10.75 10.75 10.414 10.75 10 C 10.75 9.586 10.414 9.25 10 9.25 L 5 9.25 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 2 2)\"/>"
+    },
+    "HugeIconInterfaceSolidCheck": {
+      viewBox: "0 0 23.500 23.500",
+      body: "<path d=\"M 10.75 0 C 12.707 0 14.544 0.523 16.126 1.438 C 16.484 1.646 16.606 2.104 16.399 2.463 C 16.192 2.821 15.733 2.945 15.374 2.737 C 14.014 1.951 12.436 1.5 10.75 1.5 C 5.641 1.5 1.5 5.641 1.5 10.75 C 1.5 15.859 5.641 20 10.75 20 C 15.859 20 20 15.859 20 10.75 C 20 9.61 19.794 8.519 19.418 7.513 C 19.273 7.125 19.47 6.693 19.857 6.548 C 20.245 6.403 20.678 6.599 20.823 6.987 C 21.261 8.159 21.5 9.428 21.5 10.75 C 21.5 16.687 16.687 21.5 10.75 21.5 C 4.813 21.5 0 16.687 0 10.75 C 0 4.813 4.813 0 10.75 0 Z M 19.192 2.248 C 19.469 1.94 19.944 1.915 20.252 2.192 C 20.56 2.469 20.585 2.944 20.308 3.252 L 12.57 11.849 C 11.596 12.931 9.945 13.067 8.808 12.157 L 5.281 9.336 C 4.958 9.077 4.905 8.605 5.164 8.281 C 5.423 7.958 5.895 7.905 6.219 8.164 L 9.745 10.985 C 10.262 11.399 11.012 11.338 11.455 10.846 L 19.192 2.248 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 1 1)\"/>"
+    },
+    "HugeIconInterfaceSolidGlobe": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 7.84 3.063 C 7.481 3.968 7.188 5.069 6.991 6.304 C 7.947 6.217 8.957 6.17 10 6.17 C 11.043 6.17 12.053 6.217 13.01 6.304 C 12.812 5.069 12.519 3.968 12.16 3.063 C 11.814 2.192 11.422 1.539 11.025 1.116 C 10.63 0.694 10.283 0.553 10 0.553 C 9.717 0.553 9.37 0.694 8.975 1.116 C 8.578 1.539 8.186 2.192 7.84 3.063 Z M 6.429 2.494 C 5.981 3.624 5.637 4.985 5.426 6.491 C 4.388 6.645 3.44 6.851 2.618 7.1 C 1.662 7.389 0.833 7.748 0.226 8.182 C 0.149 8.237 0.074 8.295 0 8.356 C 0.67 4.181 3.851 0.854 7.931 0 C 7.911 0.021 7.891 0.042 7.871 0.063 C 7.298 0.674 6.817 1.516 6.429 2.494 Z M 12.069 0 C 12.089 0.021 12.109 0.042 12.129 0.063 C 12.702 0.674 13.183 1.516 13.571 2.494 C 14.019 3.624 14.363 4.985 14.574 6.491 C 15.612 6.645 16.56 6.851 17.382 7.1 C 18.338 7.389 19.167 7.748 19.774 8.182 C 19.851 8.237 19.926 8.295 20 8.356 C 19.33 4.181 16.149 0.854 12.069 0 Z M 20 11.643 C 19.926 11.704 19.851 11.762 19.774 11.817 C 19.167 12.251 18.338 12.611 17.382 12.9 C 16.56 13.149 15.612 13.355 14.574 13.509 C 14.363 15.014 14.019 16.376 13.571 17.506 C 13.183 18.484 12.702 19.326 12.129 19.937 C 12.109 19.958 12.089 19.979 12.069 20 C 16.149 19.147 19.33 15.819 20 11.643 Z M 7.931 20 C 7.911 19.979 7.891 19.958 7.871 19.937 C 7.298 19.326 6.817 18.484 6.429 17.506 C 5.981 16.376 5.637 15.014 5.426 13.509 C 4.388 13.355 3.44 13.149 2.618 12.9 C 1.662 12.611 0.833 12.251 0.226 11.817 C 0.149 11.762 0.074 11.704 0 11.643 C 0.67 15.819 3.851 19.147 7.931 20 Z M 3.055 11.433 C 3.7 11.628 4.441 11.797 5.258 11.932 C 5.212 11.304 5.188 10.658 5.188 10 C 5.188 9.342 5.212 8.696 5.258 8.068 C 4.441 8.203 3.7 8.372 3.055 8.567 C 2.178 8.832 1.523 9.133 1.105 9.432 C 0.667 9.745 0.629 9.948 0.629 10 C 0.629 10.052 0.667 10.255 1.105 10.568 C 1.523 10.867 2.178 11.167 3.055 11.433 Z M 6.708 10 C 6.708 10.736 6.739 11.452 6.799 12.138 C 7.798 12.241 8.875 12.298 10 12.298 C 11.125 12.298 12.202 12.241 13.201 12.138 C 13.261 11.452 13.292 10.736 13.292 10 C 13.292 9.263 13.261 8.548 13.201 7.862 C 12.202 7.759 11.125 7.702 10 7.702 C 8.875 7.702 7.798 7.759 6.799 7.862 C 6.739 8.548 6.708 9.263 6.708 10 Z M 7.84 16.937 C 7.481 16.031 7.188 14.931 6.991 13.696 C 7.947 13.783 8.957 13.83 10 13.83 C 11.043 13.83 12.053 13.783 13.01 13.696 C 12.812 14.931 12.519 16.031 12.16 16.937 C 11.814 17.808 11.422 18.461 11.025 18.884 C 10.63 19.306 10.283 19.447 10 19.447 C 9.717 19.447 9.37 19.306 8.975 18.884 C 8.578 18.461 8.186 17.808 7.84 16.937 Z M 16.945 11.433 C 16.301 11.628 15.559 11.797 14.742 11.932 C 14.788 11.304 14.812 10.658 14.812 10 C 14.812 9.342 14.788 8.696 14.742 8.068 C 15.559 8.203 16.301 8.372 16.945 8.567 C 17.822 8.832 18.477 9.133 18.895 9.432 C 19.333 9.745 19.371 9.948 19.371 10 C 19.371 10.052 19.333 10.255 18.895 10.568 C 18.477 10.867 17.822 11.167 16.945 11.433 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 2 2)\"/>"
+    },
+    "HugeIconInterfaceSolidHome": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 18 8.15 L 18 15.967 C 18 18.194 16.209 20 14 20 L 4 20 C 1.791 20 0 18.194 0 15.967 L 0 8.15 C 0 6.939 0.54 5.792 1.47 5.027 L 6.47 0.909 C 7.942 -0.303 10.058 -0.303 11.53 0.909 L 16.53 5.027 C 17.46 5.792 18 6.939 18 8.15 Z M 7 15.25 C 6.586 15.25 6.25 15.586 6.25 16 C 6.25 16.414 6.586 16.75 7 16.75 L 11 16.75 C 11.414 16.75 11.75 16.414 11.75 16 C 11.75 15.586 11.414 15.25 11 15.25 L 7 15.25 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 3 2)\"/>"
+    },
+    "HugeIconInterfaceSolidTicket": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 4 18 C 1.791 18 0 16.209 0 14 L 0 13 C 0 12.448 0.46 12.016 0.982 11.836 C 2.157 11.429 3 10.313 3 9 C 3 7.687 2.157 6.571 0.982 6.164 C 0.46 5.984 0 5.552 0 5 L 0 4 C 0 1.791 1.791 0 4 0 L 8 0 L 16 0 C 18.209 0 20 1.791 20 4 L 20 5 C 20 5.552 19.54 5.984 19.018 6.164 C 17.843 6.571 17 7.687 17 9 C 17 10.313 17.843 11.429 19.018 11.836 C 19.54 12.016 20 12.448 20 13 L 20 14 C 20 16.209 18.209 18 16 18 L 8 18 L 4 18 Z M 8.75 3 C 8.75 2.586 8.414 2.25 8 2.25 C 7.586 2.25 7.25 2.586 7.25 3 L 7.25 5 C 7.25 5.414 7.586 5.75 8 5.75 C 8.414 5.75 8.75 5.414 8.75 5 L 8.75 3 Z M 8 12.25 C 8.414 12.25 8.75 12.586 8.75 13 L 8.75 15 C 8.75 15.414 8.414 15.75 8 15.75 C 7.586 15.75 7.25 15.414 7.25 15 L 7.25 13 C 7.25 12.586 7.586 12.25 8 12.25 Z M 8.75 8 C 8.75 7.586 8.414 7.25 8 7.25 C 7.586 7.25 7.25 7.586 7.25 8 L 7.25 10 C 7.25 10.414 7.586 10.75 8 10.75 C 8.414 10.75 8.75 10.414 8.75 10 L 8.75 8 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 2 3)\"/>"
+    },
+    "HugeIconMultimediaAndAudio": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 16 0 C 18.209 0 20 1.791 20 4 L 20 16 C 20 18.209 18.209 20 16 20 L 4 20 C 1.791 20 0 18.209 0 16 L 0 4 C 0 1.791 1.791 0 4 0 L 16 0 Z M 10 4.25 C 9.586 4.25 9.25 4.586 9.25 5 L 9.25 9.761 C 8.745 9.437 8.144 9.25 7.5 9.25 C 5.705 9.25 4.25 10.705 4.25 12.5 C 4.25 14.295 5.705 15.75 7.5 15.75 C 9.295 15.75 10.75 14.295 10.75 12.5 L 10.75 5.816 C 12.739 6.171 14.25 7.909 14.25 10 C 14.25 10.414 14.586 10.75 15 10.75 C 15.414 10.75 15.75 10.414 15.75 10 C 15.75 6.824 13.176 4.25 10 4.25 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 2 2)\"/>"
+    },
+    "HugeIconSocialSolidTiktok": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 6 18 C 9.314 18 12 15.314 12 12 L 12 5.197 C 12.883 5.708 13.907 6 15 6 L 16 6 L 16 3 L 15 3 C 13.343 3 12 1.657 12 0 L 9 0 L 9 12 C 9 13.657 7.657 15 6 15 C 4.343 15 3 13.657 3 12 C 3 10.343 4.343 9 6 9 L 6 6 C 2.686 6 0 8.686 0 12 C 0 15.314 2.686 18 6 18 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 4 3)\"/>"
+    },
+    "HugeIconSocialSolidYoutube": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 17.72 0 C 19.929 0 21.72 1.791 21.72 4 L 21.72 14 C 21.72 16.209 19.929 18 17.72 18 L 4 18 C 1.791 18 0 16.209 0 14 L 0 4 C 0 1.791 1.791 0 4 0 L 17.72 0 Z M 9.308 5.724 C 8.643 5.391 7.86 5.875 7.86 6.618 L 7.86 11.382 C 7.86 12.125 8.643 12.609 9.308 12.276 L 14.071 9.895 C 14.808 9.526 14.808 8.474 14.071 8.105 L 9.308 5.724 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 1.140 3)\"/>"
+    },
+    "HugeIconUserSolidUser": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 20 10 C 20 13.013 18.667 15.715 16.559 17.549 C 14.803 19.076 12.509 20 10 20 C 7.491 20 5.197 19.076 3.441 17.549 C 1.333 15.715 0 13.013 0 10 C 0 4.477 4.477 0 10 0 C 15.523 0 20 4.477 20 10 Z M 13 7 C 13 5.343 11.657 4 10 4 C 8.343 4 7 5.343 7 7 C 7 8.657 8.343 10 10 10 C 11.657 10 13 8.657 13 7 Z M 10 12 C 11.713 12 12.839 12.917 13.633 13.935 C 14.226 14.696 14.022 15.811 13.162 16.247 C 12.212 16.728 11.138 17 10 17 C 8.862 17 7.788 16.728 6.838 16.247 C 5.978 15.811 5.774 14.696 6.367 13.935 C 7.161 12.917 8.287 12 10 12 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 2 2)\"/>"
+    },
+    "Likes24": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 0 0 L 24 0 L 24 24 L 0 24 L 0 0 Z\" fill=\"currentColor\" fill-rule=\"evenodd\"/><path d=\"M 16.4 0 C 18.1 0.008 19.728 0.689 20.927 1.894 C 22.127 3.099 22.8 4.73 22.8 6.43 C 22.8 10 21.37 11.79 15.35 16.43 L 12.57 18.59 C 12.237 18.849 11.827 18.989 11.405 18.989 C 10.983 18.989 10.573 18.849 10.24 18.59 L 7.45 16.47 C 1.4 11.79 0 10 0 6.43 C 0 4.73 0.673 3.099 1.873 1.894 C 3.072 0.689 4.7 0.008 6.4 0 C 7.371 0.02 8.324 0.259 9.19 0.699 C 10.056 1.139 10.811 1.768 11.4 2.54 C 11.989 1.768 12.744 1.139 13.61 0.699 C 14.476 0.259 15.429 0.02 16.4 0 L 16.4 0 Z M 6.4 1.8 C 5.177 1.808 4.007 2.299 3.145 3.167 C 2.284 4.034 1.8 5.207 1.8 6.43 C 1.8 9.25 2.95 10.69 8.56 15.06 L 11.34 17.22 C 11.357 17.233 11.378 17.24 11.4 17.24 C 11.422 17.24 11.443 17.233 11.46 17.22 L 14.24 15.1 C 19.85 10.74 21 9.3 21 6.47 C 21.005 5.861 20.89 5.257 20.662 4.693 C 20.434 4.128 20.096 3.615 19.669 3.181 C 19.241 2.747 18.733 2.402 18.172 2.165 C 17.611 1.928 17.009 1.804 16.4 1.8 C 14.84 1.8 13.4 2.68 12.17 4.53 L 11.4 5.6 L 10.66 4.53 C 9.4 2.68 7.98 1.8 6.4 1.8 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 0.600 2.900)\"/>"
+    },
+    "MessageCircle24": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 0 0 L 24 0 L 24 24 L 0 24 L 0 0 Z\" fill=\"currentColor\" fill-rule=\"nonzero\"/><path d=\"M 0 0 L 24 0 L 24 24 L 0 24 L 0 0 Z\" fill=\"currentColor\" fill-rule=\"nonzero\"/><path d=\"M 6.454 14.972 L 6.954 14.972 C 6.954 14.779 6.843 14.603 6.668 14.52 C 6.493 14.437 6.286 14.463 6.137 14.586 L 6.454 14.972 Z M 1.697 17.024 L 1.817 17.51 L 1.817 17.51 L 1.697 17.024 Z M 0.82 15.882 L 0.383 15.639 L 0.383 15.64 L 0.82 15.882 Z M 2.195 12.693 L 2.682 12.806 C 2.722 12.637 2.67 12.46 2.547 12.337 L 2.195 12.693 Z M 8.5 15.194 L 8.5 14.694 L 8.5 14.694 L 8.5 15.194 Z M 6.454 14.972 L 5.954 14.972 C 5.954 15.207 6.118 15.41 6.347 15.46 L 6.454 14.972 Z M 6.137 14.586 C 5.199 15.356 3.699 16.011 1.576 16.539 L 1.817 17.51 C 3.996 16.968 5.665 16.267 6.772 15.358 L 6.137 14.586 Z M 1.576 16.539 C 1.522 16.552 1.466 16.55 1.413 16.531 L 1.083 17.475 C 1.319 17.558 1.574 17.57 1.817 17.51 L 1.576 16.539 Z M 1.413 16.531 C 1.361 16.513 1.315 16.48 1.281 16.436 L 0.488 17.044 C 0.64 17.243 0.847 17.393 1.083 17.475 L 1.413 16.531 Z M 1.281 16.436 C 1.247 16.392 1.227 16.339 1.223 16.283 L 0.226 16.358 C 0.244 16.607 0.335 16.846 0.488 17.044 L 1.281 16.436 Z M 1.223 16.283 C 1.219 16.228 1.231 16.173 1.258 16.124 L 0.383 15.64 C 0.262 15.858 0.207 16.108 0.226 16.358 L 1.223 16.283 Z M 1.258 16.124 C 1.997 14.791 2.481 13.676 2.682 12.806 L 1.708 12.58 C 1.538 13.315 1.106 14.334 0.383 15.639 L 1.258 16.124 Z M 2.547 12.337 C 1.235 11.042 0.5 9.368 0.5 7.597 L -0.5 7.597 C -0.5 9.654 0.356 11.58 1.844 13.049 L 2.547 12.337 Z M 0.5 7.597 C 0.5 3.715 4.039 0.5 8.5 0.5 L 8.5 -0.5 C 3.597 -0.5 -0.5 3.059 -0.5 7.597 L 0.5 7.597 Z M 8.5 0.5 C 12.961 0.5 16.5 3.715 16.5 7.597 L 17.5 7.597 C 17.5 3.059 13.403 -0.5 8.5 -0.5 L 8.5 0.5 Z M 16.5 7.597 C 16.5 11.478 12.961 14.694 8.5 14.694 L 8.5 15.694 C 13.403 15.694 17.5 12.135 17.5 7.597 L 16.5 7.597 Z M 8.5 14.694 C 7.848 14.694 7.198 14.624 6.562 14.484 L 6.347 15.46 C 7.054 15.616 7.776 15.694 8.5 15.694 L 8.5 14.694 Z M 6.954 14.972 L 6.954 14.972 L 5.954 14.972 L 5.954 14.972 L 6.954 14.972 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 3.500 3.500)\"/><path d=\"M 0.713 15.409 L 1.062 15.604 L 1.083 15.567 L 1.095 15.527 L 0.713 15.409 Z M 0.708 15.418 L 0.358 15.224 L 1.057 15.613 L 0.708 15.418 Z M 0.719 15.389 L 1.108 15.483 L 0.337 15.271 L 0.719 15.389 Z M 0.835 15.186 L 0.835 15.586 L 0.886 15.586 L 0.936 15.573 L 0.835 15.186 Z M 5.151 13.231 L 5.421 13.527 L 5.421 13.527 L 5.151 13.231 Z M 5.31 13.087 L 5.407 12.699 L 5.198 12.647 L 5.04 12.791 L 5.31 13.087 Z M 5.518 13.139 L 5.421 13.527 L 5.421 13.527 L 5.518 13.139 Z M 7.6 13.394 L 7.6 12.994 L 7.6 12.994 L 7.6 13.394 Z M 2.111 11.327 L 2.382 11.033 L 2.382 11.033 L 2.111 11.327 Z M 2.271 11.475 L 2.665 11.542 L 2.701 11.327 L 2.542 11.18 L 2.271 11.475 Z M 2.234 11.689 L 1.84 11.622 L 1.84 11.622 L 2.234 11.689 Z M 0.835 15.186 L 0.483 14.995 L 0.163 15.586 L 0.835 15.586 L 0.835 15.186 Z M 0.364 15.213 C 0.362 15.217 0.36 15.22 0.359 15.223 L 1.057 15.613 C 1.059 15.61 1.06 15.607 1.062 15.604 L 0.364 15.213 Z M 1.058 15.612 C 1.08 15.572 1.097 15.528 1.108 15.483 L 0.33 15.295 C 0.336 15.27 0.346 15.246 0.358 15.224 L 1.058 15.612 Z M 0.337 15.271 L 0.331 15.29 L 1.095 15.527 L 1.101 15.507 L 0.337 15.271 Z M 0.936 15.573 C 2.987 15.04 4.503 14.363 5.421 13.527 L 4.881 12.936 C 4.11 13.64 2.746 14.276 0.734 14.799 L 0.936 15.573 Z M 5.421 13.527 L 5.579 13.382 L 5.04 12.791 L 4.881 12.936 L 5.421 13.527 Z M 5.212 13.475 L 5.421 13.527 L 5.615 12.751 L 5.407 12.699 L 5.212 13.475 Z M 5.421 13.527 C 6.134 13.705 6.866 13.794 7.6 13.794 L 7.6 12.994 C 6.93 12.994 6.264 12.913 5.615 12.751 L 5.421 13.527 Z M 7.6 13.794 C 11.98 13.794 15.6 10.65 15.6 6.697 L 14.8 6.697 C 14.8 10.118 11.635 12.994 7.6 12.994 L 7.6 13.794 Z M 15.6 6.697 C 15.6 2.743 11.98 -0.4 7.6 -0.4 L 7.6 0.4 C 11.635 0.4 14.8 3.276 14.8 6.697 L 15.6 6.697 Z M 7.6 -0.4 C 3.22 -0.4 -0.4 2.743 -0.4 6.697 L 0.4 6.697 C 0.4 3.276 3.565 0.4 7.6 0.4 L 7.6 -0.4 Z M -0.4 6.697 C -0.4 8.565 0.417 10.312 1.84 11.622 L 2.382 11.033 C 1.109 9.862 0.4 8.323 0.4 6.697 L -0.4 6.697 Z M 1.84 11.622 L 2 11.769 L 2.542 11.18 L 2.382 11.033 L 1.84 11.622 Z M 1.876 11.407 L 1.84 11.622 L 2.629 11.756 L 2.665 11.542 L 1.876 11.407 Z M 1.84 11.622 C 1.699 12.454 1.257 13.569 0.483 14.995 L 1.187 15.377 C 1.973 13.926 2.465 12.718 2.629 11.756 L 1.84 11.622 Z M 0.835 15.586 L 0.835 15.586 L 0.835 14.786 L 0.835 14.786 L 0.835 15.586 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 3.500 3.500) matrix(1 0 0 1 0.900 0.900)\"/><path d=\"M 5.821 13.927 L 6.157 14.296 C 6.261 14.202 6.321 14.068 6.321 13.927 L 5.821 13.927 Z M 1.076 16.039 L 1.197 16.524 L 1.197 16.524 L 1.076 16.039 Z M 0.758 15.624 L 1.258 15.624 C 1.258 15.396 1.104 15.197 0.883 15.14 C 0.662 15.083 0.431 15.182 0.321 15.382 L 0.758 15.624 Z M 0.758 15.624 L 0.258 15.624 C 0.258 15.852 0.412 16.051 0.633 16.108 C 0.853 16.165 1.085 16.066 1.195 15.866 L 0.758 15.624 Z M 2.24 12.022 L 2.733 12.105 C 2.761 11.938 2.703 11.768 2.578 11.654 L 2.24 12.022 Z M 8 14.194 L 8 13.694 L 7.999 13.694 L 8 14.194 Z M 5.821 13.927 L 5.942 13.442 C 5.792 13.405 5.634 13.438 5.513 13.533 C 5.391 13.628 5.321 13.773 5.321 13.927 L 5.821 13.927 Z M 5.484 13.558 C 4.639 14.328 3.156 15.007 0.956 15.554 L 1.197 16.524 C 3.447 15.965 5.127 15.236 6.157 14.296 L 5.484 13.558 Z M 0.956 15.554 C 0.996 15.544 1.039 15.546 1.078 15.559 L 0.748 16.503 C 0.892 16.554 1.048 16.561 1.197 16.524 L 0.956 15.554 Z M 1.078 15.559 C 1.118 15.573 1.152 15.598 1.178 15.632 L 0.384 16.24 C 0.477 16.361 0.604 16.453 0.748 16.503 L 1.078 15.559 Z M 1.178 15.632 C 1.203 15.665 1.218 15.705 1.222 15.746 L 0.224 15.82 C 0.236 15.973 0.291 16.119 0.384 16.24 L 1.178 15.632 Z M 1.222 15.746 C 1.225 15.788 1.216 15.83 1.195 15.866 L 0.321 15.382 C 0.246 15.515 0.213 15.668 0.224 15.82 L 1.222 15.746 Z M 0.258 15.624 L 0.258 15.624 L 1.258 15.624 L 1.258 15.624 L 0.258 15.624 Z M 1.195 15.866 C 2.039 14.343 2.567 13.083 2.733 12.105 L 1.747 11.938 C 1.61 12.744 1.15 13.885 0.321 15.382 L 1.195 15.866 Z M 2.578 11.654 C 1.283 10.462 0.5 8.855 0.5 7.097 L -0.5 7.097 C -0.5 9.164 0.423 11.029 1.901 12.39 L 2.578 11.654 Z M 0.5 7.097 C 0.5 3.508 3.8 0.5 8 0.5 L 8 -0.5 C 3.364 -0.5 -0.5 2.847 -0.5 7.097 L 0.5 7.097 Z M 8 0.5 C 12.2 0.5 15.5 3.508 15.5 7.097 L 16.5 7.097 C 16.5 2.847 12.636 -0.5 8 -0.5 L 8 0.5 Z M 15.5 7.097 C 15.5 10.685 12.2 13.694 8 13.694 L 8 14.694 C 12.636 14.694 16.5 11.347 16.5 7.097 L 15.5 7.097 Z M 7.999 13.694 C 7.306 13.694 6.615 13.61 5.942 13.442 L 5.699 14.412 C 6.452 14.6 7.225 14.694 8.001 14.694 L 7.999 13.694 Z M 5.321 13.927 L 5.321 13.927 L 6.321 13.927 L 6.321 13.927 L 5.321 13.927 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 3.500 3.500) matrix(1 0 0 1 0.500 0.500)\"/>"
+    },
+    "Messages24Solid": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 16 6 C 16 3.895 14.438 2.093 12.228 1.356 C 13.029 2.385 13.5 3.632 13.5 5 C 13.5 7.705 11.657 9.941 9.063 10.939 C 9.368 10.979 9.681 11 10 11 C 10.384 11 10.76 10.97 11.124 10.912 C 11.587 11.596 12.43 12.016 14.013 12.016 C 13.575 11.37 13.273 10.722 13.187 10.237 C 14.877 9.353 16 7.786 16 6 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 4 6)\"/><path d=\"M 1.98 11 C 3.568 11 4.413 10.586 4.876 9.912 C 5.24 9.97 5.616 10 6 10 C 9.314 10 12 7.761 12 5 C 12 2.239 9.314 0 6 0 C 2.686 0 0 2.239 0 5 C 0 6.785 1.122 8.351 2.811 9.236 C 2.732 9.712 2.426 10.357 1.98 11 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 4 6)\"/>"
+    },
+    "MessagesSquare24": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 0 0 L 24 0 L 24 24 L 0 24 L 0 0 Z\" fill=\"currentColor\" fill-rule=\"evenodd\"/><path d=\"M 5.743 19.433 C 5.515 19.248 5.33 19.015 5.203 18.751 C 5.075 18.486 5.007 18.197 5.003 17.903 L 5.003 15.803 L 3.403 15.803 C 2.951 15.823 2.5 15.749 2.079 15.585 C 1.657 15.421 1.275 15.171 0.955 14.851 C 0.635 14.532 0.385 14.149 0.221 13.727 C 0.058 13.306 -0.017 12.855 0.003 12.403 L 0.003 3.403 C -0.017 2.951 0.058 2.5 0.221 2.079 C 0.385 1.657 0.635 1.275 0.955 0.955 C 1.275 0.635 1.657 0.385 2.079 0.221 C 2.5 0.058 2.951 -0.017 3.403 0.003 L 16.403 0.003 C 16.855 -0.017 17.306 0.058 17.727 0.221 C 18.149 0.385 18.532 0.635 18.851 0.955 C 19.171 1.275 19.421 1.657 19.585 2.079 C 19.749 2.5 19.823 2.951 19.803 3.403 L 19.803 12.403 C 19.823 12.855 19.749 13.306 19.585 13.727 C 19.421 14.149 19.171 14.532 18.851 14.851 C 18.532 15.171 18.149 15.421 17.727 15.585 C 17.306 15.749 16.855 15.823 16.403 15.803 L 11.743 15.803 L 8.023 19.063 C 7.761 19.403 7.38 19.63 6.956 19.698 C 6.533 19.767 6.099 19.672 5.743 19.433 L 5.743 19.433 Z M 10.673 14.343 C 10.927 14.119 11.254 13.995 11.593 13.993 L 16.403 13.993 C 16.618 14.013 16.835 13.986 17.038 13.912 C 17.242 13.839 17.426 13.722 17.579 13.569 C 17.732 13.416 17.849 13.232 17.922 13.028 C 17.996 12.825 18.023 12.608 18.003 12.393 L 18.003 3.393 C 18.023 3.178 17.996 2.961 17.922 2.758 C 17.849 2.555 17.732 2.37 17.579 2.217 C 17.426 2.065 17.242 1.947 17.038 1.874 C 16.835 1.801 16.618 1.773 16.403 1.793 L 3.403 1.793 C 3.187 1.773 2.969 1.801 2.765 1.875 C 2.561 1.948 2.376 2.067 2.223 2.221 C 2.07 2.374 1.953 2.56 1.881 2.765 C 1.808 2.969 1.782 3.187 1.803 3.403 L 1.803 12.403 C 1.783 12.618 1.811 12.835 1.884 13.038 C 1.957 13.242 2.075 13.426 2.227 13.579 C 2.38 13.732 2.565 13.849 2.768 13.922 C 2.971 13.996 3.188 14.023 3.403 14.003 L 5.903 14.003 C 6.603 14.203 6.603 14.203 6.803 14.903 L 6.803 17.733 L 10.673 14.343 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 2.097 3.097)\"/>"
+    },
+    "More24": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 0 0 L 24 0 L 24 24 L 0 24 L 0 0 Z\" fill=\"currentColor\" fill-rule=\"nonzero\"/><path d=\"M 2 12 C 3.1 12 4 12.9 4 14 C 4 15.1 3.1 16 2 16 C 0.9 16 0 15.1 0 14 C 0 12.9 0.9 12 2 12 Z M 2 10 C 0.9 10 0 9.1 0 8 C 0 6.9 0.9 6 2 6 C 3.1 6 4 6.9 4 8 C 4 9.1 3.1 10 2 10 Z M 2 4 C 0.9 4 0 3.1 0 2 C 0 0.9 0.9 0 2 0 C 3.1 0 4 0.9 4 2 C 4 3.1 3.1 4 2 4 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(0 1 -1 0 20 10)\"/>"
+    },
+    "Music24Solid": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 10.938 4 L 10.938 9.822 C 10.539 9.818 10.112 9.9 9.696 10.077 C 8.425 10.616 7.727 11.837 8.137 12.803 C 8.547 13.769 9.91 14.114 11.18 13.575 C 12.181 13.15 12.827 12.303 12.856 11.49 C 12.908 11.507 12.938 11.512 12.938 11.5 L 12.938 0 L 2.944 2.956 L 2.944 12 C 2.944 12.021 2.945 12.041 2.946 12.062 C 2.575 12.051 2.18 12.113 1.788 12.255 C 0.491 12.727 -0.27 13.909 0.089 14.896 C 0.448 15.882 1.79 16.298 3.088 15.826 C 4.259 15.4 4.993 14.396 4.861 13.479 C 4.91 13.493 4.938 13.5 4.938 13.5 L 4.938 6 L 10.938 4 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 6 4)\"/>"
+    },
+    "News24Solid": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 4.002 14 L 0.991 14 C 0.45 14 0 13.554 0 13.005 L 0 4 L 2 4 L 2 10.497 C 2 10.767 2.223 11 2.499 11 L 3 11 L 3 1.007 C 3 0.451 3.456 0 4.002 0 L 13.998 0 C 14.551 0 15 0.45 15 1.007 L 15 12.502 C 15 13.329 14.32 14 13.504 14 L 4.002 14 Z M 6 6.51 L 6 3.49 C 6 3.22 6.228 3 6.491 3 L 11.509 3 C 11.78 3 12 3.215 12 3.49 L 12 6.51 C 12 6.78 11.772 7 11.509 7 L 6.491 7 C 6.22 7 6 6.785 6 6.51 Z M 6 8.5 C 6 8.768 6.22 9 6.491 9 L 11.509 9 C 11.772 9 12 8.776 12 8.5 C 12 8.232 11.78 8 11.509 8 L 6.491 8 C 6.228 8 6 8.224 6 8.5 Z M 6.49 11 C 6.22 11 6 10.768 6 10.5 C 6 10.224 6.215 10 6.49 10 L 9.51 10 C 9.78 10 10 10.232 10 10.5 C 10 10.776 9.785 11 9.51 11 L 6.49 11 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 4 5)\"/>"
+    },
+    "Notification24": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 0 0 L 24 0 L 24 24 L 0 24 L 0 0 Z\" fill=\"currentColor\" fill-rule=\"nonzero\"/><path d=\"M 13.592 9.498 L 13.592 7.272 C 13.592 3.799 11.905 1.8 9 1.8 C 6.094 1.8 4.408 3.799 4.408 7.272 L 4.408 9.498 C 4.408 10.333 4.003 10.931 3.138 11.782 C 3.058 11.861 2.985 11.93 2.836 12.074 C 1.977 12.902 1.751 13.253 1.832 13.559 C 1.931 13.931 2.11 14.007 2.904 13.998 C 2.969 13.998 3.019 13.997 3.14 13.994 C 3.326 13.99 3.406 13.989 3.51 13.989 L 14.49 13.989 C 14.597 13.989 14.678 13.99 14.869 13.995 C 14.983 13.997 15.031 13.998 15.092 13.999 C 15.891 14.01 16.067 13.936 16.167 13.558 C 16.248 13.253 16.023 12.903 15.163 12.074 C 15.015 11.932 14.944 11.863 14.864 11.784 C 13.996 10.931 13.592 10.333 13.592 9.498 L 13.592 9.498 Z M 12.807 15.789 C 12.452 17.678 10.962 18.9 8.996 18.9 C 7.026 18.9 5.537 17.683 5.185 15.789 L 3.51 15.789 C 3.423 15.789 3.351 15.79 3.178 15.794 C 3.055 15.796 2.997 15.798 2.925 15.798 C 1.404 15.816 0.466 15.417 0.096 14.02 C -0.224 12.808 0.25 12.069 1.592 10.776 C 1.74 10.634 1.806 10.569 1.88 10.497 C 2.41 9.976 2.612 9.678 2.612 9.498 L 2.612 7.272 C 2.612 2.865 5.03 0 9 0 C 12.97 0 15.388 2.865 15.388 7.272 L 15.388 9.498 C 15.388 9.678 15.59 9.976 16.121 10.499 C 16.195 10.571 16.261 10.635 16.408 10.777 C 17.751 12.071 18.225 12.809 17.903 14.022 C 17.529 15.424 16.594 15.82 15.067 15.799 C 14.999 15.798 14.945 15.797 14.828 15.794 C 14.651 15.79 14.578 15.789 14.49 15.789 L 12.807 15.789 Z M 8.996 17.1 C 9.962 17.1 10.668 16.632 10.953 15.8 L 7.038 15.8 C 7.321 16.634 8.026 17.1 8.996 17.1 L 8.996 17.1 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 3 3.100)\"/>"
+    },
+    "Pay24Solid": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 8 16 C 3.582 16 0 12.418 0 8 C 0 3.582 3.582 0 8 0 C 12.418 0 16 3.582 16 8 C 16 12.418 12.418 16 8 16 Z M 9 10.5 C 9 10.776 8.776 11 8.5 11 L 7 11 L 7 11.487 C 7 11.765 6.777 11.99 6.5 11.994 C 6.227 11.997 6.003 11.779 6 11.506 L 6 11.5 L 6 11.012 L 5.5 11.006 C 5.223 11.003 5 10.777 5 10.5 C 5 10.227 5.221 10.006 5.494 10.006 L 5.5 10.006 L 6 10.012 L 6 9 L 5.5 8.994 C 5.223 8.99 5 8.765 5 8.488 C 5 8.215 5.221 7.994 5.494 7.994 L 5.5 7.994 L 6 8 L 6 4.512 C 6 4.236 6.224 4.012 6.5 4.012 L 8.5 4.012 C 10.231 4.012 11.5 5 11.5 6.5 C 11.5 8 10.25 9 8.5 9 L 7 9 L 7 10 L 8.5 10 C 8.776 10 9 10.224 9 10.5 Z M 7 5 L 8.5 5 C 10 5 10.5 5.75 10.5 6.499 C 10.5 7.248 10 7.998 8.5 7.998 L 7 7.998 L 7 5 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 4 4)\"/>"
+    },
+    "Phone24": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 4.707 6.495 L 4.071 5.858 L 3.645 6.283 L 3.875 6.838 L 4.707 6.495 Z M 6.017 8.189 L 6.653 7.553 L 6.653 7.552 L 6.017 8.189 Z M 7.709 9.499 L 7.362 10.33 L 7.919 10.562 L 8.346 10.135 L 7.709 9.499 Z M 8.192 9.015 L 7.555 8.379 L 7.555 8.379 L 8.192 9.015 Z M 12.555 8.773 L 13.135 8.085 L 13.134 8.084 L 12.555 8.773 Z M 13.293 9.395 L 12.713 10.083 L 12.713 10.084 L 13.293 9.395 Z M 13.551 13.121 L 14.233 13.708 L 14.236 13.705 L 13.551 13.121 Z M 11.599 14.142 L 11.506 13.247 L 11.492 13.248 L 11.478 13.25 L 11.599 14.142 Z M 3.647 10.558 L 4.283 9.922 L 4.283 9.922 L 3.647 10.558 Z M 0.057 2.655 L 0.949 2.776 L 0.951 2.756 L 0.953 2.736 L 0.057 2.655 Z M 0.203 1.958 L -0.649 1.667 L -0.65 1.67 L 0.203 1.958 Z M 1.09 0.648 L 0.506 -0.037 L 0.503 -0.035 L 1.09 0.648 Z M 4.81 0.911 L 5.499 0.332 L 5.498 0.332 L 4.81 0.911 Z M 5.43 1.649 L 4.741 2.228 L 4.742 2.229 L 5.43 1.649 Z M 5.19 6.013 L 5.825 6.65 L 5.826 6.649 L 5.19 6.013 Z M 3.875 6.838 C 4.118 7.428 4.658 8.104 5.381 8.826 L 6.653 7.552 C 5.963 6.864 5.639 6.396 5.539 6.152 L 3.875 6.838 Z M 5.38 8.825 C 6.1 9.545 6.775 10.085 7.362 10.33 L 8.055 8.668 C 7.808 8.565 7.339 8.239 6.653 7.553 L 5.38 8.825 Z M 8.346 10.135 L 8.829 9.651 L 7.555 8.379 L 7.072 8.863 L 8.346 10.135 Z M 8.828 9.651 C 9.711 8.769 11.08 8.709 11.975 9.462 L 13.134 8.084 C 11.49 6.702 9.067 6.867 7.555 8.379 L 8.828 9.651 Z M 11.975 9.461 L 12.713 10.083 L 13.873 8.707 L 13.135 8.085 L 11.975 9.461 Z M 12.713 10.084 C 13.421 10.679 13.518 11.772 12.865 12.537 L 14.236 13.705 C 15.502 12.218 15.383 9.977 13.872 8.706 L 12.713 10.084 Z M 12.868 12.534 C 12.522 12.937 12.034 13.192 11.506 13.247 L 11.691 15.037 C 12.677 14.935 13.587 14.459 14.233 13.708 L 12.868 12.534 Z M 11.478 13.25 C 9.283 13.546 6.898 12.537 4.283 9.922 L 3.01 11.194 C 5.814 13.999 8.729 15.438 11.719 15.034 L 11.478 13.25 Z M 4.283 9.922 C 1.667 7.305 0.659 4.92 0.949 2.776 L -0.835 2.534 C -1.233 5.48 0.211 8.395 3.01 11.194 L 4.283 9.922 Z M 0.953 2.736 C 0.969 2.562 1.003 2.402 1.055 2.246 L -0.65 1.67 C -0.749 1.964 -0.811 2.262 -0.84 2.574 L 0.953 2.736 Z M 1.054 2.249 C 1.176 1.893 1.391 1.576 1.676 1.331 L 0.503 -0.035 C -0.026 0.42 -0.424 1.007 -0.649 1.667 L 1.054 2.249 Z M 1.673 1.333 C 2.431 0.687 3.526 0.783 4.121 1.49 L 5.498 0.332 C 4.23 -1.177 1.988 -1.299 0.506 -0.037 L 1.673 1.333 Z M 4.121 1.49 L 4.741 2.228 L 6.119 1.07 L 5.499 0.332 L 4.121 1.49 Z M 4.742 2.229 C 5.496 3.124 5.437 4.493 4.553 5.377 L 5.826 6.649 C 7.339 5.137 7.503 2.712 6.118 1.069 L 4.742 2.229 Z M 4.554 5.376 L 4.071 5.858 L 5.342 7.132 L 5.825 6.65 L 4.554 5.376 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 4.896 4.900)\"/>"
+    },
+    "Photos24Solid": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 14.497 2.076 C 15.35 2.076 16.096 2.84 15.99 3.714 L 15.99 11.361 C 15.99 12.235 15.244 13 14.391 13 L 1.599 13 C 0.746 13 0 12.235 0 11.361 L 0 3.933 C 0 3.059 0.746 2.076 1.599 2.076 L 2.985 2.076 C 3.305 2.076 3.518 1.857 3.624 1.639 L 4.157 0.437 C 4.264 0.218 4.584 0 4.797 0 L 11.299 0 C 11.619 0 11.832 0.218 11.939 0.437 L 12.472 1.639 C 12.579 1.857 12.898 2.076 13.112 2.076 L 14.497 2.076 Z M 12 7 C 12 9.171 10.171 11 8 11 C 5.829 11 4 9.171 4 7 C 4 4.829 5.829 3 8 3 C 10.171 3 12 4.829 12 7 Z M 8 4.5 C 9.413 4.5 10.5 5.587 10.5 7 C 10.5 8.413 9.413 9.5 8 9.5 C 6.587 9.5 5.5 8.413 5.5 7 C 5.5 5.587 6.587 4.5 8 4.5 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 4 5)\"/>"
+    },
+    "PlayerBack24Solid": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 2 5.625 L 2 9.49 C 2 9.772 1.774 10 1.495 10 L 0.505 10 C 0.214 10 0 9.772 0 9.49 L 0 0.51 C 0 0.228 0.226 0 0.505 0 L 1.495 0 C 1.786 0 2 0.228 2 0.51 L 2 4.375 L 8.57 0.269 C 8.807 0.12 9 0.228 9 0.51 L 9 9.49 C 9 9.772 8.802 9.876 8.57 9.731 L 2 5.625 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 9 7)\"/>"
+    },
+    "PlayerNext24Solid": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 0 0 L 24 0 L 24 24 L 0 24 L 0 0 Z\" fill=\"currentColor\" fill-rule=\"nonzero\"/><path d=\"M 7 5.625 L 7 9.49 C 7 9.772 7.226 10 7.505 10 L 8.495 10 C 8.786 10 9 9.772 9 9.49 L 9 0.51 C 9 0.228 8.774 0 8.495 0 L 7.505 0 C 7.214 0 7 0.228 7 0.51 L 7 4.375 L 0.43 0.269 C 0.193 0.12 0 0.228 0 0.51 L 0 9.49 C 0 9.772 0.198 9.876 0.43 9.731 L 7 5.625 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 6 7)\"/>"
+    },
+    "PlayerPlay24Solid": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 0 14.591 C 0 15.144 0.372 15.344 0.825 15.042 L 11.175 8.142 C 11.631 7.838 11.628 7.344 11.175 7.042 L 0.825 0.142 C 0.369 -0.162 0 0.037 0 0.593 L 0 14.591 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 7 4.408)\"/>"
+    },
+    "Point24": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 8.545 17.006 L 9.25 17.565 L 9.25 17.565 L 8.545 17.006 Z M 5.255 17.006 L 4.55 17.565 L 4.55 17.565 L 5.255 17.006 Z M 4.85 4.849 L 5.486 5.486 L 5.486 5.486 L 4.85 4.849 Z M 9.801 6.901 L 10.701 6.901 L 9.801 6.901 Z M 0.9 6.634 C 0.9 3.381 3.412 0.9 6.9 0.9 L 6.9 -0.9 C 2.482 -0.9 -0.9 2.325 -0.9 6.634 L 0.9 6.634 Z M 6.9 0.9 C 10.388 0.9 12.9 3.381 12.9 6.634 L 14.7 6.634 C 14.7 2.325 11.318 -0.9 6.9 -0.9 L 6.9 0.9 Z M 12.9 6.634 C 12.9 7.712 12.524 9.059 11.68 10.718 C 10.839 12.37 9.564 14.273 7.84 16.447 L 9.25 17.565 C 11.017 15.339 12.369 13.332 13.284 11.535 C 14.194 9.746 14.7 8.107 14.7 6.634 L 12.9 6.634 Z M 7.84 16.447 C 7.728 16.588 7.585 16.703 7.422 16.781 L 8.205 18.402 C 8.612 18.205 8.969 17.919 9.25 17.565 L 7.84 16.447 Z M 7.422 16.781 C 7.259 16.86 7.081 16.901 6.9 16.901 L 6.9 18.701 C 7.352 18.701 7.798 18.599 8.205 18.402 L 7.422 16.781 Z M 6.9 16.901 C 6.719 16.901 6.541 16.86 6.378 16.781 L 5.595 18.402 C 6.002 18.599 6.448 18.701 6.9 18.701 L 6.9 16.901 Z M 6.378 16.781 C 6.215 16.703 6.072 16.588 5.96 16.447 L 4.55 17.565 C 4.831 17.919 5.188 18.205 5.595 18.402 L 6.378 16.781 Z M 5.96 16.447 C 4.236 14.273 2.961 12.37 2.121 10.719 C 1.276 9.06 0.9 7.712 0.9 6.634 L -0.9 6.634 C -0.9 8.108 -0.394 9.746 0.517 11.535 C 1.431 13.332 2.784 15.339 4.55 17.565 L 5.96 16.447 Z M 4.9 6.9 C 4.9 6.37 5.111 5.861 5.486 5.486 L 4.214 4.213 C 3.501 4.925 3.1 5.892 3.1 6.9 L 4.9 6.9 Z M 5.486 5.486 C 5.672 5.3 5.893 5.153 6.135 5.052 L 5.447 3.389 C 4.986 3.58 4.567 3.86 4.214 4.213 L 5.486 5.486 Z M 6.135 5.052 C 6.378 4.952 6.638 4.9 6.901 4.9 L 6.901 3.1 C 6.402 3.1 5.908 3.198 5.447 3.389 L 6.135 5.052 Z M 6.901 4.9 C 7.164 4.9 7.424 4.952 7.666 5.052 L 8.355 3.39 C 7.894 3.198 7.4 3.1 6.901 3.1 L 6.901 4.9 Z M 7.666 5.052 C 7.909 5.153 8.13 5.3 8.315 5.486 L 9.588 4.214 C 9.235 3.861 8.817 3.581 8.355 3.39 L 7.666 5.052 Z M 8.315 5.486 C 8.501 5.672 8.648 5.893 8.749 6.135 L 10.412 5.447 C 10.221 4.986 9.941 4.567 9.588 4.214 L 8.315 5.486 Z M 8.749 6.135 C 8.849 6.378 8.901 6.638 8.901 6.901 L 10.701 6.901 C 10.701 6.402 10.603 5.908 10.412 5.447 L 8.749 6.135 Z M 8.901 6.901 C 8.901 7.431 8.69 7.94 8.315 8.315 L 9.587 9.588 C 10.3 8.876 10.701 7.909 10.701 6.901 L 8.901 6.901 Z M 8.315 8.315 C 7.94 8.69 7.431 8.901 6.9 8.901 L 6.9 10.701 C 7.908 10.701 8.875 10.301 9.587 9.588 L 8.315 8.315 Z M 6.9 8.901 C 6.37 8.901 5.861 8.69 5.486 8.315 L 4.213 9.587 C 4.925 10.3 5.892 10.701 6.9 10.701 L 6.9 8.901 Z M 5.486 8.315 C 5.111 7.94 4.9 7.431 4.9 6.9 L 3.1 6.9 C 3.1 7.908 3.5 8.875 4.213 9.587 L 5.486 8.315 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 5.100 2.900)\"/>"
+    },
+    "Search16": {
+      viewBox: "0 0 16 16",
+      body: "<path d=\"M 9.959 8.721 L 13.619 12.381 C 13.96 12.723 13.96 13.277 13.619 13.619 C 13.277 13.96 12.723 13.96 12.381 13.619 L 8.721 9.959 C 7.816 10.614 6.703 11 5.5 11 C 2.462 11 0 8.538 0 5.5 C 0 2.462 2.462 0 5.5 0 C 8.538 0 11 2.462 11 5.5 C 11 6.703 10.614 7.816 9.959 8.721 Z M 5.5 9.25 C 7.571 9.25 9.25 7.571 9.25 5.5 C 9.25 3.429 7.571 1.75 5.5 1.75 C 3.429 1.75 1.75 3.429 1.75 5.5 C 1.75 7.571 3.429 9.25 5.5 9.25 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 1 1)\"/>"
+    },
+    "Share24": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 0 0 L 24 0 L 24 24 L 0 24 L 0 0 Z\" fill=\"currentColor\" fill-rule=\"nonzero\"/><path d=\"M 9.869 4.008 C 15.141 4.305 18.512 7.266 19.811 12.737 C 19.905 13.131 19.776 13.544 19.476 13.815 C 19.022 14.226 18.321 14.19 17.91 13.736 C 16.553 12.234 13.879 11.39 9.869 11.282 L 9.869 14.118 C 9.869 14.42 9.76 14.711 9.561 14.938 C 9.108 15.458 8.32 15.511 7.801 15.058 L 0.427 8.623 C 0.365 8.566 0.365 8.566 0.308 8.503 C -0.145 7.984 -0.092 7.196 0.427 6.743 L 7.801 0.308 C 8.028 0.109 8.32 0 8.621 0 C 9.31 0 9.869 0.559 9.869 1.248 L 9.869 4.008 Z M 19.246 12.529 L 19.849 13.197 L 19.181 13.8 L 18.578 13.133 L 19.246 12.529 C 18.99 12.246 18.552 12.224 18.269 12.48 C 18.082 12.649 18.001 12.907 18.06 13.153 C 17.884 12.411 17.668 11.727 17.412 11.099 C 18.134 11.5 18.746 11.976 19.246 12.529 L 19.246 12.529 Z M 8.969 5.783 L 8.069 5.783 L 8.069 2.463 L 2.088 7.683 L 8.069 12.903 L 8.069 9.47 L 8.969 9.47 C 12.613 9.47 15.43 10 17.412 11.099 C 15.952 7.518 13.179 5.783 8.969 5.783 L 8.969 5.783 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(-1 0 0 1 21.977 4.617)\"/>"
+    },
+    "TablerIconAddressBook": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 5 2 C 4.735 2 4.48 2.105 4.293 2.293 C 4.105 2.48 4 2.735 4 3 L 4 4 C 4.552 4 5 4.448 5 5 C 5 5.552 4.552 6 4 6 L 4 8 C 4.552 8 5 8.448 5 9 C 5 9.552 4.552 10 4 10 L 4 12 C 4.552 12 5 12.448 5 13 C 5 13.552 4.552 14 4 14 L 4 15 C 4 15.265 4.105 15.52 4.293 15.707 C 4.48 15.895 4.735 16 5 16 L 15 16 C 15.265 16 15.52 15.895 15.707 15.707 C 15.895 15.52 16 15.265 16 15 L 16 3 C 16 2.735 15.895 2.48 15.707 2.293 C 15.52 2.105 15.265 2 15 2 L 5 2 Z M 2 14 L 2 15 C 2 15.796 2.316 16.559 2.879 17.121 C 3.441 17.684 4.204 18 5 18 L 15 18 C 15.796 18 16.559 17.684 17.121 17.121 C 17.684 16.559 18 15.796 18 15 L 18 3 C 18 2.204 17.684 1.441 17.121 0.879 C 16.559 0.316 15.796 0 15 0 L 5 0 C 4.204 0 3.441 0.316 2.879 0.879 C 2.316 1.441 2 2.204 2 3 L 2 4 L 1 4 C 0.448 4 0 4.448 0 5 C 0 5.552 0.448 6 1 6 L 2 6 L 2 8 L 1 8 C 0.448 8 0 8.448 0 9 C 0 9.552 0.448 10 1 10 L 2 10 L 2 12 L 1 12 C 0.448 12 0 12.448 0 13 C 0 13.552 0.448 14 1 14 L 2 14 Z M 7.879 5.879 C 8.441 5.316 9.204 5 10 5 C 10.796 5 11.559 5.316 12.121 5.879 C 12.684 6.441 13 7.204 13 8 C 13 8.796 12.684 9.559 12.121 10.121 C 11.559 10.684 10.796 11 10 11 C 9.204 11 8.441 10.684 7.879 10.121 C 7.316 9.559 7 8.796 7 8 C 7 7.204 7.316 6.441 7.879 5.879 Z M 10 7 C 9.735 7 9.48 7.105 9.293 7.293 C 9.105 7.48 9 7.735 9 8 C 9 8.265 9.105 8.52 9.293 8.707 C 9.48 8.895 9.735 9 10 9 C 10.265 9 10.52 8.895 10.707 8.707 C 10.895 8.52 11 8.265 11 8 C 11 7.735 10.895 7.48 10.707 7.293 C 10.52 7.105 10.265 7 10 7 Z M 6 13 C 6 12.448 6.448 12 7 12 L 13 12 C 13.552 12 14 12.448 14 13 C 14 13.552 13.552 14 13 14 L 7 14 C 6.448 14 6 13.552 6 13 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 3 3)\"/>"
+    },
+    "TablerIconBrandInstagram": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 5 2 C 4.204 2 3.441 2.316 2.879 2.879 C 2.316 3.441 2 4.204 2 5 L 2 13 C 2 13.796 2.316 14.559 2.879 15.121 C 3.441 15.684 4.204 16 5 16 L 13 16 C 13.796 16 14.559 15.684 15.121 15.121 C 15.684 14.559 16 13.796 16 13 L 16 5 C 16 4.204 15.684 3.441 15.121 2.879 C 14.559 2.316 13.796 2 13 2 L 5 2 Z M 1.464 1.464 C 2.402 0.527 3.674 0 5 0 L 13 0 C 14.326 0 15.598 0.527 16.536 1.464 C 17.473 2.402 18 3.674 18 5 L 18 13 C 18 14.326 17.473 15.598 16.536 16.536 C 15.598 17.473 14.326 18 13 18 L 5 18 C 3.674 18 2.402 17.473 1.464 16.536 C 0.527 15.598 0 14.326 0 13 L 0 5 C 0 3.674 0.527 2.402 1.464 1.464 Z M 13.5 3.5 C 14.052 3.5 14.5 3.948 14.5 4.5 L 14.5 4.51 C 14.5 5.062 14.052 5.51 13.5 5.51 C 12.948 5.51 12.5 5.062 12.5 4.51 L 12.5 4.5 C 12.5 3.948 12.948 3.5 13.5 3.5 Z M 6.172 6.172 C 6.922 5.421 7.939 5 9 5 C 10.061 5 11.078 5.421 11.828 6.172 C 12.579 6.922 13 7.939 13 9 C 13 10.061 12.579 11.078 11.828 11.828 C 11.078 12.579 10.061 13 9 13 C 7.939 13 6.922 12.579 6.172 11.828 C 5.421 11.078 5 10.061 5 9 C 5 7.939 5.421 6.922 6.172 6.172 Z M 9 7 C 8.47 7 7.961 7.211 7.586 7.586 C 7.211 7.961 7 8.47 7 9 C 7 9.53 7.211 10.039 7.586 10.414 C 7.961 10.789 8.47 11 9 11 C 9.53 11 10.039 10.789 10.414 10.414 C 10.789 10.039 11 9.53 11 9 C 11 8.47 10.789 7.961 10.414 7.586 C 10.039 7.211 9.53 7 9 7 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 3 3)\"/>"
+    },
+    "TablerIconBrandSpotify": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 6.173 0.761 C 7.386 0.259 8.687 0 10 0 C 11.313 0 12.614 0.259 13.827 0.761 C 15.04 1.264 16.142 2 17.071 2.929 C 18 3.858 18.736 4.96 19.239 6.173 C 19.741 7.386 20 8.687 20 10 C 20 11.313 19.741 12.614 19.239 13.827 C 18.736 15.04 18 16.142 17.071 17.071 C 16.142 18 15.04 18.736 13.827 19.239 C 12.614 19.741 11.313 20 10 20 C 8.687 20 7.386 19.741 6.173 19.239 C 4.96 18.736 3.858 18 2.929 17.071 C 2 16.142 1.264 15.04 0.761 13.827 C 0.259 12.614 0 11.313 0 10 C 0 8.687 0.259 7.386 0.761 6.173 C 1.264 4.96 2 3.858 2.929 2.929 C 3.858 2 4.96 1.264 6.173 0.761 Z M 10 2 C 8.949 2 7.909 2.207 6.939 2.609 C 5.968 3.011 5.086 3.6 4.343 4.343 C 3.6 5.086 3.011 5.968 2.609 6.939 C 2.207 7.909 2 8.949 2 10 C 2 11.051 2.207 12.091 2.609 13.061 C 3.011 14.032 3.6 14.914 4.343 15.657 C 5.086 16.4 5.968 16.989 6.939 17.391 C 7.909 17.793 8.949 18 10 18 C 11.051 18 12.091 17.793 13.061 17.391 C 14.032 16.989 14.914 16.4 15.657 15.657 C 16.4 14.914 16.989 14.032 17.391 13.061 C 17.793 12.091 18 11.051 18 10 C 18 8.949 17.793 7.909 17.391 6.939 C 16.989 5.968 16.4 5.086 15.657 4.343 C 14.914 3.6 14.032 3.011 13.061 2.609 C 12.091 2.207 11.051 2 10 2 Z M 14.47 8.348 C 10.865 6.095 7.258 6.989 5.447 7.894 C 4.953 8.141 4.353 7.941 4.106 7.447 C 3.859 6.953 4.059 6.353 4.553 6.106 C 6.742 5.011 11.135 3.905 15.53 6.652 C 15.998 6.945 16.141 7.562 15.848 8.03 C 15.555 8.498 14.938 8.641 14.47 8.348 Z M 12.9 11.3 C 11.167 10 8.604 9.599 6.508 10.834 C 6.032 11.115 5.419 10.956 5.138 10.481 C 4.858 10.005 5.017 9.392 5.492 9.111 C 8.396 7.4 11.833 7.999 14.1 9.7 C 14.542 10.031 14.631 10.658 14.3 11.1 C 13.969 11.542 13.342 11.631 12.9 11.3 Z M 9.621 13.31 C 8.886 13.261 8.108 13.463 7.555 13.832 C 7.095 14.138 6.474 14.014 6.168 13.555 C 5.862 13.095 5.986 12.474 6.445 12.168 C 7.392 11.537 8.614 11.239 9.754 11.315 C 10.892 11.391 12.107 11.857 12.832 12.945 C 13.138 13.405 13.014 14.026 12.555 14.332 C 12.095 14.638 11.474 14.514 11.168 14.055 C 10.893 13.642 10.358 13.359 9.621 13.31 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 2 2)\"/>"
+    },
+    "TablerIconBrandTelegram": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 19.661 0.25 C 19.942 0.497 20.061 0.88 19.97 1.243 L 15.97 17.243 C 15.883 17.592 15.614 17.868 15.267 17.964 C 14.92 18.06 14.548 17.962 14.293 17.707 L 10.108 13.522 L 7.8 16.6 C 7.577 16.898 7.207 17.047 6.84 16.987 C 6.473 16.928 6.169 16.669 6.051 16.316 L 4.182 10.709 L 0.553 8.894 C 0.199 8.718 -0.017 8.349 0.001 7.954 C 0.019 7.559 0.269 7.211 0.638 7.068 L 18.638 0.068 C 18.986 -0.067 19.381 0.003 19.661 0.25 Z M 10.719 11.305 C 10.712 11.297 10.704 11.29 10.697 11.282 L 10.414 11 L 13.707 7.707 C 14.098 7.317 14.098 6.683 13.707 6.293 C 13.317 5.902 12.683 5.902 12.293 6.293 L 8.293 10.293 C 7.902 10.683 7.902 11.317 8.293 11.707 L 8.68 12.094 L 7.345 13.873 L 5.949 9.684 C 5.865 9.432 5.684 9.224 5.447 9.106 L 3.465 8.114 L 17.561 2.633 L 14.458 15.044 L 10.719 11.305 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 2 3)\"/>"
+    },
+    "TablerIconBrandTiktok": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 9 1 C 9 0.448 9.448 0 10 0 L 14.083 0 C 14.571 0 14.987 0.352 15.069 0.833 C 15.242 1.857 15.73 2.801 16.464 3.536 C 17.199 4.27 18.143 4.758 19.167 4.931 C 19.648 5.013 20 5.429 20 5.917 L 20 9.951 C 20 10.233 19.881 10.503 19.671 10.692 C 19.462 10.882 19.182 10.974 18.901 10.946 C 17.535 10.811 16.213 10.42 15 9.8 L 15 12.5 C 15 13.909 14.602 15.29 13.854 16.483 C 13.105 17.677 12.036 18.636 10.767 19.249 C 9.499 19.863 8.084 20.107 6.683 19.954 C 5.282 19.8 3.953 19.255 2.848 18.382 C 1.743 17.508 0.906 16.34 0.434 15.012 C -0.038 13.685 -0.127 12.251 0.178 10.876 C 0.483 9.5 1.169 8.238 2.158 7.235 C 3.147 6.231 4.398 5.526 5.769 5.201 C 6.067 5.13 6.38 5.2 6.62 5.39 C 6.86 5.579 7 5.868 7 6.174 L 7 10.5 C 7 10.815 6.852 11.111 6.6 11.3 C 6.395 11.453 6.234 11.657 6.13 11.89 C 6.026 12.124 5.983 12.38 6.006 12.635 C 6.029 12.889 6.117 13.134 6.261 13.345 C 6.405 13.556 6.6 13.727 6.829 13.842 C 7.058 13.956 7.312 14.01 7.567 13.998 C 7.823 13.987 8.071 13.91 8.289 13.776 C 8.506 13.642 8.686 13.454 8.81 13.23 C 8.935 13.007 9 12.756 9 12.5 L 9 1 Z M 11 2 L 11 12.5 C 11 13.097 10.847 13.683 10.557 14.204 C 10.266 14.725 9.848 15.164 9.34 15.477 C 8.833 15.791 8.253 15.97 7.657 15.996 C 7.061 16.023 6.468 15.897 5.935 15.63 C 5.401 15.364 4.945 14.965 4.608 14.472 C 4.272 13.979 4.068 13.409 4.014 12.814 C 3.961 12.22 4.06 11.622 4.302 11.077 C 4.472 10.695 4.709 10.347 5 10.051 L 5 7.6 C 4.477 7.866 3.998 8.216 3.582 8.638 C 2.857 9.374 2.354 10.3 2.13 11.308 C 1.907 12.317 1.972 13.369 2.318 14.342 C 2.665 15.316 3.278 16.172 4.089 16.813 C 4.899 17.454 5.874 17.853 6.901 17.966 C 7.928 18.078 8.966 17.899 9.896 17.449 C 10.826 16.999 11.611 16.296 12.16 15.421 C 12.708 14.545 13 13.533 13 12.5 C 13 12.5 13 12.5 13 12.5 L 13 8 C 13 7.621 13.214 7.274 13.554 7.105 C 13.893 6.936 14.298 6.973 14.601 7.201 C 15.614 7.963 16.773 8.499 18 8.777 L 18 6.709 C 16.89 6.378 15.875 5.775 15.05 4.95 C 14.225 4.125 13.622 3.11 13.291 2 L 11 2 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 2 2)\"/>"
+    },
+    "TablerIconBrandVk": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 0 1 C 0 0.448 0.448 0 1 0 L 5 0 C 5.552 0 6 0.448 6 1 L 6 6 C 6 6.796 6.316 7.559 6.879 8.121 C 7.198 8.441 7.582 8.681 8 8.828 L 8 1 C 8 0.448 8.448 0 9 0 L 13 0 C 13.552 0 14 0.448 14 1 L 14 4.186 C 14.421 3.983 14.801 3.697 15.116 3.341 C 15.686 2.696 16 1.865 16 1.004 C 16 0.452 16.448 0.004 17 0.004 L 21 0.004 C 21.3 0.004 21.583 0.138 21.773 0.37 C 21.963 0.602 22.039 0.906 21.981 1.2 L 21.639 2.911 L 21.639 2.911 C 21.404 4.085 20.904 5.189 20.178 6.14 C 19.824 6.603 19.421 7.024 18.976 7.396 C 19.389 7.689 19.767 8.03 20.101 8.416 C 20.846 9.275 21.347 10.318 21.55 11.436 L 21.55 11.436 L 21.984 13.825 C 22.037 14.117 21.958 14.417 21.768 14.645 C 21.578 14.872 21.296 15.004 21 15.004 L 17 15.004 C 16.448 15.004 16 14.556 16 14.004 C 16 13.143 15.686 12.312 15.116 11.667 C 14.809 11.319 14.439 11.039 14.03 10.837 L 14.03 14.008 C 14.03 14.319 13.886 14.612 13.639 14.801 C 13.429 14.963 13.164 15.033 12.904 15 L 9 15 C 6.613 15 4.324 14.052 2.636 12.364 C 0.948 10.676 0 8.387 0 6 L 0 1 Z M 12.03 13 L 12.03 9.508 C 12.03 9.221 12.153 8.948 12.368 8.758 C 12.583 8.569 12.869 8.48 13.154 8.516 C 14.492 8.683 15.723 9.333 16.615 10.343 C 17.284 11.101 17.728 12.022 17.909 13.004 L 19.802 13.004 L 19.582 11.794 C 19.582 11.794 19.582 11.794 19.582 11.794 C 19.443 11.028 19.1 10.314 18.591 9.726 C 18.081 9.139 17.422 8.699 16.684 8.453 C 16.3 8.325 16.031 7.978 16.003 7.575 C 15.974 7.171 16.191 6.79 16.553 6.61 C 17.351 6.211 18.047 5.635 18.589 4.926 C 19.13 4.217 19.502 3.394 19.677 2.519 L 19.78 2.004 L 17.909 2.004 C 17.728 2.986 17.284 3.907 16.615 4.665 C 15.723 5.675 14.492 6.325 13.154 6.492 C 13.113 6.497 13.071 6.5 13.03 6.5 L 13 6.5 C 12.448 6.5 12 6.052 12 5.5 L 12 2 L 10 2 L 10 10 C 10 10.265 9.895 10.52 9.707 10.707 C 9.52 10.895 9.265 11 9 11 C 7.674 11 6.402 10.473 5.464 9.536 C 4.527 8.598 4 7.326 4 6 L 4 2 L 2 2 L 2 6 C 2 7.857 2.737 9.637 4.05 10.95 C 5.363 12.263 7.143 13 9 13 L 12.03 13 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 1 5)\"/>"
+    },
+    "TablerIconBrandYoutube": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 5 2 C 4.204 2 3.441 2.316 2.879 2.879 C 2.316 3.441 2 4.204 2 5 L 2 13 C 2 13.796 2.316 14.559 2.879 15.121 C 3.441 15.684 4.204 16 5 16 L 17 16 C 17.796 16 18.559 15.684 19.121 15.121 C 19.684 14.559 20 13.796 20 13 L 20 5 C 20 4.204 19.684 3.441 19.121 2.879 C 18.559 2.316 17.796 2 17 2 L 5 2 Z M 1.464 1.464 C 2.402 0.527 3.674 0 5 0 L 17 0 C 18.326 0 19.598 0.527 20.536 1.464 C 21.473 2.402 22 3.674 22 5 L 22 13 C 22 14.326 21.473 15.598 20.536 16.536 C 19.598 17.473 18.326 18 17 18 L 5 18 C 3.674 18 2.402 17.473 1.464 16.536 C 0.527 15.598 0 14.326 0 13 L 0 5 C 0 3.674 0.527 2.402 1.464 1.464 Z M 8.507 5.13 C 8.821 4.952 9.206 4.957 9.514 5.143 L 14.514 8.143 C 14.816 8.323 15 8.649 15 9 C 15 9.351 14.816 9.677 14.514 9.857 L 9.514 12.857 C 9.206 13.043 8.821 13.048 8.507 12.87 C 8.194 12.693 8 12.36 8 12 L 8 6 C 8 5.64 8.194 5.307 8.507 5.13 Z M 10 7.766 L 10 10.234 L 12.056 9 L 10 7.766 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 1 3)\"/>"
+    },
+    "TablerIconFlame": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 5.617 0.076 C 5.991 -0.079 6.421 0.007 6.707 0.293 C 7.364 0.95 8.188 2.387 8.595 4.023 C 8.936 5.391 9.021 7.042 8.358 8.59 C 8.379 8.585 8.397 8.578 8.413 8.571 C 8.529 8.525 8.739 8.395 9.047 8.051 C 9.352 7.711 9.712 7.209 10.141 6.488 C 10.304 6.215 10.588 6.035 10.905 6.005 C 11.222 5.974 11.535 6.097 11.747 6.335 C 12.32 6.979 12.872 7.957 13.278 8.942 C 13.682 9.921 14 11.046 14 12 C 14 13.857 13.263 15.637 11.95 16.95 C 10.637 18.263 8.857 19 7 19 C 5.143 19 3.363 18.263 2.05 16.95 C 0.737 15.637 0 13.857 0 12 C 0 9.991 0.868 7.757 2.283 6.303 L 2.284 6.302 C 2.316 6.269 2.349 6.236 2.381 6.202 C 3.607 4.946 5 3.519 5 1 C 5 0.596 5.244 0.231 5.617 0.076 Z M 6.47 3.879 C 5.815 5.555 4.688 6.706 3.87 7.541 C 3.817 7.595 3.766 7.647 3.716 7.698 L 3 7 L 3.717 7.697 C 2.68 8.763 2 10.49 2 12 C 2 13.326 2.527 14.598 3.464 15.536 C 4.402 16.473 5.674 17 7 17 C 8.326 17 9.598 16.473 10.536 15.536 C 11.473 14.598 12 13.326 12 12 C 12 11.422 11.79 10.577 11.43 9.704 C 11.298 9.386 11.155 9.083 11.008 8.806 C 10.848 9.02 10.691 9.213 10.536 9.386 C 10.116 9.855 9.664 10.225 9.155 10.429 C 7.996 10.892 7.04 10.331 6.363 9.771 C 5.966 9.442 5.883 8.867 6.171 8.44 C 6.954 7.282 6.991 5.858 6.655 4.507 C 6.601 4.29 6.538 4.08 6.47 3.879 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 5 3)\"/>"
+    },
+    "TablerIconMail": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 3 2 C 2.735 2 2.48 2.105 2.293 2.293 C 2.22 2.366 2.159 2.449 2.112 2.54 L 10 7.798 L 17.888 2.54 C 17.841 2.449 17.78 2.366 17.707 2.293 C 17.52 2.105 17.265 2 17 2 L 3 2 Z M 18 4.869 L 10.555 9.832 C 10.219 10.056 9.781 10.056 9.445 9.832 L 2 4.869 L 2 13 C 2 13.265 2.105 13.52 2.293 13.707 C 2.48 13.895 2.735 14 3 14 L 17 14 C 17.265 14 17.52 13.895 17.707 13.707 C 17.895 13.52 18 13.265 18 13 L 18 4.869 Z M 0.879 0.879 C 1.441 0.316 2.204 0 3 0 L 17 0 C 17.796 0 18.559 0.316 19.121 0.879 C 19.684 1.441 20 2.204 20 3 L 20 13 C 20 13.796 19.684 14.559 19.121 15.121 C 18.559 15.684 17.796 16 17 16 L 3 16 C 2.204 16 1.441 15.684 0.879 15.121 C 0.316 14.559 0 13.796 0 13 L 0 3 C 0 2.204 0.316 1.441 0.879 0.879 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 2 4)\"/>"
+    },
+    "TablerIconMailForward": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 3 2 C 2.735 2 2.48 2.105 2.293 2.293 C 2.22 2.366 2.159 2.449 2.112 2.54 L 10 7.798 L 17.888 2.54 C 17.841 2.449 17.78 2.366 17.707 2.293 C 17.52 2.105 17.265 2 17 2 L 3 2 Z M 18 4.869 L 18 10.5 C 18 11.052 18.448 11.5 19 11.5 C 19.552 11.5 20 11.052 20 10.5 L 20 3 C 20 2.204 19.684 1.441 19.121 0.879 C 18.559 0.316 17.796 0 17 0 L 3 0 C 2.204 0 1.441 0.316 0.879 0.879 C 0.316 1.441 0 2.204 0 3 L 0 13 C 0 13.796 0.316 14.559 0.879 15.121 C 1.441 15.684 2.204 16 3 16 L 10 16 C 10.552 16 11 15.552 11 15 C 11 14.448 10.552 14 10 14 L 3 14 C 2.735 14 2.48 13.895 2.293 13.707 C 2.105 13.52 2 13.265 2 13 L 2 4.869 L 9.445 9.832 C 9.781 10.056 10.219 10.056 10.555 9.832 L 18 4.869 Z M 15.293 11.293 C 15.683 10.902 16.317 10.902 16.707 11.293 L 19.707 14.293 C 20.098 14.683 20.098 15.317 19.707 15.707 L 16.707 18.707 C 16.317 19.098 15.683 19.098 15.293 18.707 C 14.902 18.317 14.902 17.683 15.293 17.293 L 16.586 16 L 13 16 C 12.448 16 12 15.552 12 15 C 12 14.448 12.448 14 13 14 L 16.586 14 L 15.293 12.707 C 14.902 12.317 14.902 11.683 15.293 11.293 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 2 3)\"/>"
+    },
+    "TablerIconMailOpened": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 9.445 0.168 C 9.781 -0.056 10.219 -0.056 10.555 0.168 L 19.555 6.168 C 19.833 6.353 20 6.666 20 7 L 20 17 C 20 17.796 19.684 18.559 19.121 19.121 C 18.559 19.684 17.796 20 17 20 L 3 20 C 2.204 20 1.441 19.684 0.879 19.121 C 0.316 18.559 0 17.796 0 17 L 0 7 C 0 6.666 0.167 6.353 0.445 6.168 L 9.445 0.168 Z M 2 8.869 L 2 14.586 L 5.43 11.155 L 2 8.869 Z M 7.57 10.178 C 7.559 10.171 7.548 10.164 7.538 10.156 L 2.803 7 L 10 2.202 L 17.197 7 L 12.462 10.156 C 12.452 10.164 12.441 10.171 12.43 10.178 L 10 11.798 L 7.57 10.178 Z M 7.127 12.287 L 2.064 17.351 C 2.113 17.483 2.191 17.605 2.293 17.707 C 2.48 17.895 2.735 18 3 18 L 17 18 C 17.265 18 17.52 17.895 17.707 17.707 C 17.809 17.605 17.887 17.483 17.936 17.351 L 12.873 12.287 L 10.555 13.832 C 10.219 14.056 9.781 14.056 9.445 13.832 L 7.127 12.287 Z M 14.57 11.155 L 18 14.586 L 18 8.869 L 14.57 11.155 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 2 2)\"/>"
+    },
+    "TablerIconMusic": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 6 1 C 6 0.448 6.448 0 7 0 L 17 0 C 17.552 0 18 0.448 18 1 L 18 14 C 18 15.061 17.579 16.078 16.828 16.828 C 16.078 17.579 15.061 18 14 18 C 12.939 18 11.922 17.579 11.172 16.828 C 10.421 16.078 10 15.061 10 14 C 10 12.939 10.421 11.922 11.172 11.172 C 11.922 10.421 12.939 10 14 10 C 14.708 10 15.397 10.188 16 10.536 L 16 6 L 8 6 L 8 14 C 8 15.061 7.579 16.078 6.828 16.828 C 6.078 17.579 5.061 18 4 18 C 2.939 18 1.922 17.579 1.172 16.828 C 0.421 16.078 0 15.061 0 14 C 0 12.939 0.421 11.922 1.172 11.172 C 1.922 10.421 2.939 10 4 10 C 4.708 10 5.397 10.188 6 10.536 L 6 1 Z M 8 4 L 16 4 L 16 2 L 8 2 L 8 4 Z M 6 14 C 6 13.47 5.789 12.961 5.414 12.586 C 5.039 12.211 4.53 12 4 12 C 3.47 12 2.961 12.211 2.586 12.586 C 2.211 12.961 2 13.47 2 14 C 2 14.53 2.211 15.039 2.586 15.414 C 2.961 15.789 3.47 16 4 16 C 4.53 16 5.039 15.789 5.414 15.414 C 5.789 15.039 6 14.53 6 14 Z M 16 14 C 16 13.47 15.789 12.961 15.414 12.586 C 15.039 12.211 14.53 12 14 12 C 13.47 12 12.961 12.211 12.586 12.586 C 12.211 12.961 12 13.47 12 14 C 12 14.53 12.211 15.039 12.586 15.414 C 12.961 15.789 13.47 16 14 16 C 14.53 16 15.039 15.789 15.414 15.414 C 15.789 15.039 16 14.53 16 14 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 2 3)\"/>"
+    },
+    "TablerIconNews": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 0.586 0.586 C 0.961 0.211 1.47 0 2 0 L 12 0 C 12.53 0 13.039 0.211 13.414 0.586 C 13.789 0.961 14 1.47 14 2 L 16 2 C 16.53 2 17.039 2.211 17.414 2.586 C 17.789 2.961 18 3.47 18 4 L 18 15 C 18 15.796 17.684 16.559 17.121 17.121 C 16.559 17.684 15.796 18 15 18 L 4 18 C 2.939 18 1.922 17.579 1.172 16.828 C 0.421 16.078 0 15.061 0 14 L 0 2 C 0 1.47 0.211 0.961 0.586 0.586 Z M 12.172 16 L 4 16 C 3.47 16 2.961 15.789 2.586 15.414 C 2.211 15.039 2 14.53 2 14 L 2 2 L 12 2 L 12 15 C 12 15.344 12.059 15.682 12.172 16 Z M 14 4 L 14 15 C 14 15.265 14.105 15.52 14.293 15.707 C 14.48 15.895 14.735 16 15 16 C 15.265 16 15.52 15.895 15.707 15.707 C 15.895 15.52 16 15.265 16 15 L 16 4 L 14 4 Z M 4 5 C 4 4.448 4.448 4 5 4 L 9 4 C 9.552 4 10 4.448 10 5 C 10 5.552 9.552 6 9 6 L 5 6 C 4.448 6 4 5.552 4 5 Z M 4 9 C 4 8.448 4.448 8 5 8 L 9 8 C 9.552 8 10 8.448 10 9 C 10 9.552 9.552 10 9 10 L 5 10 C 4.448 10 4 9.552 4 9 Z M 4 13 C 4 12.448 4.448 12 5 12 L 9 12 C 9.552 12 10 12.448 10 13 C 10 13.552 9.552 14 9 14 L 5 14 C 4.448 14 4 13.552 4 13 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 3 3)\"/>"
+    },
+    "TablerIconPhoneCall": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 12 1 C 12 0.448 12.448 0 13 0 C 14.857 0 16.637 0.737 17.95 2.05 C 19.263 3.363 20 5.143 20 7 C 20 7.552 19.552 8 19 8 C 18.448 8 18 7.552 18 7 C 18 5.674 17.473 4.402 16.536 3.464 C 15.598 2.527 14.326 2 13 2 C 12.448 2 12 1.552 12 1 Z M 3 3 C 2.735 3 2.48 3.105 2.293 3.293 C 2.111 3.474 2.007 3.718 2 3.974 C 2.23 7.618 3.782 11.054 6.364 13.636 C 8.946 16.218 12.382 17.77 16.026 18 C 16.282 17.993 16.526 17.889 16.707 17.707 C 16.895 17.52 17 17.265 17 17 L 17 13.677 L 13.419 12.245 L 12.357 14.014 C 12.09 14.461 11.524 14.627 11.058 14.397 C 8.689 13.229 6.771 11.311 5.603 8.942 C 5.373 8.476 5.539 7.91 5.986 7.643 L 7.755 6.581 L 6.323 3 L 3 3 Z M 0.879 1.879 C 1.441 1.316 2.204 1 3 1 L 7 1 C 7.409 1 7.777 1.249 7.928 1.629 L 9.928 6.629 C 10.111 7.084 9.935 7.605 9.514 7.857 L 7.84 8.862 C 8.664 10.206 9.794 11.336 11.138 12.16 L 12.143 10.486 C 12.395 10.065 12.916 9.889 13.371 10.072 L 18.371 12.072 C 18.751 12.223 19 12.591 19 13 L 19 17 C 19 17.796 18.684 18.559 18.121 19.121 C 17.559 19.684 16.796 20 16 20 C 15.98 20 15.96 19.999 15.939 19.998 C 11.795 19.746 7.886 17.986 4.95 15.05 C 2.014 12.114 0.254 8.205 0.002 4.061 C 0.001 4.04 0 4.02 0 4 C 0 3.204 0.316 2.441 0.879 1.879 Z M 12 5 C 12 4.448 12.448 4 13 4 C 13.796 4 14.559 4.316 15.121 4.879 C 15.684 5.441 16 6.204 16 7 C 16 7.552 15.552 8 15 8 C 14.448 8 14 7.552 14 7 C 14 6.735 13.895 6.48 13.707 6.293 C 13.52 6.105 13.265 6 13 6 C 12.448 6 12 5.552 12 5 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 2 2)\"/>"
+    },
+    "TablerIconPlayerTrackNext": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 0 1.002 L 0 15.002 C 0 15.862 1.012 16.32 1.659 15.755 L 9.659 8.755 C 9.766 8.661 9.852 8.545 9.911 8.415 C 9.97 8.286 10.001 8.145 10.001 8.002 C 10.001 7.859 9.97 7.718 9.911 7.588 C 9.852 7.459 9.766 7.343 9.659 7.249 L 1.659 0.249 C 1.012 -0.316 0 0.143 0 1.002 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 2 3.998)\"/><path d=\"M 11 1.002 L 11 15.002 C 11 15.862 12.012 16.32 12.659 15.755 L 20.659 8.755 C 20.766 8.661 20.852 8.545 20.911 8.415 C 20.97 8.286 21.001 8.145 21.001 8.002 C 21.001 7.859 20.97 7.718 20.911 7.588 C 20.852 7.459 20.766 7.343 20.659 7.249 L 12.659 0.249 C 12.012 -0.316 11 0.143 11 1.002 Z\" fill=\"currentColor\" fill-rule=\"nonzero\" transform=\"matrix(1 0 0 1 2 3.998)\"/>"
+    },
+    "TablerIconPlaylist": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 14 1 C 14 0.448 14.448 0 15 0 L 19 0 C 19.552 0 20 0.448 20 1 C 20 1.552 19.552 2 19 2 L 16 2 L 16 14 C 16 14.525 15.897 15.045 15.696 15.531 C 15.495 16.016 15.2 16.457 14.828 16.828 C 14.457 17.2 14.016 17.494 13.531 17.696 C 13.045 17.897 12.525 18 12 18 C 11.475 18 10.955 17.897 10.469 17.696 C 9.984 17.494 9.543 17.2 9.172 16.828 C 8.8 16.457 8.506 16.016 8.304 15.531 C 8.103 15.045 8 14.525 8 14 C 8 13.475 8.103 12.955 8.304 12.469 C 8.506 11.984 8.8 11.543 9.172 11.172 C 9.543 10.8 9.984 10.505 10.469 10.304 C 10.955 10.103 11.475 10 12 10 C 12.525 10 13.045 10.103 13.531 10.304 C 13.692 10.371 13.849 10.449 14 10.536 L 14 1 Z M 0 2 C 0 1.448 0.448 1 1 1 L 11 1 C 11.552 1 12 1.448 12 2 C 12 2.552 11.552 3 11 3 L 1 3 C 0.448 3 0 2.552 0 2 Z M 0 6 C 0 5.448 0.448 5 1 5 L 11 5 C 11.552 5 12 5.448 12 6 C 12 6.552 11.552 7 11 7 L 1 7 C 0.448 7 0 6.552 0 6 Z M 0 10 C 0 9.448 0.448 9 1 9 L 7 9 C 7.552 9 8 9.448 8 10 C 8 10.552 7.552 11 7 11 L 1 11 C 0.448 11 0 10.552 0 10 Z M 12 12 C 11.737 12 11.477 12.052 11.235 12.152 C 10.992 12.253 10.772 12.4 10.586 12.586 C 10.4 12.772 10.253 12.992 10.152 13.235 C 10.052 13.477 10 13.737 10 14 C 10 14.263 10.052 14.523 10.152 14.765 C 10.253 15.008 10.4 15.228 10.586 15.414 C 10.772 15.6 10.992 15.747 11.235 15.848 C 11.477 15.948 11.737 16 12 16 C 12.263 16 12.523 15.948 12.765 15.848 C 13.008 15.747 13.228 15.6 13.414 15.414 C 13.6 15.228 13.747 15.008 13.848 14.765 C 13.948 14.523 14 14.263 14 14 C 14 13.737 13.948 13.477 13.848 13.235 C 13.747 12.992 13.6 12.772 13.414 12.586 C 13.228 12.4 13.008 12.253 12.765 12.152 C 12.523 12.052 12.263 12 12 12 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 2 3)\"/>"
+    },
+    "TablerIconQuestionMark": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 4.5 2 C 3.791 2 3.137 2.243 2.676 2.638 C 2.219 3.029 2 3.524 2 4 C 2 4.552 1.552 5 1 5 C 0.448 5 0 4.552 0 4 C 0 2.885 0.518 1.853 1.374 1.119 C 2.226 0.39 3.352 0 4.5 0 L 5.5 0 C 6.648 0 7.774 0.39 8.626 1.119 C 9.475 1.847 9.991 2.867 10 3.971 C 10.042 4.828 9.809 5.675 9.333 6.389 C 8.863 7.093 8.182 7.63 7.388 7.923 C 7.027 8.104 6.664 8.46 6.393 9.002 C 6.114 9.56 5.969 10.248 5.999 10.958 C 6.023 11.509 5.594 11.976 5.042 11.999 C 4.491 12.023 4.024 11.594 4.001 11.042 C 3.957 10.02 4.162 8.992 4.605 8.107 C 5.046 7.225 5.721 6.495 6.575 6.095 C 6.606 6.08 6.637 6.068 6.668 6.057 C 7.077 5.913 7.428 5.64 7.669 5.279 C 7.909 4.919 8.026 4.489 8.002 4.057 C 8.001 4.038 8 4.019 8 4 C 8 3.524 7.781 3.029 7.324 2.638 C 6.863 2.243 6.209 2 5.5 2 L 4.5 2 Z M 5 14 C 5.552 14 6 14.448 6 15 L 6 15.01 C 6 15.562 5.552 16.01 5 16.01 C 4.448 16.01 4 15.562 4 15.01 L 4 15 C 4 14.448 4.448 14 5 14 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 7 4)\"/>"
+    },
+    "TablerIconUser": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 3.464 1.464 C 4.402 0.527 5.674 0 7 0 C 8.326 0 9.598 0.527 10.536 1.464 C 11.473 2.402 12 3.674 12 5 C 12 6.326 11.473 7.598 10.536 8.536 C 9.598 9.473 8.326 10 7 10 C 5.674 10 4.402 9.473 3.464 8.536 C 2.527 7.598 2 6.326 2 5 C 2 3.674 2.527 2.402 3.464 1.464 Z M 7 2 C 6.204 2 5.441 2.316 4.879 2.879 C 4.316 3.441 4 4.204 4 5 C 4 5.796 4.316 6.559 4.879 7.121 C 5.441 7.684 6.204 8 7 8 C 7.796 8 8.559 7.684 9.121 7.121 C 9.684 6.559 10 5.796 10 5 C 10 4.204 9.684 3.441 9.121 2.879 C 8.559 2.316 7.796 2 7 2 Z M 5 14 C 4.204 14 3.441 14.316 2.879 14.879 C 2.316 15.441 2 16.204 2 17 L 2 19 C 2 19.552 1.552 20 1 20 C 0.448 20 0 19.552 0 19 L 0 17 C 0 15.674 0.527 14.402 1.464 13.464 C 2.402 12.527 3.674 12 5 12 L 9 12 C 10.326 12 11.598 12.527 12.536 13.464 C 13.473 14.402 14 15.674 14 17 L 14 19 C 14 19.552 13.552 20 13 20 C 12.448 20 12 19.552 12 19 L 12 17 C 12 16.204 11.684 15.441 11.121 14.879 C 10.559 14.316 9.796 14 9 14 L 5 14 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 5 2)\"/>"
+    },
+    "TablerIconUsers": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 3.464 1.464 C 4.402 0.527 5.674 0 7 0 C 8.326 0 9.598 0.527 10.536 1.464 C 11.473 2.402 12 3.674 12 5 C 12 6.326 11.473 7.598 10.536 8.536 C 9.598 9.473 8.326 10 7 10 C 5.674 10 4.402 9.473 3.464 8.536 C 2.527 7.598 2 6.326 2 5 C 2 3.674 2.527 2.402 3.464 1.464 Z M 7 2 C 6.204 2 5.441 2.316 4.879 2.879 C 4.316 3.441 4 4.204 4 5 C 4 5.796 4.316 6.559 4.879 7.121 C 5.441 7.684 6.204 8 7 8 C 7.796 8 8.559 7.684 9.121 7.121 C 9.684 6.559 10 5.796 10 5 C 10 4.204 9.684 3.441 9.121 2.879 C 8.559 2.316 7.796 2 7 2 Z M 13.031 0.882 C 13.168 0.347 13.713 0.024 14.248 0.161 C 15.324 0.437 16.277 1.062 16.958 1.939 C 17.638 2.816 18.008 3.895 18.008 5.005 C 18.008 6.115 17.638 7.194 16.958 8.071 C 16.277 8.948 15.324 9.573 14.248 9.849 C 13.713 9.986 13.168 9.663 13.031 9.128 C 12.894 8.593 13.217 8.048 13.752 7.911 C 14.397 7.746 14.969 7.371 15.378 6.844 C 15.786 6.318 16.008 5.671 16.008 5.005 C 16.008 4.339 15.786 3.692 15.378 3.165 C 14.969 2.639 14.397 2.264 13.752 2.099 C 13.217 1.962 12.894 1.417 13.031 0.882 Z M 5 14 C 4.204 14 3.441 14.316 2.879 14.879 C 2.316 15.441 2 16.204 2 17 L 2 19 C 2 19.552 1.552 20 1 20 C 0.448 20 0 19.552 0 19 L 0 17 C 0 15.674 0.527 14.402 1.464 13.464 C 2.402 12.527 3.674 12 5 12 L 9 12 C 10.326 12 11.598 12.527 12.536 13.464 C 13.473 14.402 14 15.674 14 17 L 14 19 C 14 19.552 13.552 20 13 20 C 12.448 20 12 19.552 12 19 L 12 17 C 12 16.204 11.684 15.441 11.121 14.879 C 10.559 14.316 9.796 14 9 14 L 5 14 Z M 15.032 12.9 C 15.17 12.365 15.715 12.044 16.25 12.182 C 17.319 12.458 18.266 13.079 18.944 13.95 C 19.622 14.82 19.994 15.891 20 16.994 L 20 17 L 20 19 C 20 19.552 19.552 20 19 20 C 18.448 20 18 19.552 18 19 L 18 17.003 C 17.996 16.342 17.773 15.701 17.366 15.179 C 16.959 14.657 16.391 14.284 15.75 14.118 C 15.215 13.98 14.894 13.435 15.032 12.9 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 2 2)\"/>"
+    },
+    "TablerIconVinyl": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 8.15 0.173 C 10.287 -0.23 12.497 0.076 14.444 1.042 C 14.939 1.287 15.141 1.887 14.896 2.382 C 14.65 2.877 14.05 3.079 13.556 2.834 C 11.997 2.06 10.23 1.816 8.52 2.138 C 6.811 2.46 5.253 3.33 4.082 4.617 C 2.912 5.903 2.192 7.537 2.033 9.269 C 1.875 11.001 2.284 12.738 3.201 14.216 C 4.118 15.694 5.491 16.834 7.114 17.461 C 8.736 18.089 10.519 18.17 12.192 17.694 C 13.865 17.217 15.337 16.209 16.385 14.82 C 17.433 13.432 18 11.74 18 10.001 C 18 9.448 18.448 9.001 19 9.001 C 19.552 9.001 20 9.449 20 10.001 C 20 12.175 19.291 14.29 17.981 16.025 C 16.671 17.761 14.831 19.022 12.74 19.617 C 10.648 20.213 8.42 20.111 6.392 19.327 C 4.364 18.542 2.647 17.118 1.501 15.27 C 0.356 13.422 -0.157 11.251 0.042 9.086 C 0.241 6.921 1.14 4.879 2.603 3.271 C 4.066 1.663 6.013 0.575 8.15 0.173 Z M 16.586 0.587 C 16.961 0.211 17.47 0.001 18 0.001 C 18.53 0.001 19.039 0.211 19.414 0.587 C 19.789 0.962 20 1.47 20 2.001 C 20 2.531 19.789 3.04 19.414 3.415 C 19.128 3.701 18.764 3.892 18.372 3.966 L 15.444 12.331 C 15.382 12.508 15.271 12.664 15.125 12.782 L 12.625 14.782 C 12.193 15.127 11.564 15.057 11.219 14.625 C 10.874 14.194 10.944 13.565 11.375 13.22 L 13.651 11.399 L 16.484 3.305 C 16.173 2.944 16 2.481 16 2.001 C 16 1.47 16.211 0.962 16.586 0.587 Z M 8.586 8.587 C 8.961 8.211 9.47 8.001 10 8.001 C 10.53 8.001 11.039 8.211 11.414 8.587 C 11.789 8.962 12 9.47 12 10.001 C 12 10.531 11.789 11.04 11.414 11.415 C 11.039 11.79 10.53 12.001 10 12.001 C 9.47 12.001 8.961 11.79 8.586 11.415 C 8.211 11.04 8 10.531 8 10.001 C 8 9.47 8.211 8.962 8.586 8.587 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 2 1.999)\"/>"
+    },
+    "Text24": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 14.003 0.9 C 14.003 0.662 13.909 0.433 13.74 0.265 C 13.572 0.096 13.344 0.001 13.106 0 L 0.9 0 C 0.661 0 0.432 0.095 0.264 0.264 C 0.095 0.432 0 0.661 0 0.9 C 0 1.139 0.095 1.368 0.264 1.536 C 0.432 1.705 0.661 1.8 0.9 1.8 L 13.106 1.8 C 13.601 1.8 14.003 1.4 14.003 0.9 L 14.003 0.9 Z M 14.003 6 C 14.003 5.762 13.909 5.533 13.74 5.365 C 13.572 5.196 13.344 5.101 13.106 5.1 L 0.9 5.1 C 0.661 5.1 0.432 5.195 0.264 5.364 C 0.095 5.532 0 5.761 0 6 C 0 6.239 0.095 6.468 0.264 6.636 C 0.432 6.805 0.661 6.9 0.9 6.9 L 13.106 6.9 C 13.601 6.9 14.003 6.5 14.003 6 Z M 0.003 11.1 C 0.003 11.597 0.413 12 0.899 12 L 8.107 12 C 8.602 12 9.003 11.6 9.003 11.1 C 9.003 10.603 8.593 10.2 8.107 10.2 L 0.899 10.2 C 0.404 10.2 0.003 10.6 0.003 11.1 L 0.003 11.1 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 4.997 6)\"/>"
+    },
+    "Video24Solid": {
+      viewBox: "0 0 24 24",
+      body: "<path d=\"M 4 14 L 10 14 L 10 12 L 12 12 L 12 14 L 12.993 14 C 13.55 14 14 13.549 14 12.993 L 14 1.007 C 14 0.45 13.549 0 12.993 0 L 12 0 L 12 2 L 10 2 L 10 0 L 4 0 L 4 2 L 2 2 L 2 0 L 1.007 0 C 0.45 0 0 0.451 0 1.007 L 0 12.993 C 0 13.55 0.451 14 1.007 14 L 2 14 L 2 12 L 4 12 L 4 14 Z M 4 10 L 4 8 L 2 8 L 2 10 L 4 10 Z M 4 4 L 4 6 L 2 6 L 2 4 L 4 4 Z M 12 6 L 12 4 L 10 4 L 10 6 L 12 6 Z M 12 8 L 12 10 L 10 10 L 10 8 L 12 8 Z\" fill=\"currentColor\" fill-rule=\"evenodd\" transform=\"matrix(1 0 0 1 5 5)\"/>"
+    },
+    "Views16": {
+      viewBox: "0 0 14 10",
+      body: "<path d=\"M 7 10 C 2.8 10 0 6 0 5 C 0 4 2.8 0 7 0 C 11.2 0 14 4 14 5 C 14 6 11.2 10 7 10 Z M 7 8.5 C 8.9 8.5 10.5 6.9 10.5 5 C 10.5 3.1 8.9 1.5 7 1.5 C 5.1 1.5 3.5 3.1 3.5 5 C 3.5 6.9 5.1 8.5 7 8.5 Z M 7 6.6 C 6.1 6.6 5.4 5.9 5.4 5 C 5.4 4.1 6.1 3.4 7 3.4 C 7.9 3.4 8.6 4.1 8.6 5 C 8.6 5.9 7.9 6.6 7 6.6 Z\" fill=\"currentColor\" fill-rule=\"nonzero\"/>"
+    }
+  };
+} catch {}
+Object.assign(__ds_scope, { __ds_default_components_icons_icon_data_12stud1 });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/icons/icon-data.js", error: String((e && e.message) || e) }); }
+
+__ds_scope.__ds_default_components_icons_icon_data_12stud1$1nb03e1 = __ds_scope.__ds_default_components_icons_icon_data_12stud1;
+
+// components/icons/Icon.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function Icon({
+  name,
+  size,
+  ...rest
+}) {
+  const d = __ds_scope.__ds_default_components_icons_icon_data_12stud1$1nb03e1[name];
+  if (!d) return null;
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: size,
+    height: size,
+    viewBox: d.viewBox,
+    fill: "none"
+    // body strings are emitter-controlled <path> markup — geometry,
+    // numeric fills and transforms only; no .fig-authored text reaches them.
+    ,
+    dangerouslySetInnerHTML: {
+      __html: d.body
+    }
+  }, rest));
+}
+Object.assign(__ds_scope, { Icon, __ds_default_components_icons_Icon_fio49a: Icon });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/icons/Icon.jsx", error: String((e && e.message) || e) }); }
+
+// components/brandbook/ServiceCard.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* Service card from the brandbook company-description page: 12px radius,
+   24px padding, 24px gap, icon+label row (32px icon, 12px gap, 28px Bold label),
+   then 28px body copy. */
+function ServiceCard({
+  icon,
+  label,
+  children,
+  background = 'var(--surface-card)',
+  ink = 'var(--ke-ink)',
+  labelInk,
+  iconColor,
+  style,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      borderRadius: 12,
+      background,
+      padding: 24,
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 24,
+      alignItems: 'flex-start',
+      boxSizing: 'border-box',
+      flex: 1,
+      ...style
+    }
+  }, rest), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'row',
+      gap: 12,
+      alignItems: 'center'
+    }
+  }, icon ? /*#__PURE__*/React.createElement(__ds_scope.Icon, {
+    name: icon,
+    size: 32,
+    style: {
+      color: iconColor ?? labelInk ?? ink,
+      flexShrink: 0
+    }
+  }) : null, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-display)',
+      fontWeight: 700,
+      fontSize: 28,
+      lineHeight: 1,
+      whiteSpace: 'nowrap',
+      color: labelInk ?? ink
+    }
+  }, label)), /*#__PURE__*/React.createElement("p", {
+    style: {
+      margin: 0,
+      alignSelf: 'stretch',
+      fontFamily: 'var(--font-display)',
+      fontWeight: 400,
+      fontSize: 28,
+      lineHeight: 1.15,
+      color: ink,
+      textWrap: 'pretty'
+    }
+  }, children));
+}
+Object.assign(__ds_scope, { ServiceCard, __ds_default_components_brandbook_ServiceCard_lz0lk6: ServiceCard });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/brandbook/ServiceCard.jsx", error: String((e && e.message) || e) }); }
+
+// components/community/BottomNav.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function BottomNav({
+  tabs,
+  active = 0,
+  onSelect,
+  width = 390,
+  ...rest
+}) {
+  const items = tabs ?? [{
+    icon: 'Home24Solid',
+    label: 'Главная'
+  }, {
+    icon: 'Search16',
+    label: 'Поиск'
+  }, {
+    icon: 'Music24Solid',
+    label: 'Музыка'
+  }, {
+    icon: 'Messages24Solid',
+    label: 'Сообщения'
+  }, {
+    icon: 'Groups24Solid',
+    label: 'Профиль'
+  }];
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      width,
+      height: 56,
+      background: 'var(--chrome-nav)',
+      display: 'flex',
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-around',
+      ...rest.style
+    }
+  }, rest), items.map((t, i) => /*#__PURE__*/React.createElement("button", {
+    key: i,
+    onClick: () => onSelect && onSelect(i),
+    "aria-label": t.label,
+    "aria-current": i === active,
+    style: {
+      background: 'none',
+      border: 'none',
+      padding: 8,
+      cursor: 'pointer',
+      display: 'flex',
+      color: i === active ? 'var(--ke-lime)' : 'var(--chrome-nav-ink-muted)',
+      transition: 'color var(--dur-base) var(--ease-standard)'
+    }
+  }, /*#__PURE__*/React.createElement(__ds_scope.Icon, {
+    name: t.icon,
+    size: 24
+  }))));
+}
+Object.assign(__ds_scope, { BottomNav, __ds_default_components_community_BottomNav_1ka2h1k: BottomNav });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/community/BottomNav.jsx", error: String((e && e.message) || e) }); }
+
+// components/community/HomeBottomMenu.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function HomeBottomMenu({
+  tabs,
+  active = 0,
+  onSelect,
+  width = 390,
+  ...rest
+}) {
+  const items = tabs ?? [{
+    icon: 'Home24Solid',
+    label: 'Главная'
+  }, {
+    icon: 'Music24Solid',
+    label: 'Музыка'
+  }, {
+    icon: 'Clips24Solid',
+    label: 'Клипы'
+  }, {
+    icon: 'Messages24Solid',
+    label: 'Сообщения'
+  }, {
+    icon: 'Groups24Solid',
+    label: 'Профиль'
+  }];
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      width,
+      background: 'var(--chrome-nav)',
+      display: 'flex',
+      flexDirection: 'row',
+      alignItems: 'stretch',
+      justifyContent: 'space-around',
+      padding: '8px 0 10px',
+      boxSizing: 'border-box',
+      ...rest.style
+    }
+  }, rest), items.map((t, i) => /*#__PURE__*/React.createElement("button", {
+    key: i,
+    onClick: () => onSelect && onSelect(i),
+    "aria-current": i === active,
+    style: {
+      background: 'none',
+      border: 'none',
+      padding: '4px 6px',
+      cursor: 'pointer',
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 4,
+      alignItems: 'center',
+      color: i === active ? 'var(--ke-lime)' : 'var(--chrome-nav-ink-muted)',
+      transition: 'color var(--dur-base) var(--ease-standard)'
+    }
+  }, /*#__PURE__*/React.createElement(__ds_scope.Icon, {
+    name: t.icon,
+    size: 24
+  }), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-ui)',
+      fontWeight: 400,
+      fontSize: 10,
+      lineHeight: '12px'
+    }
+  }, t.label))));
+}
+Object.assign(__ds_scope, { HomeBottomMenu, __ds_default_components_community_HomeBottomMenu_pcn8ch: HomeBottomMenu });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/community/HomeBottomMenu.jsx", error: String((e && e.message) || e) }); }
+
+// components/community/XActionsPageMenuItem.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function XActionsPageMenuItem({
+  icon = 'Notification24',
+  label = 'Уведомления',
+  width = 200,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      position: 'relative',
+      width,
+      height: 36,
+      display: 'flex',
+      flexDirection: 'row',
+      gap: 10,
+      alignItems: 'center',
+      ...rest.style
+    }
+  }, rest), /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 24,
+      height: 24,
+      flexShrink: 0,
+      color: 'var(--chrome-meta)'
+    }
+  }, /*#__PURE__*/React.createElement(__ds_scope.Icon, {
+    name: icon,
+    size: 24
+  })), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-ui)',
+      fontWeight: 400,
+      fontSize: 13,
+      whiteSpace: 'nowrap',
+      lineHeight: '18px',
+      color: 'var(--ke-black)'
+    }
+  }, label));
+}
+Object.assign(__ds_scope, { XActionsPageMenuItem, __ds_default_components_community_XActionsPageMenuItem_5es3yw: XActionsPageMenuItem });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/community/XActionsPageMenuItem.jsx", error: String((e && e.message) || e) }); }
+
+// components/community/CommunitiesActionCollapsedButton.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function CommunitiesActionCollapsedButton({
+  primary = 'Подписаться',
+  items,
+  ...rest
+}) {
+  const rows = items ?? [{
+    icon: 'Notification24',
+    label: 'Уведомления'
+  }, {
+    icon: 'Share24',
+    label: 'Рассказать друзьям'
+  }, {
+    icon: 'More24',
+    label: 'Еще'
+  }];
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      position: 'relative',
+      width: 232,
+      borderRadius: 5,
+      background: 'var(--chrome-surface)',
+      boxShadow: 'inset 0 0 0 1px var(--chrome-border), inset 0 -1px 0 0 var(--chrome-border-strong)',
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 6,
+      padding: '13px 16px',
+      alignItems: 'flex-start',
+      boxSizing: 'border-box',
+      ...rest.style
+    }
+  }, rest), /*#__PURE__*/React.createElement(__ds_scope.XActionsPageMenuButton, {
+    label: primary,
+    width: 199
+  }), /*#__PURE__*/React.createElement("div", {
+    "aria-hidden": "true",
+    style: {
+      height: 1,
+      background: 'var(--chrome-border)',
+      alignSelf: 'stretch',
+      flexShrink: 0
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 200,
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center'
+    }
+  }, rows.map((r, i) => /*#__PURE__*/React.createElement(__ds_scope.XActionsPageMenuItem, {
+    key: i,
+    icon: r.icon,
+    label: r.label
+  }))));
+}
+Object.assign(__ds_scope, { CommunitiesActionCollapsedButton, __ds_default_components_community_CommunitiesActionCollapsedButton_1qnzne4: CommunitiesActionCollapsedButton });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/community/CommunitiesActionCollapsedButton.jsx", error: String((e && e.message) || e) }); }
+
+// components/community/XButtonActionsLabelFixed.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function XButtonActionsLabelFixed({
+  label = 'Написать',
+  icon,
+  onClick,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("button", _extends({
+    onClick: onClick,
+    style: {
+      height: 36,
+      borderRadius: 5,
+      border: 'none',
+      boxShadow: 'inset 0 0 0 1px var(--chrome-border-strong)',
+      background: 'var(--chrome-surface)',
+      color: 'var(--chrome-link)',
+      fontFamily: 'var(--font-ui)',
+      fontWeight: 500,
+      fontSize: 13,
+      lineHeight: '18px',
+      padding: '0 14px',
+      display: 'inline-flex',
+      gap: 8,
+      alignItems: 'center',
+      cursor: 'pointer',
+      transition: 'background var(--dur-base) var(--ease-standard)',
+      ...rest.style
+    }
+  }, rest), icon ? /*#__PURE__*/React.createElement(__ds_scope.Icon, {
+    name: icon,
+    size: 20
+  }) : null, label);
+}
+Object.assign(__ds_scope, { XButtonActionsLabelFixed, __ds_default_components_community_XButtonActionsLabelFixed_knwgtf: XButtonActionsLabelFixed });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/community/XButtonActionsLabelFixed.jsx", error: String((e && e.message) || e) }); }
+
+// components/community/XIconCounter.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function XIconCounter({
+  icon = 'Likes24',
+  count = 21,
+  active = false,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      position: 'relative',
+      height: 24,
+      display: 'flex',
+      flexDirection: 'row',
+      gap: 6,
+      padding: '0 3px',
+      alignItems: 'center',
+      boxSizing: 'border-box',
+      ...rest.style
+    }
+  }, rest), /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 24,
+      height: 24,
+      opacity: active ? 1 : 0.7,
+      flexShrink: 0,
+      color: active ? 'var(--ke-lime-deep)' : 'var(--chrome-meta)'
+    }
+  }, /*#__PURE__*/React.createElement(__ds_scope.Icon, {
+    name: icon,
+    size: 24
+  })), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-ui)',
+      fontWeight: 500,
+      fontSize: 14,
+      whiteSpace: 'nowrap',
+      lineHeight: '16px',
+      color: active ? 'var(--ke-lime-deep)' : 'var(--chrome-meta)'
+    }
+  }, count));
+}
+Object.assign(__ds_scope, { XIconCounter, __ds_default_components_community_XIconCounter_x712zz: XIconCounter });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/community/XIconCounter.jsx", error: String((e && e.message) || e) }); }
+
+// components/community/XIconCounterViews.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function XIconCounterViews({
+  count = '12.4K',
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      height: 24,
+      display: 'flex',
+      gap: 6,
+      padding: '0 3px',
+      alignItems: 'center',
+      boxSizing: 'border-box',
+      ...rest.style
+    }
+  }, rest), /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 16,
+      height: 16,
+      opacity: 0.7,
+      flexShrink: 0,
+      color: 'var(--chrome-meta)'
+    }
+  }, /*#__PURE__*/React.createElement(__ds_scope.Icon, {
+    name: "Views16",
+    size: 16
+  })), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-ui)',
+      fontWeight: 500,
+      fontSize: 14,
+      whiteSpace: 'nowrap',
+      lineHeight: '16px',
+      color: 'var(--chrome-meta)'
+    }
+  }, count));
+}
+Object.assign(__ds_scope, { XIconCounterViews, __ds_default_components_community_XIconCounterViews_pdeg65: XIconCounterViews });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/community/XIconCounterViews.jsx", error: String((e && e.message) || e) }); }
+
+// components/community/XContainerCounters.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function XContainerCounters({
+  likes = 21,
+  comments = 4,
+  shares = 2,
+  views = '12.4K',
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      display: 'flex',
+      flexDirection: 'row',
+      gap: 12,
+      alignItems: 'center',
+      ...rest.style
+    }
+  }, rest), /*#__PURE__*/React.createElement(__ds_scope.XIconCounter, {
+    icon: "Likes24",
+    count: likes
+  }), /*#__PURE__*/React.createElement(__ds_scope.XIconCounter, {
+    icon: "MessageCircle24",
+    count: comments
+  }), /*#__PURE__*/React.createElement(__ds_scope.XIconCounter, {
+    icon: "Share24",
+    count: shares
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginLeft: 'auto'
+    }
+  }, /*#__PURE__*/React.createElement(__ds_scope.XIconCounterViews, {
+    count: views
+  })));
+}
+Object.assign(__ds_scope, { XContainerCounters, __ds_default_components_community_XContainerCounters_93rvlo: XContainerCounters });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/community/XContainerCounters.jsx", error: String((e && e.message) || e) }); }
+
+// components/community/XLeftMenuRow.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function XLeftMenuRow({
+  icon = 'Home24Solid',
+  label = 'Моя страница',
+  active = false,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      position: 'relative',
+      width: 153,
+      height: 28,
+      borderRadius: 2,
+      ...rest.style
+    }
+  }, rest), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      left: 0,
+      top: 0,
+      width: 115,
+      height: 27,
+      display: 'flex',
+      flexDirection: 'row',
+      gap: 7,
+      alignItems: 'flex-start'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'relative',
+      width: 24,
+      height: 24,
+      opacity: active ? 1 : 0.45,
+      flexShrink: 0,
+      color: 'var(--chrome-nav-ink)'
+    }
+  }, /*#__PURE__*/React.createElement(__ds_scope.Icon, {
+    name: icon,
+    size: 24
+  })), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-ui)',
+      fontWeight: 400,
+      fontSize: 12.5,
+      whiteSpace: 'nowrap',
+      lineHeight: '27px',
+      color: active ? 'var(--ke-lime)' : 'var(--chrome-nav-ink)'
+    }
+  }, label)));
+}
+Object.assign(__ds_scope, { XLeftMenuRow, __ds_default_components_community_XLeftMenuRow_to7gla: XLeftMenuRow });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/community/XLeftMenuRow.jsx", error: String((e && e.message) || e) }); }
+
+// components/community/XMainContainerTextLocation.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function XMainContainerTextLocation({
+  address = 'Алматы, Казахстан',
+  lines = ['ул. Абая 150', 'пн–пт 10:00–19:00'],
+  width = 516,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      width,
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 6,
+      ...rest.style
+    }
+  }, rest), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 8,
+      alignItems: 'flex-start'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 24,
+      height: 24,
+      flexShrink: 0,
+      color: 'var(--chrome-icon)'
+    }
+  }, /*#__PURE__*/React.createElement(__ds_scope.Icon, {
+    name: "Point24",
+    size: 24
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 2
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-ui)',
+      fontWeight: 400,
+      fontSize: 13,
+      lineHeight: '18px',
+      color: 'var(--chrome-link)'
+    }
+  }, address), lines.map((l, i) => /*#__PURE__*/React.createElement("span", {
+    key: i,
+    style: {
+      fontFamily: 'var(--font-ui)',
+      fontWeight: 400,
+      fontSize: 13,
+      lineHeight: '18px',
+      color: 'var(--chrome-meta)'
+    }
+  }, l)))), /*#__PURE__*/React.createElement("div", {
+    "aria-hidden": "true",
+    style: {
+      height: 92,
+      borderRadius: 5,
+      background: 'var(--ke-lavender)',
+      boxShadow: 'inset 0 0 0 1px var(--chrome-border)'
+    }
+  }));
+}
+Object.assign(__ds_scope, { XMainContainerTextLocation, __ds_default_components_community_XMainContainerTextLocation_78d9gs: XMainContainerTextLocation });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/community/XMainContainerTextLocation.jsx", error: String((e && e.message) || e) }); }
+
+// components/community/XSearchHeader.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function XSearchHeader({
+  placeholder = 'Поиск',
+  width = 230,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      position: 'relative',
+      width,
+      height: 28,
+      borderRadius: 14,
+      background: 'var(--chrome-nav-field)',
+      ...rest.style
+    }
+  }, rest), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      left: 7,
+      top: 6,
+      width: 16,
+      height: 16,
+      color: 'var(--chrome-nav-ink-muted)'
+    }
+  }, /*#__PURE__*/React.createElement(__ds_scope.Icon, {
+    name: "Search16",
+    size: 16
+  })), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: 'absolute',
+      left: 28,
+      top: 6,
+      fontFamily: 'var(--font-ui)',
+      fontWeight: 400,
+      fontSize: 13,
+      whiteSpace: 'nowrap',
+      lineHeight: '16px',
+      color: 'var(--chrome-nav-ink-muted)'
+    }
+  }, placeholder));
+}
+Object.assign(__ds_scope, { XSearchHeader, __ds_default_components_community_XSearchHeader_1yb1esl: XSearchHeader });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/community/XSearchHeader.jsx", error: String((e && e.message) || e) }); }
+
+// components/community/XTextGroupInfo.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function XTextGroupInfo({
+  icon = 'Text24',
+  children = 'Независимый музыкальный лейбл полного цикла',
+  width = 516,
+  link = false,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      position: 'relative',
+      width,
+      display: 'flex',
+      flexDirection: 'row',
+      gap: 8,
+      alignItems: 'flex-start',
+      ...rest.style
+    }
+  }, rest), /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 24,
+      height: 24,
+      flexShrink: 0,
+      color: 'var(--chrome-icon)'
+    }
+  }, /*#__PURE__*/React.createElement(__ds_scope.Icon, {
+    name: icon,
+    size: 24
+  })), /*#__PURE__*/React.createElement("span", {
+    style: {
+      flexGrow: 1,
+      fontFamily: 'var(--font-ui)',
+      fontWeight: 400,
+      fontSize: 13,
+      lineHeight: '18px',
+      color: link ? 'var(--chrome-link)' : 'var(--ke-black)'
+    }
+  }, children));
+}
+Object.assign(__ds_scope, { XTextGroupInfo, __ds_default_components_community_XTextGroupInfo_ozi39g: XTextGroupInfo });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/community/XTextGroupInfo.jsx", error: String((e && e.message) || e) }); }
+
+// components/community/XMainContainerTextPhone.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function XMainContainerTextPhone({
+  phone = '+7 700 000 00 00',
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement(__ds_scope.XTextGroupInfo, _extends({
+    icon: "Phone24",
+    link: true
+  }, rest), phone);
+}
+Object.assign(__ds_scope, { XMainContainerTextPhone, __ds_default_components_community_XMainContainerTextPhone_1j92bv1: XMainContainerTextPhone });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/community/XMainContainerTextPhone.jsx", error: String((e && e.message) || e) }); }
+
+// components/community/CommunitiesContainerInfo.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+const rule = {
+  height: 1,
+  background: 'var(--chrome-border)',
+  alignSelf: 'stretch',
+  flexShrink: 0
+};
+function CommunitiesContainerInfo({
+  name = 'Key Entertainment',
+  category = 'Музыкальный лейбл',
+  width = 552,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      position: 'relative',
+      width,
+      borderRadius: 5,
+      background: 'var(--chrome-surface)',
+      boxShadow: 'inset 0 0 0 1px var(--chrome-border), inset 0 -1px 0 0 var(--chrome-border-strong)',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'flex-start',
+      ...rest.style
+    }
+  }, rest), /*#__PURE__*/React.createElement("div", {
+    style: {
+      height: 75,
+      display: 'flex',
+      flexDirection: 'column',
+      padding: '14px 20px',
+      alignSelf: 'stretch',
+      boxSizing: 'border-box'
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-ui)',
+      fontWeight: 400,
+      fontSize: 19,
+      lineHeight: '27px',
+      color: 'var(--ke-black)'
+    }
+  }, name), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-ui)',
+      fontWeight: 400,
+      fontSize: 13,
+      lineHeight: '20px',
+      color: 'var(--chrome-meta)'
+    }
+  }, category)), /*#__PURE__*/React.createElement("div", {
+    "aria-hidden": "true",
+    style: rule
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      height: 50,
+      position: 'relative',
+      alignSelf: 'stretch'
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: 'absolute',
+      left: 21,
+      top: 18,
+      fontFamily: 'var(--font-ui)',
+      fontWeight: 400,
+      fontSize: 13,
+      whiteSpace: 'nowrap',
+      lineHeight: '18px',
+      color: 'var(--ke-black)'
+    }
+  }, "\u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044F")), /*#__PURE__*/React.createElement("div", {
+    "aria-hidden": "true",
+    style: rule
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 6,
+      padding: '16px 18px',
+      alignItems: 'center',
+      alignSelf: 'stretch',
+      boxSizing: 'border-box'
+    }
+  }, /*#__PURE__*/React.createElement(__ds_scope.XTextGroupInfo, {
+    width: width - 36
+  }, "\u041D\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043C\u044B\u0439 \u043C\u0443\u0437\u044B\u043A\u0430\u043B\u044C\u043D\u044B\u0439 \u043B\u0435\u0439\u0431\u043B \u043F\u043E\u043B\u043D\u043E\u0433\u043E \u0446\u0438\u043A\u043B\u0430"), /*#__PURE__*/React.createElement(__ds_scope.XTextGroupInfo, {
+    width: width - 36,
+    icon: "Earth24",
+    link: true
+  }, "www.keyent.kz"), /*#__PURE__*/React.createElement(__ds_scope.XMainContainerTextPhone, {
+    width: width - 36
+  }), /*#__PURE__*/React.createElement(__ds_scope.XMainContainerTextLocation, {
+    width: width - 36
+  })));
+}
+Object.assign(__ds_scope, { CommunitiesContainerInfo, __ds_default_components_community_CommunitiesContainerInfo_afria2: CommunitiesContainerInfo });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/community/CommunitiesContainerInfo.jsx", error: String((e && e.message) || e) }); }
+
+// components/social/IconBadgePost.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* The icon-badge post: a single glyph blown up to 640px inside a 960px circle
+   with a 60px black ring, on a flat brand ground. 1080×1080. */
+function IconBadgePost({
+  icon = 'TablerIconBrandSpotify',
+  background = 'var(--ke-lime-deep)',
+  ring = 'var(--ke-lime-bright)',
+  ink = 'var(--ke-black)',
+  scale = 1,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      width: 1080 * scale,
+      height: 1080 * scale,
+      flexShrink: 0,
+      ...rest.style
+    }
+  }, rest), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'relative',
+      width: 1080,
+      height: 1080,
+      overflow: 'hidden',
+      background,
+      transform: `scale(${scale})`,
+      transformOrigin: 'top left'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      left: 60,
+      top: 60,
+      width: 960,
+      height: 960,
+      borderRadius: 960,
+      background: ring,
+      boxShadow: '0 0 0 60px rgb(0,0,0)',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center'
+    }
+  }, /*#__PURE__*/React.createElement(__ds_scope.Icon, {
+    name: icon,
+    size: 640,
+    style: {
+      color: ink
+    }
+  }))));
+}
+Object.assign(__ds_scope, { IconBadgePost, __ds_default_components_social_IconBadgePost_ib57ba: IconBadgePost });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/social/IconBadgePost.jsx", error: String((e && e.message) || e) }); }
+
+// components/social/Tag.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* Lime pill tag from the social templates, and the outlined URL pill from the
+   deck header. Fully rounded; type is Nunito Sans SemiBold on lime, Inter Light
+   in the outlined deck variant. */
+function Tag({
+  children,
+  variant = 'accent',
+  size = 28.766735076904297,
+  style,
+  ...rest
+}) {
+  const accent = variant === 'accent';
+  return /*#__PURE__*/React.createElement("span", _extends({
+    style: {
+      display: 'inline-flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      borderRadius: 999,
+      boxSizing: 'border-box',
+      padding: accent ? '13.816px 26.37px' : '10px 24px',
+      gap: accent ? 13.18475341796875 : 10,
+      background: accent ? 'var(--ke-lime)' : 'transparent',
+      boxShadow: accent ? 'none' : 'inset 0 0 0 2px currentColor',
+      color: accent ? 'var(--ke-lime-ink)' : 'var(--ke-oxford-blue)',
+      fontFamily: accent ? 'var(--font-display)' : 'var(--font-deck)',
+      fontWeight: accent ? 600 : 300,
+      fontSize: accent ? size : 32,
+      letterSpacing: accent ? 0 : '-0.05em',
+      lineHeight: accent ? 1.020227313041687 : 1,
+      whiteSpace: 'nowrap',
+      ...style
+    }
+  }, rest), children);
+}
+Object.assign(__ds_scope, { Tag, __ds_default_components_social_Tag_7wdpj4: Tag });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/social/Tag.jsx", error: String((e && e.message) || e) }); }
+
+// components/social/MediaFrame.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* YouTube thumbnail (1280×720) and cover-art frame: photo darkened 37%,
+   logo top-left at the 72px margin, optional lime tag top-right,
+   Manrope Bold title bar across the lower third. */
+function MediaFrame({
+  image,
+  title,
+  tag,
+  width = 1280,
+  height = 720,
+  background = 'var(--ke-thumb-yellow)',
+  titleSize = 96,
+  style,
+  children,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      position: 'relative',
+      width,
+      height,
+      overflow: 'hidden',
+      background,
+      ...style
+    }
+  }, rest), image ? /*#__PURE__*/React.createElement("div", {
+    "aria-hidden": "true",
+    style: {
+      position: 'absolute',
+      inset: 0,
+      background: `var(--photo-scrim-soft), url(${image}) center / cover no-repeat`
+    }
+  }) : null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      left: 72,
+      top: 72
+    }
+  }, /*#__PURE__*/React.createElement(__ds_scope.Logo, {
+    height: 72,
+    color: "var(--ke-white)"
+  })), tag ? /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      right: 72,
+      top: 84
+    }
+  }, /*#__PURE__*/React.createElement(__ds_scope.Tag, {
+    size: 41.46931076049805
+  }, tag)) : null, title ? /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      left: 72,
+      right: 0,
+      bottom: 73,
+      display: 'flex',
+      alignItems: 'center',
+      padding: 24,
+      boxSizing: 'border-box'
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-body)',
+      fontWeight: 700,
+      fontSize: titleSize,
+      lineHeight: 1.0402272939682007,
+      color: 'var(--ke-white)',
+      textWrap: 'balance'
+    }
+  }, title)) : null, children);
+}
+Object.assign(__ds_scope, { MediaFrame, __ds_default_components_social_MediaFrame_871fvz: MediaFrame });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/social/MediaFrame.jsx", error: String((e && e.message) || e) }); }
+
+// components/social/PostFrame.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* Instagram post / story frame. Square posts are 1080×1080, stories 1080×1920.
+   Photo full-bleed, logo at the 65px margin, lime tag, then the Nunito Sans
+   Bold display line. `scale` renders the frame smaller without changing ratios. */
+function PostFrame({
+  image,
+  tag,
+  title,
+  subtitle,
+  format = 'square',
+  background = 'var(--ke-lime)',
+  ink = 'var(--ke-white)',
+  titleSize,
+  scale = 1,
+  style,
+  children,
+  ...rest
+}) {
+  const w = 1080,
+    h = format === 'story' ? 1920 : 1080;
+  const ts = titleSize ?? (format === 'story' ? 162.43943786621094 : 110);
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: {
+      width: w * scale,
+      height: h * scale,
+      flexShrink: 0,
+      ...style
+    }
+  }, rest), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'relative',
+      width: w,
+      height: h,
+      overflow: 'hidden',
+      background,
+      transform: `scale(${scale})`,
+      transformOrigin: 'top left'
+    }
+  }, image ? /*#__PURE__*/React.createElement("div", {
+    "aria-hidden": "true",
+    style: {
+      position: 'absolute',
+      inset: 0,
+      background: `url(${image}) center / cover no-repeat`
+    }
+  }) : null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      left: 65,
+      top: format === 'story' ? 485 : 65
+    }
+  }, /*#__PURE__*/React.createElement(__ds_scope.Logo, {
+    height: 82.718,
+    color: ink
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      left: 65,
+      bottom: format === 'story' ? 485 : 65,
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 40,
+      alignItems: 'flex-start',
+      maxWidth: 950
+    }
+  }, tag ? /*#__PURE__*/React.createElement(__ds_scope.Tag, null, tag) : null, title ? /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-display)',
+      fontWeight: 700,
+      fontSize: ts,
+      lineHeight: 1.0402272939682007,
+      color: ink,
+      whiteSpace: 'pre-line'
+    }
+  }, title) : null, subtitle ? /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-display)',
+      fontWeight: 400,
+      fontSize: 40,
+      lineHeight: 1.1,
+      color: ink,
+      opacity: 0.7
+    }
+  }, subtitle) : null), children));
+}
+Object.assign(__ds_scope, { PostFrame, __ds_default_components_social_PostFrame_1h0iout: PostFrame });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/social/PostFrame.jsx", error: String((e && e.message) || e) }); }
+
+// slides/Slides.jsx
+try { (() => {
+const {
+  Logo,
+  DeckHeader,
+  GlassRow,
+  PatternField,
+  Tag,
+  Icon
+} = window.KeyEntertainmentDesignSystem_27049e;
+
+/* Slide shell: 1920×1080 authored at true size, scaled to fit the frame it sits in.
+   `theme="deck"` = navy gradient + tiled mark watermark (the English deck).
+   `theme="light"` = white page, oxford-blue ink. */
+function Slide({
+  theme = 'deck',
+  children,
+  scale = 1,
+  pattern = true
+}) {
+  const dark = theme === 'deck';
+  const inner = /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'relative',
+      width: 1920,
+      height: 1080,
+      padding: 60,
+      boxSizing: 'border-box',
+      display: 'flex',
+      flexDirection: 'column'
+    }
+  }, children);
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 1920 * scale,
+      height: 1080 * scale,
+      overflow: 'hidden',
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 1920,
+      height: 1080,
+      transform: `scale(${scale})`,
+      transformOrigin: 'top left',
+      background: dark ? 'var(--surface-deck)' : 'var(--ke-white)',
+      position: 'relative',
+      overflow: 'hidden'
+    }
+  }, dark ? /*#__PURE__*/React.createElement("div", {
+    "aria-hidden": "true",
+    style: {
+      position: 'absolute',
+      left: 680,
+      top: 466,
+      width: 754.613,
+      height: 754.613,
+      borderRadius: '50%',
+      background: 'var(--ke-lime)',
+      filter: 'blur(0px)',
+      opacity: 0.9
+    }
+  }) : null, dark ? /*#__PURE__*/React.createElement("div", {
+    "aria-hidden": "true",
+    style: {
+      position: 'absolute',
+      inset: 0,
+      background: 'linear-gradient(-56.071deg, rgba(255,255,255,.35) 38.86%, rgba(255,255,255,0) 89.23%)',
+      mixBlendMode: 'overlay'
+    }
+  }) : null, pattern ? /*#__PURE__*/React.createElement("img", {
+    "aria-hidden": "true",
+    src: "../assets/patterns/pattern-deck-tile-lime.svg",
+    alt: "",
+    style: {
+      position: 'absolute',
+      left: 0,
+      top: 0,
+      width: 2808,
+      opacity: dark ? 0.3 : 0.12,
+      mixBlendMode: dark ? 'overlay' : 'normal'
+    }
+  }) : null, inner));
+}
+const deckTitle = {
+  fontFamily: 'var(--font-deck)',
+  fontWeight: 600,
+  fontSize: 48,
+  lineHeight: 1,
+  letterSpacing: '-0.05em',
+  color: 'var(--ke-lime)',
+  margin: 0
+};
+const deckBody = {
+  fontFamily: 'var(--font-deck)',
+  fontWeight: 400,
+  fontSize: 32,
+  lineHeight: 1.1,
+  letterSpacing: '-0.05em',
+  color: 'var(--ke-white)',
+  margin: 0
+};
+
+/* 01 — Cover. Oversized KEY / ENTERTAINMENT set in Inter Bold at 233px. */
+function TitleSlide({
+  scale = 1
+}) {
+  return /*#__PURE__*/React.createElement(Slide, {
+    theme: "light",
+    scale: scale,
+    pattern: false
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center'
+    }
+  }, /*#__PURE__*/React.createElement(Logo, {
+    height: 60,
+    color: "var(--ke-oxford-blue)"
+  }), /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: 'var(--ke-oxford-blue)'
+    }
+  }, /*#__PURE__*/React.createElement(Tag, {
+    variant: "outline"
+  }, "www.keyent.kz"))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      left: 60,
+      top: 170,
+      width: 1800,
+      height: 339,
+      opacity: 0.2,
+      overflow: 'hidden'
+    }
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "../assets/patterns/pattern-3-navy.svg",
+    alt: "",
+    style: {
+      width: 1800
+    }
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      left: 46,
+      top: 567,
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 31
+    }
+  }, ['KEY', 'ENTERTAINMENT'].map(w => /*#__PURE__*/React.createElement("span", {
+    key: w,
+    style: {
+      fontFamily: 'var(--font-deck)',
+      fontWeight: 700,
+      fontSize: 233,
+      lineHeight: 0.9,
+      letterSpacing: '-0.07em',
+      color: 'var(--ke-oxford-blue)'
+    }
+  }, w))), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: 'absolute',
+      left: 60,
+      top: 976,
+      fontFamily: 'var(--font-deck)',
+      fontWeight: 400,
+      fontSize: 60,
+      lineHeight: 0.9,
+      letterSpacing: '-0.05em',
+      color: 'var(--ke-oxford-blue)'
+    }
+  }, "your partner in the world of music"));
+}
+
+/* 02 — Chapter divider. Number, title, and the inventory of what follows. */
+function ChapterSlide({
+  scale = 1,
+  number = '01',
+  title = 'Key Distribution',
+  blurb = 'Release delivery, playlist support, verification, analytics, royalty reporting'
+}) {
+  return /*#__PURE__*/React.createElement(Slide, {
+    scale: scale
+  }, /*#__PURE__*/React.createElement(DeckHeader, {
+    url: "www.keyent.kz",
+    section: null,
+    folio: null
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginTop: 'auto',
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 48
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-deck)',
+      fontWeight: 700,
+      fontSize: 233,
+      lineHeight: 0.9,
+      letterSpacing: '-0.07em',
+      color: 'var(--ke-lime)'
+    }
+  }, number), /*#__PURE__*/React.createElement("h2", {
+    style: {
+      ...deckTitle,
+      fontSize: 96,
+      color: 'var(--ke-white)'
+    }
+  }, title), /*#__PURE__*/React.createElement("p", {
+    style: {
+      ...deckBody,
+      maxWidth: 1200,
+      opacity: 0.75
+    }
+  }, blurb)));
+}
+
+/* 03 — List slide. The deck's default content page: lime title + glass rows. */
+function ListSlide({
+  scale = 1,
+  section = 'Key Distribution Services',
+  folio = '04',
+  title = 'Our services include:',
+  full = [],
+  pairs = []
+}) {
+  return /*#__PURE__*/React.createElement(Slide, {
+    scale: scale
+  }, /*#__PURE__*/React.createElement(DeckHeader, {
+    section: section,
+    folio: folio
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginTop: 80,
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 40
+    }
+  }, /*#__PURE__*/React.createElement("h2", {
+    style: deckTitle
+  }, title), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 10
+    }
+  }, full.map((r, i) => /*#__PURE__*/React.createElement(GlassRow, {
+    key: i
+  }, r)), pairs.map((p, i) => /*#__PURE__*/React.createElement("div", {
+    key: i,
+    style: {
+      display: 'flex',
+      gap: 10
+    }
+  }, /*#__PURE__*/React.createElement(GlassRow, {
+    style: {
+      flex: 1
+    }
+  }, p[0]), /*#__PURE__*/React.createElement(GlassRow, {
+    style: {
+      flex: 1
+    }
+  }, p[1]))))));
+}
+
+/* 04 — Services grid. Huge-icon solid glyph per business line. */
+function ServicesSlide({
+  scale = 1,
+  items = []
+}) {
+  return /*#__PURE__*/React.createElement(Slide, {
+    scale: scale
+  }, /*#__PURE__*/React.createElement(DeckHeader, {
+    section: "What we do",
+    folio: "02"
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginTop: 80,
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 40
+    }
+  }, /*#__PURE__*/React.createElement("h2", {
+    style: deckTitle
+  }, "What we do"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gridTemplateColumns: 'repeat(2,1fr)',
+      gap: 10
+    }
+  }, items.map((it, i) => /*#__PURE__*/React.createElement("div", {
+    key: i,
+    style: {
+      borderRadius: 16,
+      background: 'var(--surface-row-glass)',
+      padding: 40,
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 24
+    }
+  }, /*#__PURE__*/React.createElement(Icon, {
+    name: it.icon,
+    size: 64,
+    style: {
+      color: 'var(--ke-lime)'
+    }
+  }), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-deck)',
+      fontWeight: 600,
+      fontSize: 40,
+      letterSpacing: '-0.05em',
+      color: 'var(--ke-white)'
+    }
+  }, it.label), /*#__PURE__*/React.createElement("p", {
+    style: {
+      ...deckBody,
+      opacity: 0.7
+    }
+  }, it.body))))));
+}
+
+/* 05 — Numbers. Big lime figures on glass. */
+function StatSlide({
+  scale = 1,
+  stats = []
+}) {
+  return /*#__PURE__*/React.createElement(Slide, {
+    scale: scale
+  }, /*#__PURE__*/React.createElement(DeckHeader, {
+    section: "Key in numbers",
+    folio: "03"
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginTop: 80,
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 40
+    }
+  }, /*#__PURE__*/React.createElement("h2", {
+    style: deckTitle
+  }, "Key in numbers"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 10
+    }
+  }, stats.map((s, i) => /*#__PURE__*/React.createElement("div", {
+    key: i,
+    style: {
+      flex: 1,
+      borderRadius: 16,
+      background: 'var(--surface-row-glass)',
+      padding: 40,
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 20
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-deck)',
+      fontWeight: 700,
+      fontSize: 130,
+      lineHeight: 0.9,
+      letterSpacing: '-0.07em',
+      color: 'var(--ke-lime)'
+    }
+  }, s.value), /*#__PURE__*/React.createElement("span", {
+    style: {
+      ...deckBody,
+      opacity: 0.75
+    }
+  }, s.label))))));
+}
+
+/* 06 — Statement. One line, full bleed, lime on navy. */
+function StatementSlide({
+  scale = 1,
+  children = 'Distribution at 0%. Every stream, every territory, every payout accounted for.'
+}) {
+  return /*#__PURE__*/React.createElement(Slide, {
+    scale: scale
+  }, /*#__PURE__*/React.createElement(DeckHeader, {
+    section: "Why Key",
+    folio: "06"
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      margin: 'auto 0',
+      maxWidth: 1600
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-deck)',
+      fontWeight: 600,
+      fontSize: 96,
+      lineHeight: 0.95,
+      letterSpacing: '-0.05em',
+      color: 'var(--ke-lime)',
+      textWrap: 'balance'
+    }
+  }, children)));
+}
+
+/* 07 — Contact. Tabler brand glyphs + outlined pills. */
+function ContactSlide({
+  scale = 1
+}) {
+  const links = [{
+    icon: 'TablerIconBrandInstagram',
+    label: '@keymusicompany'
+  }, {
+    icon: 'TablerIconBrandYoutube',
+    label: 'Key Entertainment'
+  }, {
+    icon: 'TablerIconBrandTelegram',
+    label: '@keyent'
+  }, {
+    icon: 'TablerIconMail',
+    label: 'info@keyent.kz'
+  }, {
+    icon: 'TablerIconPhoneCall',
+    label: '+7 700 000 00 00'
+  }, {
+    icon: 'TablerIconBrandSpotify',
+    label: 'Key Records'
+  }];
+  return /*#__PURE__*/React.createElement(Slide, {
+    scale: scale
+  }, /*#__PURE__*/React.createElement(DeckHeader, {
+    section: "Contacts",
+    folio: "23"
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginTop: 'auto',
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 60
+    }
+  }, /*#__PURE__*/React.createElement("h2", {
+    style: {
+      ...deckTitle,
+      fontSize: 96,
+      color: 'var(--ke-white)'
+    }
+  }, "Let\u2019s work together"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gridTemplateColumns: 'repeat(3,1fr)',
+      gap: 10
+    }
+  }, links.map((l, i) => /*#__PURE__*/React.createElement("div", {
+    key: i,
+    style: {
+      borderRadius: 16,
+      background: 'var(--surface-row-glass)',
+      padding: 30,
+      display: 'flex',
+      gap: 24,
+      alignItems: 'center'
+    }
+  }, /*#__PURE__*/React.createElement(Icon, {
+    name: l.icon,
+    size: 48,
+    style: {
+      color: 'var(--ke-lime)',
+      flexShrink: 0
+    }
+  }), /*#__PURE__*/React.createElement("span", {
+    style: deckBody
+  }, l.label)))), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-deck)',
+      fontWeight: 300,
+      fontSize: 60,
+      letterSpacing: '-0.05em',
+      color: 'var(--ke-lime)'
+    }
+  }, "www.keyent.kz")));
+}
+Object.assign(window, {
+  Slide,
+  TitleSlide,
+  ChapterSlide,
+  ListSlide,
+  ServicesSlide,
+  StatSlide,
+  StatementSlide,
+  ContactSlide
+});
+})(); } catch (e) { __ds_ns.__errors.push({ path: "slides/Slides.jsx", error: String((e && e.message) || e) }); }
+
+// ui_kits/brandbook/Pages.jsx
+try { (() => {
+const {
+  Logo,
+  SectionHeading,
+  ColorSwatch,
+  LogoTile,
+  ServiceCard,
+  PatternField,
+  Icon
+} = window.KeyEntertainmentDesignSystem_27049e;
+const S = 0.3646; // 1920 → 700
+
+/* Brandbook page shell: 1920×1080, 108px margin, folio top-right. */
+function Page({
+  children,
+  background = 'var(--ke-white)',
+  folio,
+  scale = S
+}) {
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 1920 * scale,
+      height: 1080 * scale,
+      overflow: 'hidden',
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 1920,
+      height: 1080,
+      transform: `scale(${scale})`,
+      transformOrigin: 'top left',
+      background,
+      position: 'relative',
+      overflow: 'hidden'
+    }
+  }, folio ? /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: 'absolute',
+      left: 1811.641,
+      top: 83,
+      fontFamily: 'var(--font-display)',
+      fontWeight: 400,
+      fontSize: 36,
+      lineHeight: 1,
+      color: 'var(--ke-midnight)'
+    }
+  }, folio) : null, children));
+}
+const Body = ({
+  children,
+  color = 'var(--ke-oxford-blue)',
+  width = 1704,
+  size = 32
+}) => /*#__PURE__*/React.createElement("p", {
+  style: {
+    margin: 0,
+    width,
+    fontFamily: 'var(--font-body)',
+    fontWeight: 400,
+    fontSize: size,
+    lineHeight: 1.25,
+    color,
+    textWrap: 'pretty'
+  }
+}, children);
+const Content = ({
+  children,
+  top = 265
+}) => /*#__PURE__*/React.createElement("div", {
+  style: {
+    position: 'absolute',
+    left: 108,
+    top,
+    width: 1704,
+    display: 'flex',
+    flexDirection: 'column',
+    gap: 48
+  }
+}, children);
+const Head = ({
+  children,
+  rule,
+  color
+}) => /*#__PURE__*/React.createElement("div", {
+  style: {
+    position: 'absolute',
+    left: 108,
+    top: 108
+  }
+}, /*#__PURE__*/React.createElement(SectionHeading, {
+  rule: rule,
+  color: color
+}, children));
+
+/* ── 00 Cover ── */
+function Cover() {
+  return /*#__PURE__*/React.createElement(Page, {
+    background: "var(--ke-white)"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "../../assets/brand/hero-shape.svg",
+    alt: "",
+    style: {
+      position: 'absolute',
+      left: 1083.523,
+      top: -294.722,
+      width: 822.181,
+      height: 1302.978,
+      color: 'var(--ke-black)'
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      left: 108,
+      top: 108
+    }
+  }, /*#__PURE__*/React.createElement(Logo, {
+    height: 145.847 * 0.62,
+    color: "var(--ke-oxford-blue)"
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      left: 108,
+      top: 652,
+      width: 1502,
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 96
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-display)',
+      fontWeight: 700,
+      fontSize: 96,
+      lineHeight: 1,
+      color: 'var(--ke-oxford-blue)',
+      whiteSpace: 'pre-line'
+    }
+  }, 'Руководство фирменного стиля\nдля бренда Key Entertainment'), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-display)',
+      fontWeight: 400,
+      fontSize: 36,
+      lineHeight: 1,
+      color: 'var(--ke-oxford-blue)'
+    }
+  }, "2023")));
+}
+
+/* ── 01 Company description ── */
+function Company() {
+  const cards = [{
+    icon: 'TablerIconMusic',
+    label: 'Music Label',
+    body: 'Работая с нами, артисты получают возможность создавать и развивать свой творческий потенциал под кураторством опытных профессионалов индустрии.'
+  }, {
+    icon: 'TablerIconBrandSpotify',
+    label: 'Distribution',
+    body: 'Наш сервис дистрибуции предлагает загрузку песен под 0%. Это позволяет артистам получить максимальное вознаграждение от своих произведений.'
+  }, {
+    icon: 'TablerIconPlaylist',
+    label: 'Booking Agency',
+    body: 'Как современный партнер в организации мероприятий любой сложности, мы помогаем нашим артистам добиться успеха на концертной площадке.'
+  }, {
+    icon: 'TablerIconVinyl',
+    label: 'Records',
+    body: 'Наша студия предлагает профессиональное сведение и мастеринг треков — высококачественная звукозапись для любого уровня.'
+  }];
+  return /*#__PURE__*/React.createElement(Page, {
+    background: "var(--ke-off-white)"
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: 'absolute',
+      left: 108,
+      top: 109,
+      fontFamily: 'var(--font-display)',
+      fontWeight: 700,
+      fontSize: 72,
+      lineHeight: 1,
+      color: 'var(--ke-navy-deep)'
+    }
+  }, "\u041E\u043F\u0438\u0441\u0430\u043D\u0438\u0435 \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0438"), /*#__PURE__*/React.createElement(Content, {
+    top: 220
+  }, /*#__PURE__*/React.createElement(Body, null, "Key Entertainment \u2014 \u044D\u0442\u043E \u043D\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043C\u044B\u0439 \u043C\u0443\u0437\u044B\u043A\u0430\u043B\u044C\u043D\u044B\u0439 \u043B\u0435\u0439\u0431\u043B \u043F\u043E\u043B\u043D\u043E\u0433\u043E \u0446\u0438\u043A\u043B\u0430, \u043E\u0431\u0435\u0441\u043F\u0435\u0447\u0438\u0432\u0430\u044E\u0449\u0438\u0439 \u0432\u0441\u0435\u0441\u0442\u043E\u0440\u043E\u043D\u043D\u044E\u044E \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u043A\u0443 \u0434\u043B\u044F \u043C\u0443\u0437\u044B\u043A\u0430\u043D\u0442\u043E\u0432 \u0432\u0441\u0435\u0445 \u0436\u0430\u043D\u0440\u043E\u0432. \u041C\u044B \u043F\u0440\u0435\u0434\u043B\u0430\u0433\u0430\u0435\u043C \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0435 \u0443\u0441\u043B\u0443\u0433\u0438:"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gridTemplateColumns: 'repeat(2,1fr)',
+      gap: 32
+    }
+  }, cards.map(c => /*#__PURE__*/React.createElement(ServiceCard, {
+    key: c.label,
+    icon: c.icon,
+    label: c.label
+  }, c.body)))));
+}
+
+/* ── 02 Chapter divider ── */
+function Chapter() {
+  return /*#__PURE__*/React.createElement(Page, {
+    background: "var(--ke-periwinkle)",
+    folio: "01"
+  }, /*#__PURE__*/React.createElement(PatternField, {
+    mode: "wash",
+    color: "var(--ke-tropical-indigo)",
+    style: {
+      position: 'absolute',
+      inset: 0
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      left: 108,
+      top: 806,
+      width: 1704,
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 48
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-display)',
+      fontWeight: 700,
+      fontSize: 72,
+      lineHeight: 1,
+      color: 'var(--ke-oxford-blue)'
+    }
+  }, "\u041B\u043E\u0433\u043E\u0442\u0438\u043F"), /*#__PURE__*/React.createElement(Body, null, "\u041E\u0441\u043D\u043E\u0432\u043D\u044B\u0435 \u043F\u0440\u043E\u043F\u043E\u0440\u0446\u0438\u0438, \u043E\u0445\u0440\u0430\u043D\u043D\u043E\u0435 \u043F\u043E\u043B\u0435, \u043E\u0441\u043D\u043E\u0432\u043D\u044B\u0435 \u0446\u0432\u0435\u0442\u0430, \u0446\u0432\u0435\u0442\u043E\u0432\u044B\u0435 \u0441\u043E\u0447\u0435\u0442\u0430\u043D\u0438\u044F, \u0448\u0440\u0438\u0444\u0442\u044B, \u0430\u043B\u044C\u0442\u0435\u0440\u043D\u0430\u0442\u0438\u0432\u043D\u044B\u0435 \u0432\u0435\u0440\u0441\u0438\u0438 \u043B\u043E\u0433\u043E\u0442\u0438\u043F\u0430, \u043E\u0448\u0438\u0431\u043A\u0438 \u043F\u0440\u0438 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0438")));
+}
+
+/* ── 03 Clear space ── */
+function ClearSpace() {
+  return /*#__PURE__*/React.createElement(Page, {
+    folio: "03"
+  }, /*#__PURE__*/React.createElement(Head, null, "\u041E\u0445\u0440\u0430\u043D\u043D\u043E\u0435 \u043F\u043E\u043B\u0435"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      left: 108,
+      top: 396.5,
+      width: 435
+    }
+  }, /*#__PURE__*/React.createElement(Body, {
+    width: 435
+  }, "\u041E\u0445\u0440\u0430\u043D\u043D\u043E\u0435 \u043F\u043E\u043B\u0435 \u043B\u043E\u0433\u043E\u0442\u0438\u043F\u0430 \u0440\u0430\u0432\u043D\u043E 1/3 \u0435\u0433\u043E \u0432\u044B\u0441\u043E\u0442\u044B. \u041D\u0430 \u044D\u0442\u043E\u0439 \u043E\u0431\u043B\u0430\u0441\u0442\u0438 \u0437\u0430\u043F\u0440\u0435\u0449\u0430\u0435\u0442\u0441\u044F \u0440\u0430\u0437\u043C\u0435\u0449\u0430\u0442\u044C \u043B\u044E\u0431\u044B\u0435 \u0438\u043D\u044B\u0435 \u0433\u0440\u0430\u0444\u0438\u0447\u0435\u0441\u043A\u0438\u0435 \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u0438 \u0442\u0435\u043A\u0441\u0442.")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      left: 761,
+      top: 343.6,
+      width: 1050.632,
+      height: 392.795,
+      background: 'var(--ke-lavender)',
+      boxShadow: 'inset 0 0 0 0.786px var(--ke-blue-rule)',
+      padding: 78.559,
+      boxSizing: 'border-box'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      height: '100%',
+      background: 'var(--ke-white)',
+      boxShadow: 'inset 0 0 0 0.786px var(--ke-blue-rule)',
+      display: 'flex',
+      alignItems: 'center'
+    }
+  }, /*#__PURE__*/React.createElement(Logo, {
+    height: 235.677 * 0.5,
+    color: "var(--ke-black)",
+    style: {
+      width: '100%',
+      height: 'auto'
+    }
+  }))));
+}
+
+/* ── 04 Core colours ── */
+function Colors() {
+  return /*#__PURE__*/React.createElement(Page, {
+    folio: "04"
+  }, /*#__PURE__*/React.createElement(Head, null, "\u041E\u0441\u043D\u043E\u0432\u043D\u044B\u0435 \u0446\u0432\u0435\u0442\u0430"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      left: 108,
+      top: 265,
+      width: 1705,
+      display: 'flex',
+      gap: 30
+    }
+  }, /*#__PURE__*/React.createElement(ColorSwatch, {
+    hex: "#D3FF33",
+    name: "lime",
+    cmyk: "17 0 80 0",
+    rgb: "211 255 51"
+  }), /*#__PURE__*/React.createElement(ColorSwatch, {
+    hex: "#9F96FF",
+    name: "tropical indigo",
+    cmyk: "38 41 0 0",
+    rgb: "159 150 255"
+  }), /*#__PURE__*/React.createElement(ColorSwatch, {
+    hex: "#0C2350",
+    name: "oxford blue",
+    cmyk: "100 33 0 80",
+    rgb: "0 34 51"
+  })));
+}
+
+/* ── 05 Colour combinations ── */
+function Combinations() {
+  return /*#__PURE__*/React.createElement(Page, {
+    folio: "05"
+  }, /*#__PURE__*/React.createElement(Head, null, "\u0426\u0432\u0435\u0442\u043E\u0432\u044B\u0435 \u0441\u043E\u0447\u0435\u0442\u0430\u043D\u0438\u044F"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      left: 108,
+      top: 228,
+      width: 1704
+    }
+  }, /*#__PURE__*/React.createElement(Body, {
+    size: 32
+  }, "\u041D\u0438\u0436\u0435 \u043F\u0440\u0435\u0434\u043E\u0441\u0442\u0430\u0432\u043B\u0435\u043D\u044B \u0432\u0430\u0440\u0438\u0430\u043D\u0442\u044B \u0446\u0432\u0435\u0442\u043E\u0432\u044B\u0445 \u0441\u043E\u0447\u0435\u0442\u0430\u043D\u0438\u0439 \u043F\u0440\u0438 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0438 \u043B\u043E\u0433\u043E\u0442\u0438\u043F\u0430. \u041D\u0430 \u043B\u0430\u0439\u043C\u0435 \u043B\u043E\u0433\u043E\u0442\u0438\u043F \u0432\u0441\u0435\u0433\u0434\u0430 \u0447\u0451\u0440\u043D\u044B\u0439, \u043D\u0430 \u043E\u043A\u0441\u0444\u043E\u0440\u0434\u0441\u043A\u043E\u043C \u0441\u0438\u043D\u0435\u043C \u2014 \u0432\u0441\u0435\u0433\u0434\u0430 \u0431\u0435\u043B\u044B\u0439.")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      left: 108,
+      top: 311,
+      width: 1704,
+      display: 'flex',
+      gap: 30
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 30
+    }
+  }, /*#__PURE__*/React.createElement(LogoTile, {
+    background: "var(--ke-white)",
+    ink: "var(--ke-black)"
+  }), /*#__PURE__*/React.createElement(LogoTile, {
+    background: "var(--ke-lime)",
+    ink: "var(--ke-black)"
+  }), /*#__PURE__*/React.createElement(LogoTile, {
+    background: "var(--ke-tropical-indigo)",
+    ink: "var(--ke-oxford-blue)"
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 30
+    }
+  }, /*#__PURE__*/React.createElement(LogoTile, {
+    background: "var(--ke-black)",
+    ink: "var(--ke-white)"
+  }), /*#__PURE__*/React.createElement(LogoTile, {
+    background: "var(--ke-oxford-blue)",
+    ink: "var(--ke-white)"
+  }), /*#__PURE__*/React.createElement(LogoTile, {
+    image: "../../assets/images/concert-crowd.jpg",
+    ink: "var(--ke-white)"
+  }))));
+}
+
+/* ── 06 Typefaces ── */
+function Typefaces() {
+  const rows = [['Nunito Sans Bold', 700], ['Nunito Sans Semibold', 600], ['Nunito Sans Regular', 400], ['Nunito Sans Extralight', 200]];
+  return /*#__PURE__*/React.createElement(Page, {
+    folio: "06"
+  }, /*#__PURE__*/React.createElement(Head, null, "\u0428\u0440\u0438\u0444\u0442\u044B"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      left: 108,
+      top: 240,
+      width: 1704,
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 60
+    }
+  }, rows.map(([name, w]) => /*#__PURE__*/React.createElement("div", {
+    key: name,
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 24
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-display)',
+      fontWeight: w,
+      fontSize: 120,
+      lineHeight: 1,
+      color: 'var(--ke-oxford-blue)'
+    }
+  }, "\u0410\u0430 Bb \u041A\u043A Ff"), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-display)',
+      fontWeight: 400,
+      fontSize: 36,
+      lineHeight: 1,
+      color: 'var(--text-muted)'
+    }
+  }, name)))));
+}
+
+/* ── 07 Patterns ── */
+function Patterns() {
+  return /*#__PURE__*/React.createElement(Page, {
+    folio: "10"
+  }, /*#__PURE__*/React.createElement(Head, null, "\u041F\u0430\u0442\u0442\u0435\u0440\u043D\u044B"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      left: 108,
+      top: 241,
+      width: 1704,
+      height: 731,
+      display: 'grid',
+      gridTemplateColumns: 'repeat(2,1fr)',
+      gridTemplateRows: 'repeat(2,1fr)',
+      gap: 32
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      background: `url(../../assets/patterns/pattern-1.png) center / cover`,
+      borderRadius: 12
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      background: 'var(--ke-lime-deep)',
+      borderRadius: 12,
+      overflow: 'hidden',
+      position: 'relative'
+    }
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "../../assets/logo/logo-mark-white.svg",
+    alt: "",
+    style: {
+      position: 'absolute',
+      left: -40,
+      top: -20,
+      height: 400,
+      opacity: 0.85
+    }
+  }), /*#__PURE__*/React.createElement("img", {
+    src: "../../assets/logo/logo-mark-lime.svg",
+    alt: "",
+    style: {
+      position: 'absolute',
+      right: -60,
+      bottom: -40,
+      height: 420
+    }
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      background: 'var(--ke-periwinkle)',
+      borderRadius: 12,
+      overflow: 'hidden',
+      position: 'relative'
+    }
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "../../assets/patterns/pattern-3-navy.svg",
+    alt: "",
+    style: {
+      position: 'absolute',
+      left: 0,
+      top: 40,
+      width: '100%',
+      opacity: 0.25
+    }
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      background: 'var(--ke-oxford-blue)',
+      borderRadius: 12,
+      overflow: 'hidden',
+      position: 'relative'
+    }
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "../../assets/patterns/pattern-4-lime.svg",
+    alt: "",
+    style: {
+      position: 'absolute',
+      left: 0,
+      top: 0,
+      width: '100%',
+      opacity: 0.4
+    }
+  }))));
+}
+const PAGES = [['Обложка', Cover], ['Описание компании', Company], ['Раздел', Chapter], ['Охранное поле', ClearSpace], ['Основные цвета', Colors], ['Цветовые сочетания', Combinations], ['Шрифты', Typefaces], ['Паттерны', Patterns]];
+Object.assign(window, {
+  Page,
+  PAGES,
+  Cover,
+  Company,
+  Chapter,
+  ClearSpace,
+  Colors,
+  Combinations,
+  Typefaces,
+  Patterns
+});
+})(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/brandbook/Pages.jsx", error: String((e && e.message) || e) }); }
+
+// ui_kits/social/Screens.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+const {
+  useState
+} = React;
+const {
+  Logo,
+  PostFrame,
+  MediaFrame,
+  Tag,
+  Icon
+} = window.KeyEntertainmentDesignSystem_27049e;
+const IMG = '../../assets/images/concert-crowd.jpg';
+const PORTRAIT = '../../assets/images/mission-portrait.png';
+
+// The nine post designs the brand file ships, in feed order.
+const POSTS = [{
+  kind: 'photo',
+  image: IMG,
+  tag: 'new release',
+  title: 'AyaFunk\nENBEK'
+}, {
+  kind: 'flat',
+  background: 'var(--ke-lime)',
+  ink: 'var(--ke-black)',
+  title: 'snippet\nout now',
+  tag: 'snippet'
+}, {
+  kind: 'icon',
+  icon: 'TablerIconBrandSpotify',
+  background: 'var(--ke-oxford-blue)',
+  ring: 'var(--ke-lime)'
+}, {
+  kind: 'photo',
+  image: PORTRAIT,
+  tag: 'backstage',
+  title: 'studio\nday 04'
+}, {
+  kind: 'icon',
+  icon: 'TablerIconBrandVk',
+  background: 'var(--ke-lime-deep)',
+  ring: 'var(--ke-lime-bright)'
+}, {
+  kind: 'flat',
+  background: 'var(--ke-oxford-blue)',
+  ink: 'var(--ke-lime)',
+  title: 'booking\nopen',
+  tag: 'booking'
+}, {
+  kind: 'icon',
+  icon: 'TablerIconMusic',
+  background: 'var(--ke-tropical-indigo)',
+  ring: 'var(--ke-white)'
+}, {
+  kind: 'photo',
+  image: IMG,
+  tag: 'live',
+  title: 'ALMATY\n21.09'
+}, {
+  kind: 'flat',
+  background: 'var(--ke-near-black)',
+  ink: 'var(--ke-white)',
+  title: '0%\ndistribution',
+  tag: 'distribution'
+}];
+const STORIES = [{
+  image: IMG,
+  tag: 'snippet',
+  title: 'AyaFunk\nENBEK'
+}, {
+  image: PORTRAIT,
+  tag: 'backstage',
+  title: 'mixing\nsession'
+}, {
+  background: 'var(--ke-lime)',
+  ink: 'var(--ke-black)',
+  tag: 'link in bio',
+  title: 'submit\nyour demo'
+}];
+
+/* The icon-badge post: one glyph blown up inside a ring, exactly as the file draws it. */
+function IconPost({
+  icon,
+  background,
+  ring,
+  scale = 1
+}) {
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 1080 * scale,
+      height: 1080 * scale,
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 1080,
+      height: 1080,
+      background,
+      transform: `scale(${scale})`,
+      transformOrigin: 'top left',
+      position: 'relative',
+      overflow: 'hidden'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      left: 60,
+      top: 60,
+      width: 960,
+      height: 960,
+      borderRadius: 960,
+      background: ring,
+      boxShadow: '0 0 0 60px rgb(0,0,0)',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center'
+    }
+  }, /*#__PURE__*/React.createElement(Icon, {
+    name: icon,
+    size: 640,
+    style: {
+      color: 'var(--ke-black)'
+    }
+  }))));
+}
+function Post({
+  p,
+  scale
+}) {
+  if (p.kind === 'icon') return /*#__PURE__*/React.createElement(IconPost, _extends({}, p, {
+    scale: scale
+  }));
+  return /*#__PURE__*/React.createElement(PostFrame, {
+    scale: scale,
+    image: p.image,
+    background: p.background,
+    ink: p.ink,
+    tag: p.tag,
+    title: p.title,
+    titleSize: 110
+  });
+}
+function ProfileHeader({
+  onOpenStories
+}) {
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 28,
+      alignItems: 'center',
+      padding: '0 0 24px'
+    }
+  }, /*#__PURE__*/React.createElement("button", {
+    onClick: onOpenStories,
+    title: "Open stories",
+    style: {
+      width: 116,
+      height: 116,
+      borderRadius: '50%',
+      border: 'none',
+      padding: 4,
+      background: 'linear-gradient(135deg,var(--ke-lime),var(--ke-tropical-indigo))',
+      cursor: 'pointer',
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: '100%',
+      height: '100%',
+      borderRadius: '50%',
+      background: 'var(--ke-oxford-blue)',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center'
+    }
+  }, /*#__PURE__*/React.createElement(Logo, {
+    variant: "mark",
+    height: 54,
+    color: "var(--ke-lime)"
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 8
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 14,
+      alignItems: 'center'
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-display)',
+      fontWeight: 700,
+      fontSize: 22,
+      color: 'var(--ke-oxford-blue)'
+    }
+  }, "keymusicompany"), /*#__PURE__*/React.createElement(Tag, {
+    size: 11
+  }, "label")), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-body)',
+      fontSize: 14,
+      color: 'var(--ke-ink)',
+      maxWidth: 380,
+      lineHeight: 1.4
+    }
+  }, "Key Entertainment \u2014 full-cycle independent music label. Distribution at 0%. Booking. Records."), /*#__PURE__*/React.createElement("a", {
+    href: "https://www.keyent.kz",
+    style: {
+      fontFamily: 'var(--font-body)',
+      fontSize: 14
+    }
+  }, "www.keyent.kz"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 24,
+      marginTop: 4,
+      fontFamily: 'var(--font-display)',
+      fontSize: 13,
+      color: 'var(--text-muted)'
+    }
+  }, /*#__PURE__*/React.createElement("span", null, /*#__PURE__*/React.createElement("b", {
+    style: {
+      color: 'var(--ke-oxford-blue)'
+    }
+  }, "132"), " posts"), /*#__PURE__*/React.createElement("span", null, /*#__PURE__*/React.createElement("b", {
+    style: {
+      color: 'var(--ke-oxford-blue)'
+    }
+  }, "18.4k"), " followers"), /*#__PURE__*/React.createElement("span", null, /*#__PURE__*/React.createElement("b", {
+    style: {
+      color: 'var(--ke-oxford-blue)'
+    }
+  }, "41"), " artists"))));
+}
+function FeedGrid({
+  onSelect,
+  onOpenStories
+}) {
+  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(ProfileHeader, {
+    onOpenStories: onOpenStories
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gridTemplateColumns: 'repeat(3, 1fr)',
+      gap: 6
+    }
+  }, POSTS.map((p, i) => /*#__PURE__*/React.createElement("button", {
+    key: i,
+    onClick: () => onSelect(i),
+    style: {
+      padding: 0,
+      border: 'none',
+      background: 'none',
+      cursor: 'pointer',
+      lineHeight: 0,
+      transition: 'opacity var(--dur-base) var(--ease-standard)'
+    },
+    onMouseEnter: e => e.currentTarget.style.opacity = 0.82,
+    onMouseLeave: e => e.currentTarget.style.opacity = 1
+  }, /*#__PURE__*/React.createElement(Post, {
+    p: p,
+    scale: 0.2
+  })))));
+}
+function PostDetail({
+  index,
+  onBack
+}) {
+  const p = POSTS[index];
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 16
+    }
+  }, /*#__PURE__*/React.createElement("button", {
+    onClick: onBack,
+    style: btn
+  }, "\u2190 back to feed"), /*#__PURE__*/React.createElement(Post, {
+    p: p,
+    scale: 0.62
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxWidth: 670,
+      fontFamily: 'var(--font-body)',
+      fontSize: 15,
+      lineHeight: 1.45,
+      color: 'var(--ke-ink)'
+    }
+  }, /*#__PURE__*/React.createElement("b", {
+    style: {
+      fontFamily: 'var(--font-display)'
+    }
+  }, "keymusicompany"), " ", p.tag ? `#${p.tag} ` : '', "Out now on all platforms. Distribution by Key Entertainment."));
+}
+function StoryPlayer({
+  onBack
+}) {
+  const [i, setI] = useState(0);
+  const s = STORIES[i];
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 16,
+      alignItems: 'flex-start'
+    }
+  }, /*#__PURE__*/React.createElement("button", {
+    onClick: onBack,
+    style: btn
+  }, "\u2190 back to feed"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'relative'
+    }
+  }, /*#__PURE__*/React.createElement(PostFrame, {
+    format: "story",
+    scale: 0.32,
+    image: s.image,
+    background: s.background,
+    ink: s.ink,
+    tag: s.tag,
+    title: s.title
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      top: 10,
+      left: 10,
+      right: 10,
+      display: 'flex',
+      gap: 4
+    }
+  }, STORIES.map((_, k) => /*#__PURE__*/React.createElement("div", {
+    key: k,
+    style: {
+      flex: 1,
+      height: 3,
+      borderRadius: 999,
+      background: k <= i ? 'var(--ke-white)' : 'rgba(255,255,255,.35)'
+    }
+  }))), /*#__PURE__*/React.createElement("button", {
+    onClick: () => setI(Math.max(0, i - 1)),
+    style: {
+      ...tapZone,
+      left: 0
+    },
+    "aria-label": "Previous"
+  }), /*#__PURE__*/React.createElement("button", {
+    onClick: () => setI(Math.min(STORIES.length - 1, i + 1)),
+    style: {
+      ...tapZone,
+      right: 0
+    },
+    "aria-label": "Next"
+  })), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-display)',
+      fontSize: 12,
+      color: 'var(--text-muted)'
+    }
+  }, "Tap the left / right half to move through the set \xB7 ", i + 1, " of ", STORIES.length));
+}
+function ThumbnailSet() {
+  const thumbs = [{
+    image: IMG,
+    tag: 'backstage',
+    title: 'Как записывался трек Puerto-Rico?'
+  }, {
+    image: PORTRAIT,
+    tag: 'interview',
+    title: 'AyaFunk о новом альбоме'
+  }, {
+    image: IMG,
+    tag: 'live',
+    title: 'Key Live · Almaty 2024'
+  }];
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 18
+    }
+  }, thumbs.map((t, i) => /*#__PURE__*/React.createElement("div", {
+    key: i,
+    style: {
+      display: 'flex',
+      gap: 16,
+      alignItems: 'flex-start'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 384,
+      height: 216,
+      overflow: 'hidden',
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      transform: 'scale(0.3)',
+      transformOrigin: 'top left'
+    }
+  }, /*#__PURE__*/React.createElement(MediaFrame, t))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 6,
+      paddingTop: 4
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-display)',
+      fontWeight: 700,
+      fontSize: 16,
+      color: 'var(--ke-oxford-blue)'
+    }
+  }, t.title), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-display)',
+      fontSize: 13,
+      color: 'var(--text-muted)'
+    }
+  }, "Key Entertainment \xB7 1280 \xD7 720")))));
+}
+function Banner() {
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 12
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 700,
+      height: 394,
+      overflow: 'hidden'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 2560,
+      height: 1440,
+      transform: 'scale(0.2734)',
+      transformOrigin: 'top left',
+      background: 'var(--surface-deck)',
+      position: 'relative',
+      overflow: 'hidden',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center'
+    }
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "../../assets/patterns/pattern-deck-tile-lime.svg",
+    alt: "",
+    style: {
+      position: 'absolute',
+      left: 0,
+      top: 0,
+      width: '100%',
+      opacity: 0.18
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'relative',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      gap: 60
+    }
+  }, /*#__PURE__*/React.createElement(Logo, {
+    height: 230,
+    color: "var(--ke-white)"
+  }), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-deck)',
+      fontWeight: 300,
+      fontSize: 96,
+      letterSpacing: '-0.05em',
+      color: 'var(--ke-lime)'
+    }
+  }, "your partner in the world of music")))), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-display)',
+      fontSize: 12,
+      color: 'var(--text-muted)'
+    }
+  }, "Channel banner \xB7 2560 \xD7 1440 \xB7 safe area centred"));
+}
+const btn = {
+  fontFamily: 'var(--font-display)',
+  fontSize: 13,
+  fontWeight: 600,
+  color: 'var(--ke-oxford-blue)',
+  background: 'none',
+  border: 'none',
+  padding: 0,
+  cursor: 'pointer',
+  alignSelf: 'flex-start'
+};
+const tapZone = {
+  position: 'absolute',
+  top: 0,
+  bottom: 0,
+  width: '50%',
+  background: 'transparent',
+  border: 'none',
+  cursor: 'pointer'
+};
+Object.assign(window, {
+  POSTS,
+  STORIES,
+  Post,
+  IconPost,
+  FeedGrid,
+  PostDetail,
+  StoryPlayer,
+  ThumbnailSet,
+  Banner
+});
+})(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/social/Screens.jsx", error: String((e && e.message) || e) }); }
+
+if (__ds_scope.__ds_default_components_icons_icon_data_12stud1$1nb03e1 === undefined) __ds_scope.__ds_default_components_icons_icon_data_12stud1$1nb03e1 = __ds_scope.__ds_default_components_icons_icon_data_12stud1;
+
+__ds_ns.Logo = __ds_scope.Logo;
+
+__ds_ns.PatternField = __ds_scope.PatternField;
+
+__ds_ns.ColorSwatch = __ds_scope.ColorSwatch;
+
+__ds_ns.LogoTile = __ds_scope.LogoTile;
+
+__ds_ns.SectionHeading = __ds_scope.SectionHeading;
+
+__ds_ns.ServiceCard = __ds_scope.ServiceCard;
+
+__ds_ns.BannerImage = __ds_scope.BannerImage;
+
+__ds_ns.Avatar28 = __ds_scope.Avatar28;
+
+__ds_ns.AvatarsSmall = __ds_scope.AvatarsSmall;
+
+__ds_ns.BottomNav = __ds_scope.BottomNav;
+
+__ds_ns.CommunitiesActionCollapsedButton = __ds_scope.CommunitiesActionCollapsedButton;
+
+__ds_ns.CommunitiesContainerInfo = __ds_scope.CommunitiesContainerInfo;
+
+__ds_ns.CommunitiesOfferNers = __ds_scope.CommunitiesOfferNers;
+
+__ds_ns.CommunitiesSubscriptionsAll = __ds_scope.CommunitiesSubscriptionsAll;
+
+__ds_ns.CommunitiesSubscriptionsFriendsSmallAlone = __ds_scope.CommunitiesSubscriptionsFriendsSmallAlone;
+
+__ds_ns.HomeBottomMenu = __ds_scope.HomeBottomMenu;
+
+__ds_ns.ProfilePicture = __ds_scope.ProfilePicture;
+
+__ds_ns.XActionsPageMenuButton = __ds_scope.XActionsPageMenuButton;
+
+__ds_ns.XActionsPageMenuItem = __ds_scope.XActionsPageMenuItem;
+
+__ds_ns.XAvatarCircle = __ds_scope.XAvatarCircle;
+
+__ds_ns.XAvatarsRow = __ds_scope.XAvatarsRow;
+
+__ds_ns.XButtonActionsLabelFixed = __ds_scope.XButtonActionsLabelFixed;
+
+__ds_ns.XCommunityTitleLayout = __ds_scope.XCommunityTitleLayout;
+
+__ds_ns.XContainerCounters = __ds_scope.XContainerCounters;
+
+__ds_ns.XIconCounter = __ds_scope.XIconCounter;
+
+__ds_ns.XIconCounterViews = __ds_scope.XIconCounterViews;
+
+__ds_ns.XLeftMenuRow = __ds_scope.XLeftMenuRow;
+
+__ds_ns.XMainContainerTextLocation = __ds_scope.XMainContainerTextLocation;
+
+__ds_ns.XMainContainerTextPhone = __ds_scope.XMainContainerTextPhone;
+
+__ds_ns.XMenuSeparator = __ds_scope.XMenuSeparator;
+
+__ds_ns.XSearchHeader = __ds_scope.XSearchHeader;
+
+__ds_ns.XSubscriptionsGroupAvatars = __ds_scope.XSubscriptionsGroupAvatars;
+
+__ds_ns.XTextGroupInfo = __ds_scope.XTextGroupInfo;
+
+__ds_ns.XTitleLayout125 = __ds_scope.XTitleLayout125;
+
+__ds_ns.XTitleLayoutPost = __ds_scope.XTitleLayoutPost;
+
+__ds_ns.XUsername = __ds_scope.XUsername;
+
+__ds_ns.DeckHeader = __ds_scope.DeckHeader;
+
+__ds_ns.GlassRow = __ds_scope.GlassRow;
+
+__ds_ns.Icon = __ds_scope.Icon;
+
+__ds_ns.IconBadgePost = __ds_scope.IconBadgePost;
+
+__ds_ns.MediaFrame = __ds_scope.MediaFrame;
+
+__ds_ns.PostFrame = __ds_scope.PostFrame;
+
+__ds_ns.Tag = __ds_scope.Tag;
+
+})();
