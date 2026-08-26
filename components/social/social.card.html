@@ -1,0 +1,24 @@
+<!-- @dsCard group="Components" viewport="700x330" name="Social — Tag, PostFrame, MediaFrame" subtitle="Lime pill, post & story artwork, video thumbnail" -->
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;background:var(--ke-off-white)}#root{padding:16px;display:flex;gap:14px;align-items:flex-start}</style>
+</head><body><div id="root"></div>
+<script type="text/babel">
+const { Tag, PostFrame, MediaFrame } = window.KeyEntertainmentDesignSystem_27049e;
+ReactDOM.createRoot(document.getElementById('root')).render(<>
+  <PostFrame scale={0.14} format="story" image="../../assets/images/concert-crowd.jpg" tag="snippet" title={"AyaFunk\nENBEK"} />
+  <PostFrame scale={0.185} background="var(--ke-lime)" ink="var(--ke-black)" tag="new release" title={"KEY\nRECORDS"} titleSize={130} />
+  <div style={{display:'flex',flexDirection:'column',gap:12}}>
+    <div style={{width:340,height:191,overflow:'hidden'}}><div style={{transform:'scale(0.2656)',transformOrigin:'top left'}}>
+      <MediaFrame image="../../assets/images/concert-crowd.jpg" tag="backstage" title="Как записывался трек Puerto-Rico?" />
+    </div></div>
+    <div style={{display:'flex',gap:10,alignItems:'center',flexWrap:'wrap'}}>
+      <Tag size={14}>snippet</Tag><Tag size={14}>backstage</Tag><Tag size={14}>new release</Tag>
+      <span style={{color:'var(--ke-oxford-blue)'}}><Tag variant="outline" style={{fontSize:14,padding:'6px 14px'}}>www.keyent.kz</Tag></span>
+    </div>
+  </div>
+</>);
+</script></body></html>
