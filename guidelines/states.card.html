@@ -1,0 +1,15 @@
+<!-- @dsCard group="Colors" viewport="700x150" name="States (extension)" subtitle="The source defines no interaction states — these are the house defaults" -->
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><link rel="stylesheet" href="../styles.css">
+<style>body{margin:0;padding:16px;font-family:var(--font-display);color:var(--ke-oxford-blue)}
+.g{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.s{height:52px;border-radius:999px;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:13px}
+.l{font-size:9px;opacity:.55;margin-top:5px}
+.note{font-size:9px;opacity:.5;margin-top:12px;line-height:1.5}</style>
+</head><body><div class="g">
+<div><div class="s" style="background:var(--ke-lime);color:var(--ke-lime-ink)">Default</div><div class="l">#D3FF33 / ink #506600</div></div>
+<div><div class="s" style="background:var(--ke-lime-bright);color:var(--ke-lime-ink)">Hover</div><div class="l">#CEFF1A</div></div>
+<div><div class="s" style="background:var(--ke-lime-deep);color:#fff">Press</div><div class="l">#A0CC00</div></div>
+<div><div class="s" style="background:var(--ke-lime);color:var(--ke-lime-ink);outline:2px solid var(--ke-oxford-blue);outline-offset:2px">Focus</div><div class="l">2px oxford blue, 2px offset</div></div>
+</div>
+<div class="note">Transitions: 180ms cubic-bezier(.2,0,.2,1) on colour and opacity only. No scale, no shadow, no bounce. Flagged as an extension — the brand file is static.</div>
+</body></html>

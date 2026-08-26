@@ -1,0 +1,27 @@
+<!-- @dsCard group="Spacing" viewport="700x230" name="Page grids" subtitle="Brandbook 108px margin vs deck 60px margin — never mixed" -->
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><link rel="stylesheet" href="../styles.css">
+<style>body{margin:0;padding:16px;font-family:var(--font-display);display:flex;gap:16px;color:var(--ke-oxford-blue)}
+.page{width:320px;height:180px;position:relative;box-sizing:border-box}
+.live{position:absolute;inset:0;border:1px dashed var(--ke-tropical-indigo)}
+.cap{font-size:10px;opacity:.55;margin-top:6px;letter-spacing:.03em}
+.head{position:absolute;height:10px;background:var(--ke-tropical-indigo)}
+.folio{position:absolute;width:8px;height:6px;background:var(--ke-tropical-indigo);opacity:.6}</style>
+</head><body>
+<div>
+  <div class="page" style="background:var(--ke-white);box-shadow:inset 0 0 0 1px rgba(0,0,0,.15);padding:18px">
+    <div class="live"></div><div class="head" style="left:18px;top:18px;width:2px;height:10px"></div>
+    <div class="head" style="left:24px;top:20px;width:90px;height:6px"></div>
+    <div class="folio" style="right:18px;top:18px"></div>
+  </div>
+  <div class="cap">Brandbook · 1920×1080 · margin 108 · live 1704</div>
+</div>
+<div>
+  <div class="page" style="background:var(--surface-deck);padding:10px">
+    <div class="live" style="border-color:rgba(255,255,255,.35)"></div>
+    <div class="head" style="left:10px;top:10px;width:60px;height:8px;background:#fff"></div>
+    <div class="head" style="right:10px;top:10px;width:70px;height:6px;background:rgba(255,255,255,.6)"></div>
+    <div class="head" style="left:10px;bottom:10px;width:300px;height:14px;background:rgba(255,255,255,.08)"></div>
+  </div>
+  <div class="cap">Deck · 1920×1080 · margin 60 · live 1800</div>
+</div>
+</body></html>
