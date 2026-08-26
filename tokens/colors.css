@@ -1,0 +1,75 @@
+/* Key Entertainment — colour tokens. Values transcribed from the .fig. */
+:root{
+  /* ── Core brand (brandbook slide 04 "Основные цвета") ── */
+  --ke-lime:#D3FF33;            /* lime            — CMYK 17 0 80 0  / RGB 211 255 51 */
+  --ke-tropical-indigo:#9F96FF; /* tropical indigo — CMYK 38 41 0 0  / RGB 159 150 255 */
+  --ke-oxford-blue:#0C2350;     /* oxford blue     — CMYK 100 33 0 80 / RGB 12 35 80 */
+
+  /* ── Extended brand neutrals & tints found in the file ── */
+  --ke-black:#000000;
+  --ke-near-black:#0D0D0D;      /* logo lockup card ground */
+  --ke-midnight:#07132C;        /* brandbook section-divider ground */
+  --ke-abyss:#010814;           /* deck gradient end stop */
+  --ke-navy-deep:#143A85;       /* brandbook headline blue */
+  --ke-periwinkle:#D0CCFF;      /* brandbook chapter ground */
+  --ke-lavender:#E8E5FF;        /* clear-space diagram ground */
+  --ke-indigo-ink:#080066;      /* type on periwinkle grounds */
+  --ke-blue-rule:#1100CC;       /* diagram rules */
+  --ke-white:#FFFFFF;
+  --ke-off-white:#F2F2F2;       /* brandbook light ground */
+  --ke-ink:#1A1A1A;             /* body copy on light */
+  --ke-lime-ink:#506600;        /* type inside a lime pill */
+  --ke-lime-deep:#A0CC00;       /* pattern shadow lime */
+  --ke-lime-bright:#CEFF1A;     /* pattern highlight lime */
+  --ke-thumb-yellow:#FEC90C;    /* YouTube thumbnail ground */
+
+  /* ── Semantic aliases ── */
+  --surface-page:var(--ke-white);
+  --surface-page-alt:var(--ke-off-white);
+  --surface-chapter:var(--ke-periwinkle);
+  --surface-chapter-dark:var(--ke-midnight);
+  --surface-invert:var(--ke-black);
+  --surface-card:var(--ke-white);
+  --surface-card-invert:var(--ke-near-black);
+  --surface-diagram:var(--ke-lavender);
+  --surface-accent:var(--ke-lime);
+  --surface-deck:linear-gradient(165.679deg,#0C2350 15.61%,#010814 152.16%);
+  --surface-row-glass:rgba(255,255,255,.05);
+  --surface-scrim:rgba(0,0,0,.5);
+  --surface-scrim-soft:rgba(0,0,0,.37);
+
+  --text-display:var(--ke-oxford-blue);
+  --text-heading:var(--ke-navy-deep);
+  --text-body:var(--ke-ink);
+  --text-muted:rgba(12,35,80,.5);
+  --text-on-dark:var(--ke-white);
+  --text-on-dark-muted:rgba(255,255,255,.3);
+  --text-on-chapter:var(--ke-indigo-ink);
+  --text-accent:var(--ke-lime);
+  --text-on-accent:var(--ke-lime-ink);
+
+  --border-hairline:rgba(0,0,0,1);
+  --border-diagram:var(--ke-blue-rule);
+  --border-on-dark:rgba(255,255,255,.12);
+  --accent-rule:var(--ke-tropical-indigo);
+
+  --link:var(--ke-navy-deep);
+  --link-hover:var(--ke-oxford-blue);
+
+  /* ── Community-page chrome (brandbook p.17 "Оформление VK") ──
+     Geometry comes from the platform's own library components in the source
+     file; the palette is re-pointed at Key Entertainment's colours so the
+     recreation carries this brand and not the platform's. */
+  --chrome-surface:var(--ke-white);
+  --chrome-border:#E7E8EC;
+  --chrome-border-strong:#D3D9DE;
+  --chrome-nav:var(--ke-oxford-blue);
+  --chrome-nav-field:var(--ke-navy-deep);
+  --chrome-nav-ink:var(--ke-lavender);
+  --chrome-nav-ink-muted:rgba(232,229,255,.55);
+  --chrome-link:var(--ke-navy-deep);
+  --chrome-meta:#626D7A;
+  --chrome-icon:#9BA1AD;
+}
+a{color:var(--link);text-decoration:none}
+a:hover{color:var(--link-hover);text-decoration:underline}

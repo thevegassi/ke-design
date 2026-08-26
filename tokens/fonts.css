@@ -1,0 +1,7 @@
+/* Key Entertainment webfonts.
+   The .fig ships no font binaries. All three families used in the file
+   (Nunito Sans, Manrope, Inter) are available on Google Fonts, so they are
+   loaded from there rather than substituted. If licensed desktop/web binaries
+   exist internally, drop them in assets/fonts/ and replace this import with
+   local @font-face rules. */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Manrope:wght@200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");

@@ -1,0 +1,40 @@
+/* Key Entertainment — spacing & layout tokens.
+   Two page grids exist in the file and must not be mixed on one artefact:
+   · Brandbook page: 1920×1080, 108px margin, 1704px live area
+   · Deck page:      1920×1080,  60px margin, 1800px live area */
+:root{
+  --space-2:8px;
+  --space-3:10px;
+  --space-4:12px;
+  --space-6:24px;
+  --space-7:30px;
+  --space-8:32px;
+  --space-9:40px;
+  --space-10:48px;
+  --space-12:60px;
+  --space-14:72px;
+  --space-16:96px;
+  --space-18:108px;
+  --space-20:128px;
+  --space-32:256px;
+
+  --page-w:1920px;
+  --page-h:1080px;
+  --margin-brandbook:108px;
+  --live-brandbook:1704px;
+  --margin-deck:60px;
+  --live-deck:1800px;
+  --margin-social:60px;   /* 1080-square posts */
+  --margin-thumb:72px;    /* 1280×720 YouTube thumbnails */
+
+  --accent-rule-w:14px;   /* the vertical bar left of every section heading */
+  --accent-rule-h:60px;
+  --accent-rule-gap:30px;
+
+  --post-square:1080px;
+  --post-story-h:1920px;
+  --thumb-w:1280px;
+  --thumb-h:720px;
+  --banner-w:2560px;
+  --banner-h:1440px;
+}

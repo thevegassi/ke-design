@@ -1,0 +1,43 @@
+/* Key Entertainment — typography tokens.
+   The file carries TWO type systems, both in active use:
+   · Brandbook / social  → Nunito Sans (display + UI) with Manrope for long body copy
+   · Presentation deck   → Inter, tracked tight (-0.05em) with sub-1 line-heights
+   Sizes below are literal transcriptions; do not round them. */
+:root{
+  --font-display:"Nunito Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --font-body:Manrope,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --font-deck:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --font-ui:Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif; /* social-platform chrome only */
+
+  --fw-extralight:200; /* @kind font */
+  --fw-light:300; /* @kind font */
+  --fw-regular:400; /* @kind font */
+  --fw-semibold:600; /* @kind font */
+  --fw-bold:700; /* @kind font */
+  --fw-extrabold:800; /* @kind font */
+
+  /* Brandbook scale @1920×1080 */
+  --size-cover:96px;      /* cover statement, Nunito Sans Bold */
+  --size-title:72px;      /* page title / colour hex, Nunito Sans Bold */
+  --size-section:48px;    /* section heading, Nunito Sans Bold */
+  --size-lead:36px;       /* lead-in + folio, Nunito Sans Regular */
+  --size-body:32px;       /* body copy, Manrope or Nunito Sans Regular */
+  --size-label:28px;      /* card label, Nunito Sans Bold */
+
+  /* Deck scale @1920×1080 (Inter) */
+  --size-deck-hero:233px; /* KEY / ENTERTAINMENT cover words */
+  --size-deck-tagline:60px;
+  --size-deck-title:48px;
+  --size-deck-body:32px;
+  --size-deck-meta:24px;
+
+  --lh-tight:0.9; /* @kind font */         /* deck display */
+  --lh-flush:1; /* @kind font */           /* single-line brandbook headings ("100%") */
+  --lh-snug:1.04; /* @kind font */         /* social display */
+  --lh-body:1.1; /* @kind font */          /* deck body rows */
+  --lh-copy:1.4; /* @kind font */          /* long-form prose (readability extension) */
+
+  --tracking-deck-hero:-0.07em; /* @kind font */
+  --tracking-deck:-0.05em; /* @kind font */
+  --tracking-normal:0; /* @kind font */
+}
