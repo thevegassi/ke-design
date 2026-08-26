@@ -1,0 +1,26 @@
+<!-- @dsCard group="Components" viewport="700x300" name="Deck — Header & GlassRow" subtitle="Slide running header and translucent content rows" -->
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0}#root{width:700px;height:300px;overflow:hidden;background:var(--surface-deck)}</style>
+</head><body><div id="root"></div>
+<script type="text/babel">
+const { DeckHeader, GlassRow, PatternField } = window.KeyEntertainmentDesignSystem_27049e;
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <PatternField mode="tile" size={90} color="#fff" opacity={0.12} style={{width:700,height:300}}>
+    <div style={{transform:'scale(0.3646)',transformOrigin:'top left',width:1920,padding:60,boxSizing:'border-box'}}>
+      <DeckHeader section="Key Distribution Services" folio="04" />
+      <div style={{marginTop:60,display:'flex',flexDirection:'column',gap:10}}>
+        <span style={{fontFamily:'var(--font-deck)',fontWeight:600,fontSize:48,letterSpacing:'-0.05em',color:'var(--ke-lime)'}}>Our services include:</span>
+        <GlassRow>Uploading releases to Spotify, Apple Music, YouTube Music, TikTok and other platforms</GlassRow>
+        <div style={{display:'flex',gap:10}}>
+          <GlassRow style={{flex:1}}>Posting and updating artist profiles</GlassRow>
+          <GlassRow style={{flex:1}}>Obtaining access to official artist cards</GlassRow>
+        </div>
+      </div>
+    </div>
+  </PatternField>
+);
+</script></body></html>
