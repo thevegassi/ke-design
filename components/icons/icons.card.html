@@ -1,0 +1,19 @@
+<!-- @dsCard group="Components" viewport="700x260" name="Icons" subtitle="37 glyphs extracted from the brand file — Tabler outline + Huge-icon solid" -->
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;background:var(--ke-white)}#root{padding:16px;display:flex;flex-direction:column;gap:12px}.grid{display:flex;flex-wrap:wrap;gap:14px}.lbl{font-family:var(--font-display);font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--text-muted)}</style>
+</head><body><div id="root"></div>
+<script type="text/babel">
+const { Icon } = window.KeyEntertainmentDesignSystem_27049e;
+const tabler = ["TablerIconMusic","TablerIconVinyl","TablerIconPlaylist","TablerIconPlayerTrackNext","TablerIconFlame","TablerIconNews","TablerIconUser","TablerIconUsers","TablerIconMail","TablerIconMailOpened","TablerIconMailForward","TablerIconAddressBook","TablerIconPhoneCall","TablerIconQuestionMark","TablerIconBrandSpotify","TablerIconBrandYoutube","TablerIconBrandInstagram","TablerIconBrandTiktok","TablerIconBrandTelegram","TablerIconBrandVk"];
+const huge = ["HugeIconBusinessSolidBriefcase","HugeIconBusinessSolidChart","HugeIconBusinessSolidTarget","HugeIconCommunicationSolidBroadcast","HugeIconCommunicationSolidCalling","HugeIconCommunicationSolidMail","HugeIconFilesAndFolder","HugeIconFinanceAndPayment","HugeIconInterfaceSolidBoard","HugeIconInterfaceSolidCheck","HugeIconInterfaceSolidGlobe","HugeIconInterfaceSolidHome","HugeIconInterfaceSolidTicket","HugeIconMultimediaAndAudio","HugeIconSocialSolidTiktok","HugeIconSocialSolidYoutube","HugeIconUserSolidUser"];
+ReactDOM.createRoot(document.getElementById('root')).render(<>
+  <span className="lbl">Tabler · outline · 32px · currentColor</span>
+  <div className="grid" style={{color:'var(--ke-oxford-blue)'}}>{tabler.map(n=><Icon key={n} name={n} size={26}/>)}</div>
+  <span className="lbl">Huge-icon · solid · presentation deck</span>
+  <div className="grid" style={{color:'var(--ke-oxford-blue)'}}>{huge.map(n=><Icon key={n} name={n} size={26}/>)}</div>
+</>);
+</script></body></html>
