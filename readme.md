@@ -173,7 +173,9 @@ Three colours are declared as core (brandbook p.04, in this order):
 | --- | --- | --- | --- |
 | `#D3FF33` | lime | 17 0 80 0 | 211 255 51 |
 | `#9F96FF` | tropical indigo | 38 41 0 0 | 159 150 255 |
-| `#0C2350` | oxford blue | 100 33 0 80 | 0 34 51 |
+| `#0C2350` | oxford blue | 100 33 0 80 | 12 35 80 |
+
+The brandbook's own swatch mislabels oxford blue's RGB as `0 34 51`, which doesn't match its own hex. `12 35 80` (the correct conversion of `#0C2350`, matching `tokens/colors.css`) is used here instead.
 
 Around them the file uses a small, disciplined extended set: `#000000` and `#0D0D0D` for inverted grounds, `#07132C` and `#010814` for the darkest chapter and deck grounds, `#143A85` for brandbook headlines, `#D0CCFF` and `#E8E5FF` as periwinkle/lavender chapter and diagram grounds, `#080066` for type on periwinkle, `#F2F2F2` and `#FFFFFF` for light grounds, `#1A1A1A` for body copy, `#506600` for type inside a lime pill, and `#FEC90C` on one YouTube thumbnail.
 
